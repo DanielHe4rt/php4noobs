@@ -1,4 +1,4 @@
-# Linux4noobs
+# PHP4Noobs
 
 <h1 align="center">
   <img src="./images/php.png" alt="php" width="120">
