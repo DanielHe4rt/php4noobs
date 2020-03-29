@@ -1,10 +1,15 @@
 # 3.2 - Comentários
 
-Iremos usar um sistema muito interessante para poder nos guiar enquanto programamos. **Comentários** são um dos principios de qualquer programadeiro que não quer criar algo e esquecer no dia seguinte.<br>
+Iremos usar um sistema muito interessante para poder nos guiar enquanto programamos. **Comentários** são um dos principios de qualquer programadeiro que não quer criar algo e esquecer no dia seguinte.
 
-Tá, mas como eu faço um comentário? <br><br>
-Os comentários são iniciados com duas barras "**//**" no nosso querido PHP. Tá, mas eai?<br>
-Os comentários não são interpretados quando o código está sendo lido, então você pode usar e abusar dos mesmos pra documentar tudo que você achar importante. Veja o código abaixo:
+Os comentários não são interpretados quando o código está sendo lido, então você pode usar e abusar dos mesmos pra documentar tudo que você achar necessário.
+
+Existem alguns tipos de comentário no PHP e vamos entender e quando usar.
+
+### Comentário de linha única
+
+Os comentários de linha única são iniciados com duas barras "**//**" no nosso querido PHP.
+Veja o exemplo abaixo abaixo:
 
 ```php
 <?php
@@ -16,10 +21,44 @@ echo "He4rtDevs <3";
 ```
 
 <center><i>Arquivo encontrado em: exemplos/comentarios1.php</i></center>
+
 Você pode executar o exemplo acima com o comando abaixo:<br>
 
-```
-    php /curso-php/3-PHP-Básico/3.2-Comentários/exemplos/comentarios1.php
+```bash
+danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php comentarios1.php
+He4rtDevs <3
 ```
 
-<img src="https://i.imgur.com/VvVI12n.gif">
+Como podemos observar, não foi mostrado nada fora do esperado. Os comentários são totalmente anulados na hora de qualquer tipo de processamento e só serve de fato para leitura do desenvolvedor.
+
+### Comentário de multiplas linhas
+
+Para comentar multiplas linhas, é usado um padrão um pouco diferente do que é acostumado.
+
+- Inicia a linha com **/\*\***
+- Para cada nova linha é inserido um novo asteristico **\***
+- Para fechar o comentário é inserido <strong>\*/</strong>
+
+Veja o exemplo abaixo:
+
+```php
+<?php
+/**
+ * Script para visualização de comentarios
+ * e mostrar o nome do melhor grupo de devs do mundo
+ *
+ * @author danielhe4rt - hey@danielheart.dev // Opcional
+ * @return string // Opcional
+ */
+
+echo "He4rtDevs <3";
+```
+
+<center><i>Arquivo encontrado em: exemplos/comentarios2.php</i></center>
+
+Podemos ver o resultado novamente na execução abaixo onde não é lido nenhum tipo de comentário.
+
+```bash
+danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php comentarios2.php
+He4rtDevs <3
+```
