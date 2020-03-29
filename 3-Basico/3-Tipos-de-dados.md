@@ -38,11 +38,7 @@ Inteiros podem ser especificados em notação decimal (base 10), hexadecimal (ba
 
 ```php
 <?php
-var_dump(1234); // número decimal
-var_dump(-123); // um número negativo
-var_dump(0123); // número octal (equivalente a 83 em decimal)
-var_dump(0x1A); // número hexadecimal (equivalente a 26 em decimal)
-var_dump(0b11111111); // número binário (equivalente ao 255 decimal)
+echo "Exemplos de números inteiros \n";
 var_dump(1234); // número decimal
 var_dump(-123); // um número negativo
 var_dump(0123); // número octal (equivalente a 83 em decimal)
@@ -51,10 +47,233 @@ var_dump(0b11111111); // número binário (equivalente ao 255 decimal)
 ```
 
 <center><i>Arquivo encontrado em: exemplos/integer1.php</i></center>
+
 Você pode executar o exemplo acima com o comando abaixo:<br>
 
-```
-    php /curso-php/3-PHP-Básico/3.3-Tipos-de-dados/exemplos/integer1.php
+```console
+danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php tipos1.php
+Exemplos de números inteiros
+int(1234)
+int(-123)
+int(83)
+int(26)
+int(255)
 ```
 
-<img src="https://i.imgur.com/L022Olp.gif">
+## Números Flutuantes
+
+Números de ponto flutuante (também conhecidos como "floats", "doubles" ou "números reais"), podem ser especificados utilizando qualquer uma das seguintes sintaxes:
+
+```php
+<?php
+
+$a = 1.234;
+$b = 1.2e3;
+$c = 7E-10;
+
+echo $a . "\n";
+echo $b . "\n";
+echo $c . "\n"
+```
+
+<center><i>Arquivo encontrado em: exemplos/tipos2.php</i></center>
+
+Você pode executar o exemplo acima com o comando abaixo:<br>
+
+```console
+danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php tipos2.php
+1.234
+1200
+7.0E-10
+```
+
+## Strings
+
+Uma string é uma série de caracteres, onde um caractere é o mesmo que um byte. Isso significa que o PHP possui suporte a um conjunto de apenas 256 caracteres, e, portanto, não possui suporte nativo a Unicode. Veja mais detalhes do tipo string.
+
+Uma string é um conjunto de caracteres, formando uma frase e/ou palavra ou até mesmo um caractere único.
+
+Uma string pode ser especificada de quatro formas diferentes, porém só iremos usar duas. Sendo elas com:
+
+- Aspas Simples
+- Aspas Duplas
+
+Nós já passamos por uma string nos exemplos anteriores de output com **echo** então vai ser mais fácil o entendimento. Segue o exemplo abaixo:
+
+```php
+<?php
+
+echo "He4rtDevs <3";
+echo "Melhor grupo do mundo para devs iniciantes";
+```
+
+Vamos analisar o exemplo abaixo:
+
+```console
+danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php tipos3.php
+He4rtDevs <3Melhor grupo do mundo para devs iniciantes
+```
+
+Podemos ver que a linha não foi quebrada e isso não irá acontecer se você não usar uma sequencia de escape, na qual já apareceu em um exemplo nessa sessão.
+A sequencia **\n** significa que a partir desse ponto será uma nova linha no nosso console e pode ser colocado em qualquer parte da string. Segue o exemplo abaixo:
+
+```php
+<?php
+
+echo "He4rtDevs <3\n";
+echo "Melhor grupo do mundo para devs iniciantes";
+```
+
+OU
+
+```php
+<?php
+
+echo "He4rtDevs <3";
+echo "\n";
+echo "Melhor grupo do mundo para devs iniciantes";
+```
+
+Vamos ver o resultado, onde é esperado que seja quebrada a linha e separado o conteúdo das strings.
+
+```console
+danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php tipos4.php
+He4rtDevs <3
+Melhor grupo do mundo para devs iniciantes
+```
+
+Com essa base você já consegue fazer vários exemplos com strings e sempre tendo uma saída com uma fácil legibilidade.
+
+## Arrays (Vetores)
+
+Um array no PHP é na verdade um mapa ordenado. Um mapa é um tipo que relaciona valores a chaves. Este tipo é otimizado para várias usos diferentes: ele pode ser tratado como um array, uma lista (vetor), hashtable (que é uma implementação de mapa), dicionário, coleção, pilha, fila e provavelmente mais. Assim como existe a possibilidade dos valores do array serem outros arrays, árvores e arrays multidimensionais.
+
+Um array pode ser criado com o construtor de linguagem **array()** ou por **[]**. Ele leva qualquer quantidade de pares separados por vírgula chave => valor como argumentos.
+
+```
+array(
+    chave  => valor,
+    chave2 => valor2,
+    chave3 => valor3,
+    ...
+)
+```
+
+Caso vocẽ não queira uma "chave", ele será usado o mapa incremental padrão de vetores, começando pelo 0,1,2,3... Veja os exemplos abaixo:
+
+```php
+<?php
+
+$array1 = array(
+    "dev" => "danielhe4rt",
+    "group" => "he4rtdevs"
+);
+
+// Ou se você quiser um jeito mais simples de instanciar um array:
+
+$array2 = [
+    "dev" => "danielhe4rt",
+    "group" => "he4rtdevs"
+];
+
+var_dump($array1);
+var_dump($array2);
+
+```
+
+Vejamos o resultado abaixo:
+
+```console
+danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php tipos5.php
+array(2) {
+  ["dev"]=>
+  string(11) "danielhe4rt"
+  ["group"]=>
+  string(9) "he4rtdevs"
+}
+array(2) {
+  ["dev"]=>
+  string(11) "danielhe4rt"
+  ["group"]=>
+  string(9) "he4rtdevs"
+}
+```
+
+Mostramos dois jeitos de declarar arrays e os dois estão **certos**, porém usando **[]** é um jeito mais simples de expressar um array.
+
+Agora vamos para outro exemplo de como ficaria se vocẽ não colocasse chaves nos seus arrays:
+
+```php
+<?php
+
+$array1 = array(
+    "danielhe4rt",
+    "he4rtdevs"
+);
+
+// Ou se você quiser um jeito mais simples de instanciar um array:
+
+$array2 = [
+    "danielhe4rt",
+    "he4rtdevs"
+];
+
+var_dump($array1);
+var_dump($array2);
+
+```
+
+```console
+danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php tipos6.php
+array(2) {
+  [0]=>
+  string(11) "danielhe4rt"
+  [1]=>
+  string(9) "he4rtdevs"
+}
+array(2) {
+  [0]=>
+  string(11) "danielhe4rt"
+  [1]=>
+  string(9) "he4rtdevs"
+}
+```
+
+Vamos comparar o resultado abaixo com o nosso último teste acima e anotar algumas diferenças:
+
+- No primeiro usamos chaves como string
+- No segundo usamos chaves incrementais padrões de um array
+
+Ao colocar um dado dentro de um array sem uma chave, ele automáticamente atribui o primeiro valor incremental, sendo ele iniciado **sempre** do 0.
+
+Agora vamos entender como mostrar a saída de um vetor. Vamos declarar dois vetores e trabalhar em cima deles:
+
+```php
+<?php
+
+$array1 = [
+    'dev' => 'danielhe4rt',
+    'group' => 'he4rtdevs'
+];
+
+$array2 = [
+    'danielhe4rt',
+    'he4rtdevs'
+];
+
+// Array associativo
+echo $array1['dev'] . "\n";
+echo $array1['group'] . "\n";
+
+// Array não associativo
+echo $array2[0] . "\n";
+echo $array2[1] . "\n";
+```
+
+```console
+danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php tipos7.php
+danielhe4rt
+he4rtdevs
+danielhe4rt
+he4rtdevs
+```
