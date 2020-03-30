@@ -22,14 +22,19 @@ var_dump(TrUe);
 var_dump(fAlSe)
 ```
 
-<center><i>Arquivo encontrado em: exemplos/boolean1.php</i></center>
+<p align="center"><i>Arquivo encontrado em: exemplos/tipos0.php</i></p>
+
 Você pode executar o exemplo acima com o comando abaixo:<br>
 
 ```
-    php /curso-php/3-PHP-Básico/3.3-Tipos-de-dados/exemplos/boolean1.php
+danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php tipos0.php
+bool(true)
+bool(false)
+bool(true)
+bool(false)
+bool(true)
+bool(false)
 ```
-
-<img src="https://i.imgur.com/b3wbeHh.gif">
 
 ## Inteiros
 
@@ -46,7 +51,7 @@ var_dump(0x1A); // número hexadecimal (equivalente a 26 em decimal)
 var_dump(0b11111111); // número binário (equivalente ao 255 decimal)
 ```
 
-<center><i>Arquivo encontrado em: exemplos/integer1.php</i></center>
+<p align="center"><i>Arquivo encontrado em: exemplos/tipos1.php</i></p>
 
 Você pode executar o exemplo acima com o comando abaixo:<br>
 
@@ -76,7 +81,7 @@ echo $b . "\n";
 echo $c . "\n"
 ```
 
-<center><i>Arquivo encontrado em: exemplos/tipos2.php</i></center>
+<p align="center"><i>Arquivo encontrado em: exemplos/tipos2.php</i></p>
 
 Você pode executar o exemplo acima com o comando abaixo:<br>
 
@@ -107,6 +112,7 @@ echo "He4rtDevs <3";
 echo "Melhor grupo do mundo para devs iniciantes";
 ```
 
+<p align="center"><i>Arquivo encontrado em: exemplos/tipos3.php</i></p>
 Vamos analisar o exemplo abaixo:
 
 ```console
@@ -134,6 +140,7 @@ echo "\n";
 echo "Melhor grupo do mundo para devs iniciantes";
 ```
 
+<p align="center"><i>Arquivo encontrado em: exemplos/tipos4.php</i></p>
 Vamos ver o resultado, onde é esperado que seja quebrada a linha e separado o conteúdo das strings.
 
 ```console
@@ -181,6 +188,7 @@ var_dump($array2);
 
 ```
 
+<p align="center"><i>Arquivo encontrado em: exemplos/tipos5.php</i></p>
 Vejamos o resultado abaixo:
 
 ```console
@@ -223,6 +231,7 @@ var_dump($array2);
 
 ```
 
+<p align="center"><i>Arquivo encontrado em: exemplos/tipos6.php</i></p>
 ```console
 danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php tipos6.php
 array(2) {
@@ -270,6 +279,8 @@ echo $array2[0] . "\n";
 echo $array2[1] . "\n";
 ```
 
+<p align="center"><i>Arquivo encontrado em: exemplos/tipos7.php</i></p>
+
 ```console
 danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php tipos7.php
 danielhe4rt
@@ -277,3 +288,5 @@ he4rtdevs
 danielhe4rt
 he4rtdevs
 ```
+
+Com isso podemos entender que é possível acessar tanto com a posição do nosso vetor quanto a uma chave específica atribuida.
