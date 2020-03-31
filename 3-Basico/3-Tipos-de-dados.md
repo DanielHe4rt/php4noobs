@@ -284,7 +284,7 @@ echo $array2[1] . "\n";
 ```console
 danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php tipos7.php
 danielhe4rt
-he4rtdevs
+he4rtdevskkkkkkkk
 danielhe4rt
 he4rtdevs
 ```
