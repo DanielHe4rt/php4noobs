@@ -1,10 +1,6 @@
-<h2 align="center">
-  Curso PHP - Operadores Aritméticos
-</h2>
+# 3.5 Operadores Aritméticos
 
-<p>Bem vindo ao módulo de PHP Básico, vamos dar ínicio a nossa aula de operadores aritméticos!</p>
-
-<p>No PHP existem vários operadores aritméticos, vamos conhecer quais são eles: <p>
+Quando falamos de linguagens de programação, podemos esperar que existam os operadores aritméticos como em todas as outras linguagens. Vamos conhecer quais são eles:
 
 - Negação (-) (Sinal de menos antes de uma varíavel ou número) Transforma o número ou variável para o oposto, se for negativo vira positivo, se for positivo vira negativo.
 - Adição (+) Realiza a soma de duas ou mais variáveis.
@@ -14,36 +10,45 @@
 - Módulo(Resto da Divisão) (%) Irá retornar o resto da divisão.
 - Exponencial (\*\*) Retorna o resultado de uma variável elevada a outra.
 
-<h2 align="center">
- Exemplos
-</h2>
+## Exemplos
 
-## Negação
+### Negação
 
 ```php
-$num = 77; //Variável num igual a 77 positivo
-$num2 = -num; //Variável num2 vai ser igual ao oposto de num(77), ou seja, 77 negativo
+<?php
+$num1 = 77; //Variável num igual a 77 positivo
+$num2 = -$num1; //Variável num2 vai ser igual ao oposto de num(77), ou seja, 77 negativo
 
-echo $num2;
+echo $num1 . "\n";
+echo $num2 . "\n";
 
 ```
 
-_Resultado_
+<p align="center"><i>Arquivo encontrado em: exemplos/operadoresA1.php</i></p>
 
-![Resultado do Primeiro Exemplo](https://i.imgur.com/psc0HNb.png)
+```console
+danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php operadoresA1.php
+77
+-77
+```
 
 ## Adição
 
 ```php
+<?php
+
 $a = 10; //a = 10
 $b = 20; //b = 20
 $soma = $a + $b; //Realizando a soma com sinal de + das variáveis $a e $b
-echo $soma;
+echo $soma . "\n";
 ```
 
-_Resultado_
+<p align="center"><i>Arquivo encontrado em: exemplos/operadoresA2.php</i></p>
 
-![Resultado do Segundo Exemplo](https://i.imgur.com/3xzkKeP.png)
+```console
+danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php operadoresA2.php
+30
+```
 
 ## Subtração
 
@@ -53,13 +58,16 @@ $b = 50; //b = 50
 
 $subtracao = $a - $b; //Realizando a subtração com sinal de - das variáveis $a e $b
 
-echo $subtracao;
+echo $subtracao . "\n";
 
 ```
 
-_Resultado_
+<p align="center"><i>Arquivo encontrado em: exemplos/operadoresA3.php</i></p>
 
-![Resultado do Terceiro Exemplo](https://i.imgur.com/o3SwzcD.png)
+```console
+danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php operadoresA3.php
+50
+```
 
 ## Multiplicação
 
@@ -69,15 +77,16 @@ $b = 50; // b = 50
 
 $multiplicacao = $a * $b; // Realizando a multiplicação com sinal de * das variáveis $a e $b
 
-echo $multiplicacao;
+echo $multiplicacao . "\n";
 
 ```
 
-_Resultado_
+<p align="center"><i>Arquivo encontrado em: exemplos/operadoresA4.php</i></p>
 
-![Resultado do Quarto Exemplo](https://i.imgur.com/2tT9tY5.png)
-
-## Divisão
+```console
+danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php operadoresA3.php
+50
+```
 
 ```php
 $a = 100; //a = 100

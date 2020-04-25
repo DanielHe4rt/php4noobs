@@ -51,4 +51,6 @@ são **extremamente apreciadas**
 
 - **Daniel Reis (danielhe4rt)** - _Developer & Founder of He4rt Developers_ - [Twitter](https://twitter.com/danielhe4rt)
 
+- **João Oliveira (Akashi)** - _Developer & Member of He4rt Developers_ - [Twitter](https://twitter.com/zJoaoOliveira)
+
 <p align="center">Made with 💜</p>
