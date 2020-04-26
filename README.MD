@@ -36,6 +36,10 @@
 6. [Operadores Lógicos](/3-Basico/6-Operadores-logicos.md)
 7. [Recapitulação](/3-Basico/7-Recapitulacao.md)
 
+### Módulo Intermediário
+
+1. [Funções/Métodos](/4-Intermediario/1-Funcoes.md)
+
 ## Como Contribuir
 
 Contribuições fazem com que a comunidade open source seja um lugar incrível para aprender, inspirar e criar. Todas contribuições
