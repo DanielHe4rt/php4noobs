@@ -94,7 +94,9 @@ danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php tipos2.php
 
 ## Strings
 
-Uma string é uma série de caracteres, onde um caractere é o mesmo que um byte. Isso significa que o PHP possui suporte a um conjunto de apenas 256 caracteres, e, portanto, não possui suporte nativo a Unicode. Veja mais detalhes do tipo string.
+Uma string é uma série de caracteres, onde um caractere é o mesmo que um byte. 
+Isso significa que o PHP possui suporte a um conjunto de apenas 256 caracteres, e, portanto, não possui suporte nativo a Unicode.
+Veja mais detalhes do tipo string.
 
 Uma string é um conjunto de caracteres, formando uma frase e/ou palavra ou até mesmo um caractere único.
 
