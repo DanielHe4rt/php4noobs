@@ -127,3 +127,49 @@ $rest = substr("abcdef", 2, -1);  // retorna "cde"
 $rest = substr("abcdef", 4, -4);  // retorna false
 $rest = substr("abcdef", -3, -1); // retorna "de"
 ```
+
+## strpos
+
+A função **strpos()** retorna a posição númerica da primeira ocorrência do item buscado.
+A Primeira posição da string é igual á 0, seguindo assim em diante. Como se fosse um vetor (array).
+
+Argumentos/Parametros:
+
+- String a ser buscada. (String maior,completa)
+- String com o contéudo que quero buscar.
+- (Opcional) Procurar na String a partir da posição x.
+
+Retornos Esperados:
+
+- **Sucesso**: string
+- **Erro**: false (boolean)
+
+### Exemplos
+
+Exemplo #1
+Procurando por um caracter em especifico:
+
+```php
+    $stringCompleta = 'developers';
+    $buscandoPor    = 'e';
+    $posicao        = strpos($stringCompleta, $buscandoPor); // retorna 1
+```
+
+Exemplo #2
+Caso a função não encontre nenhuma ocorrência.
+
+```php
+    $stringCompleta = 'developers';
+    $buscandoPor    = '4devs';
+    $posicao = strpos($stringCompleta, $buscandoPor); // retorna false
+```
+
+Exemplo #3
+Procurando uma ocorrência, a partir de uma posição:
+
+```php
+    $stringCompleta = 'developers';
+    $buscandoPor    = 'e';
+    $posicaoInicial = 4 // ou seja, buscando a partir de ..."lopers".
+    $posicao = strpos($stringCompleta, $buscandoPor, $posicaoInicial); // retorna 7
+```
