@@ -28,13 +28,19 @@
 
 ### Módulo Básico
 
-1. [Funções de Saida](/3-Basico/1-Saida.md)
+1. [Funções de Saída](/3-Basico/1-Saida.md)
 2. [Comentários](/3-Basico/2-Comentarios.md)
 3. [Tipos de Dados](/3-Basico/3-Tipos-de-dados.md)
-4. [Váriaveis](/3-Basico/4-Variaveis.md)
+4. [Variáveis](/3-Basico/4-Variaveis.md)
 5. [Operadores Aritméticos](/3-Basico/5-Operadores-aritmeticos.md)
-6. [Operadores Lógicos](/3-Basico/6-Operadores-logicos.md)
-7. [Recapitulação](/3-Basico/7-Recapitulacao.md)
+6. [Operadores Bitwise (bit a bit)](/3-Basico/6-Operadores-bitwise.md)
+7. [Operadores de Atribuição](/3-Basico/7-Operadores-atribuicao.md)
+8. [Operadores de Comparação](/3-Basico/8-Operadores-comparacao.md)
+9. [Operadores de String](/3-Basico/9-Operadores-string.md)
+10. [Operadores de Arrays](/3-Basico/10-Operadores-arrays.md)
+11. [Operadores Lógicos](/3-Basico/11-Operadores-logicos.md)
+12. [Operador de execução](/3-Basico/12-Execucao.md)
+13. [Recapitulação](/3-Basico/13-Recapitulacao.md)
 
 ### Módulo Intermediário
 

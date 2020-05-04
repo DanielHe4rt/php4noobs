@@ -1,6 +1,6 @@
 # 3.4 - Variáveis
 
-Pra começar, todos sabemos que para guardar informação as linguagens de programação utilizam variaveis certo? na maioria das linguagens você precisa especificar o tipo de variável antes de declara-lá, PHP é diferente.
+Pra começar, todos sabemos que para guardar informação as linguagens de programação utilizam variáveis certo? na maioria das linguagens você precisa especificar o tipo de variável antes de declara-lá, PHP é diferente.
 
 No PHP existe a "tipagem dinâmica", onde você pode criar a variável sem precisar declarar seu tipo(float, string, int) e também você pode alterar o tipo de variável enquanto o programa roda, não importando o tipo anterior.
 Antes de alguns exemplos, vamos determinar algumas regras para nomeação de variáveis.

@@ -2,37 +2,16 @@
 
 Quando falamos de linguagens de programação, podemos esperar que existam os operadores aritméticos como em todas as outras linguagens. Vamos conhecer quais são eles:
 
-- Negação (-) (Sinal de menos antes de uma varíavel ou número) Transforma o número ou variável para o oposto, se for negativo vira positivo, se for positivo vira negativo.
-- Adição (+) Realiza a soma de duas ou mais variáveis.
-- Subtração (-) Realize a subtração de duas ou mais variáveis.
-- Multiplicação (\*) Multiplicação de duas ou mais variáveis.
-- Divisão (/) Divisão de duas ou mais variáveis.
-- Módulo(Resto da Divisão) (%) Irá retornar o resto da divisão.
-- Exponencial (\*\*) Retorna o resultado de uma variável elevada a outra.
+- Adição `+`
+- Subtração `-`
+- Multiplicação `*`
+- Divisão `/`
+- Módulo (resto de uma divisão) `%`
 
 ## Exemplos
 
-### Negação
-
-```php
-<?php
-$num1 = 77; //Variável num igual a 77 positivo
-$num2 = -$num1; //Variável num2 vai ser igual ao oposto de num(77), ou seja, 77 negativo
-
-echo $num1 . "\n";
-echo $num2 . "\n";
-
-```
-
-<p align="center"><i>Arquivo encontrado em: exemplos/operadoresA1.php</i></p>
-
-```console
-danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php operadoresA1.php
-77
--77
-```
-
 ## Adição
+Realiza a soma de duas ou mais variáveis.
 
 ```php
 <?php
@@ -51,6 +30,7 @@ danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php operadoresA2.php
 ```
 
 ## Subtração
+Realize a subtração de duas ou mais variáveis.
 
 ```php
 $a = 100; //a = 100
@@ -70,6 +50,7 @@ danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php operadoresA3.php
 ```
 
 ## Multiplicação
+Multiplicação de duas ou mais variáveis.
 
 ```php
 $a = 500; //a = 500
@@ -88,6 +69,9 @@ danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php operadoresA3.php
 50
 ```
 
+## Divisão
+Divisão de duas ou mais variáveis.
+
 ```php
 $a = 100; //a = 100
 $b = 2; // b = 2
@@ -103,6 +87,7 @@ _Resultado_
 ![Resultado do Quinto Exemplo](https://i.imgur.com/NFIjLcW.png)
 
 ## Modulos
+Retorna o resto de uma divisão.
 
 ```php
 $a = 3; //a = 3
@@ -118,18 +103,6 @@ _Resultado_
 
 ![Resultado do Quinto Exemplo](https://i.imgur.com/TBtUD1x.png)
 
-## Exponencial
-
-```php
-$a = 10; // a = 5
-$b = 2; // b = 5
-
-$exponencial = $a ** $b; //Aqui fazemos que a variável $a = 10 seja elevada a $b = 2, ou seja, 10x10 = 100
-
-echo $exponencial;
-
-```
-
 _Resultado_
 
 ![Resultado do Quinto Exemplo](https://i.imgur.com/3i83LR3.png)
@@ -142,7 +115,7 @@ _Resultado_
 
 ```php
 //Exemplo em que utilizamos várias operações matemáticas na mesma linha
-echo (50 + 10 - 30) * (5.2 / 2)
+echo (50 + 10 - 30) * (5.2 / 2);
 /*
 Como podem ver, a expressão acima contém parênteses, significa qual expressão será executada primeiro.
 A primeira expressão resulta em 30 pois é efetuada a soma de 50 + 10 e depois a subtração de - 30.
@@ -178,6 +151,30 @@ echo 50 + 10 - 30 * 5.2 / 2;
 _Resultado_
 
 <p>A expressão será calculada de acordo com a ordem de precedência dos operadores aritméticos</p>
+
+### Notas
+
+* O operador subtração `-`, antes de uma varíavel ou número transforma o número ou variável para o oposto, se for negativo vira positivo, se for positivo vira negativo.
+```php
+<?php
+$num1 = 77; //Variável num igual a 77 positivo
+$num2 = -$num1; //Variável num2 vai ser igual ao oposto de num(77), ou seja, 77 negativo
+
+echo $num1 . "\n";
+echo $num2 . "\n";
+
+```
+
+* O operador exponencial `**`, retorna o resultado de uma variável elevada a outra, funciona a partir do PHP 5.6.
+```php
+$a = 10; // a = 5
+$b = 2; // b = 5
+
+$exponencial = $a ** $b; //Aqui fazemos que a variável $a = 10 seja elevada a $b = 2, ou seja, 10x10 = 100
+
+echo $exponencial;
+
+```
 
 ## Ordem de precedência dos operadores aritméticos
 

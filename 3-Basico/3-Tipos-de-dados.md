@@ -1,9 +1,9 @@
-# 3.3 - Tipo de dados
+# 3.3 - Tipos de dados
 
 Programação é uma constante troca de dados entre a memória e o processador, onde a memória PRECISA saber o que está sendo enviado para existir uma melhor forma de processar essa informação e conhecer os tipos de dados padrões vai ajudar a você entender um conceito muito básico da programação de baixo nível (não muito bem aplicada em PHP, masss): a tipagem. <br>
 
 Por que você deveria perder tempo com isso já que o PHP não te obriga a fazer essa parte de tipagem?<br>
-Os tipos de dados são MUITO importantes para que sua aplicação não quebre por um erro bobo onde você "deveria ter mandando um número inteiro em vez de um flutuante".<br>
+Os tipos de dados são MUITO importantes para que sua aplicação não quebre por um erro bobo onde você "deveria tá mandando um número inteiro em vez de um flutuante".<br>
 
 Vamos entender os tipos escalares do PHP:
 
@@ -19,7 +19,7 @@ var_dump(False);
 var_dump(true);
 var_dump(false);
 var_dump(TrUe);
-var_dump(fAlSe)
+var_dump(fAlSe);
 ```
 
 <p align="center"><i>Arquivo encontrado em: exemplos/tipos0.php</i></p>
@@ -78,7 +78,7 @@ $c = 7E-10;
 
 echo $a . "\n";
 echo $b . "\n";
-echo $c . "\n"
+echo $c . "\n";
 ```
 
 <p align="center"><i>Arquivo encontrado em: exemplos/tipos2.php</i></p>
@@ -94,7 +94,9 @@ danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php tipos2.php
 
 ## Strings
 
-Uma string é uma série de caracteres, onde um caractere é o mesmo que um byte. Isso significa que o PHP possui suporte a um conjunto de apenas 256 caracteres, e, portanto, não possui suporte nativo a Unicode. Veja mais detalhes do tipo string.
+Uma string é uma série de caracteres, onde um caractere é o mesmo que um byte. 
+Isso significa que o PHP possui suporte a um conjunto de apenas 256 caracteres, e, portanto, não possui suporte nativo a Unicode.
+Veja mais detalhes do tipo string.
 
 Uma string é um conjunto de caracteres, formando uma frase e/ou palavra ou até mesmo um caractere único.
 
