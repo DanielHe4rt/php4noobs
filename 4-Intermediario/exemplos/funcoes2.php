@@ -3,9 +3,9 @@
 function greetings(string $name, bool $welcome = false)
 {
     if ($welcome) {
-        echo "Hello " . $name;
+        echo 'Hello ' . $name;
     } else {
-        echo "Get the fuck out of here " . $name;
+        echo 'Get the fuck out of here ' . $name;
     }
 
 }

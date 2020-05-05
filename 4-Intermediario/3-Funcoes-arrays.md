@@ -4,7 +4,7 @@ Nesse tópico, iremos abordar algumas funções importantes para manipulação d
 
 ## implode
 
-A função **implode()** retorna uma string à partir de uma array, juntando todos os vetores em ordem crescente com um delimitador selecionado.
+A função **`implode()`** retorna uma string à partir de uma array, juntando todos os vetores em ordem crescente com um delimitador selecionado.
 
 [Link para documentação](https://www.php.net/manual/pt_BR/function.implode)
 
@@ -22,9 +22,9 @@ echo $comma_separated; // lastname,email,phone
 
 ## array_push
 
-A função **array_push()** insere um novo elemento no final de um array.
+A função **`array_push()`** insere um novo elemento no final de um array.
 
-Argumentos/Parametros:
+Argumentos/Parâmetros:
 
 - Array no qual você quer inserir um novo elemento;
 - Novo elemento.
@@ -34,7 +34,7 @@ Argumentos/Parametros:
 ### Exemplos
 
 Exemplo #1
-Melhores Comunides
+Melhores Comunidades
 
 ```php
 $communities = []; // []
@@ -49,7 +49,7 @@ print_r($communities); // ['He4rtDevs', 'CodigoFalado']
 ```
 
 Exemplo #2
-Arrays de Arrays
+Array de Arrays
 
 ```php
 $communities = [
@@ -95,9 +95,9 @@ array_push($communities['links'], 'https://codigofalado.com.br');
 
 ## array_search
 
-A função **array_search()** procura um elemento dentro do valor e retorna sua chave caso encontrado.
+A função **`array_search()`** procura um elemento dentro do valor e retorna sua chave caso encontrado.
 
-Argumentos/Parametros:
+Argumentos/Parâmetros:
 
 - Elemento que você deseja buscar no array;
 - Array a ser pesquisado.
@@ -107,7 +107,7 @@ Argumentos/Parametros:
 ### Exemplos
 
 Exemplo #1
-Melhores Comunides
+Melhores Comunidades
 
 ```php
 $communities = ['php.net','CodigoFalado','TwitchTV','He4rtDevs']; // []
@@ -119,13 +119,13 @@ $result = array_search('foguete roxo', $communities); // Return false
 
 ## array_diff
 
-A função **array_diff()** compara um ou mais arrays e retorna os elementos que divergem tendo o primeiro array como referencia.
+A função **`array_diff()`** compara um ou mais arrays e retorna os elementos que divergem tendo o primeiro array como referência.
 
-Argumentos/Parametros:
+Argumentos/Parâmetros:
 
-- Primeiro array a ser comparado
-- Segundo array a ser comparado
-- N arrays a serem comparados
+- Primeiro array a ser comparado;
+- Segundo array a ser comparado;
+- N arrays a serem comparados.
 
 [Link para documentação](https://www.php.net/manual/pt_BR/function.array-diff)
 
@@ -155,7 +155,7 @@ $colorPallete1 = ['black', 'pink', 'purple', 'red'];
 $colorPallete2 = ['yellow', 'pink', 'brown', 'blue'];
 $colorPallete3 = ['yellow', 'white', 'brown', 'blue'];
 
-$result = array_diff($colorPallete1, $colorPallete2, $collorPallete3);
+$result = array_diff($colorPallete1, $colorPallete2, $colorPallete3);
 // Result
 // [
 //    'black',
@@ -167,11 +167,11 @@ $result = array_diff($colorPallete1, $colorPallete2, $collorPallete3);
 
 ## array_sum
 
-A função **array_sum()** soma todos os valores dentro de um array.
+A função **`array_sum()`** soma todos os valores dentro de um array.
 
-Argumentos/Parametros:
+Argumentos/Parâmetros:
 
-- Primeiro array a ser comparado
+- Primeiro array a ser comparado.
 
 [Link para documentação](https://www.php.net/manual/pt_BR/function.array-diff)
 
@@ -186,7 +186,7 @@ $result = array_sum($numbers); // Result 21
 ```
 
 Exemplo #2
-Numeros flutuantes
+Números flutuantes
 
 ```php
 $numbers = [1.5, 6, 2, 8.3, 0.3];
@@ -195,13 +195,14 @@ $result = array_sum($numbers); // Result 18.1
 
 ## array_replace
 
-A função **array_replace()** substitui valores do primeiro array passado usando os próximos como critério de comparação. Os arrays que irão ser passados deverão conter a chave de qual elemento será substituido seguido do seu valor. Os parametros após o primeiro são infinitos.
+A função **`array_replace()`** substitui valores do primeiro array passado usando os próximos como critério de comparação.
+Os arrays que irão ser passados deverão conter a chave de qual elemento será substituído seguido do seu valor. Os parâmetros após o primeiro são infinitos.
 
-Argumentos/Parametros:
+Argumentos/Parâmetros:
 
-- Primeiro array a ser comparado
-- 1o Array com mudanças a serem feitas
-- 2o Array com mudanças a serem feitas
+- Primeiro array a ser comparado;
+- 1o Array com mudanças a serem feitas;
+- 2o Array com mudanças a serem feitas.
 - ...
 
 [Link para documentação](https://www.php.net/manual/pt_BR/function.array-replace)
@@ -209,19 +210,20 @@ Argumentos/Parametros:
 ### Exemplos
 
 Exemplo #1
-Numeros inteiros
+Números inteiros
 
 ```php
 $names = ['danielhe4rt', 'geekcom','Loooooogan_','MaeHe4rt'];
 $nick1 = [2 => 'Loogan_'];
-$nick2 = [2, => 'kjkGustavo', 3 => 'JuhBotelho'];
+$nick2 = [2 => 'kjkGustavo', 3 => 'JuhBotelho'];
 
-$result = array_replace($names, $nickGustavo, $nickJuh);
+$result = array_replace($names, $nick1, $nick2);
+
 // Result
 // [
 //    'danielhe4rt',
 //    'geekcom',
-//    'Loogan_',
+//    'kjkGustavo',
 //    'JuhBotelho',
 // ]
 ```

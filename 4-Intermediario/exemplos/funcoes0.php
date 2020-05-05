@@ -2,7 +2,7 @@
 
 function recepcionar($nomePessoa)
 {
-    echo "Olá " . $nomePessoa;
+    echo 'Olá ' . $nomePessoa;
 }
 
-recepcionar("danielhe4rt");
+recepcionar('danielhe4rt');

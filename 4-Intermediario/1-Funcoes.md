@@ -11,7 +11,7 @@ Em poucas palavras: **Função é um bloco de código reutilizável** onde você
 Ficou confuso? Vamos entender sobre o que é preciso pra se escrever uma função:
 
 - Palavra reservada **function**;
-- Um nome para a função (como se fosse uma variavel);
+- Um nome para a função (como se fosse uma variável);
 - Parâmetros (opcional)
 - Um bloco de código.
 
@@ -24,10 +24,10 @@ Vamos escrever uma função simples e analisar os elementos citados acima no blo
 ```php
 function recepcionar ($nomePessoa)
 {
-    echo "Olá " . $nomePessoa;
+    echo 'Olá ' . $nomePessoa;
 }
 
-recepcionar("danielhe4rt");
+recepcionar('danielhe4rt');
 ```
 
 <p align="center"><i>Arquivo encontrado em: exemplos/funcoes0.php</i></p>
@@ -36,10 +36,10 @@ Olhando bem por cima, podemos ver os pontos citados porém vamos listar pra fica
 
 - Palavra reservada function;
 - Nome da função (recepcionar);
-- Parametros: \$nomePessoa (opcionais);
+- Parâmetros: \$nomePessoa (opcionais);
 - Bloco de código {tudo que estiver entre as chaves}.
 
-Para executar uma função, basta digitar o seu nome e adicionar os parametros caso tenha e tá pronto a funçãozinha!
+Para executar uma função, basta digitar o seu nome e adicionar os parâmetros caso tenha e tá pronto a funçãozinha!
 
 Vamos ver o exemplo acima em funcionamento:
 
@@ -113,9 +113,9 @@ PS: seria muito interessante também você padronizar nomes de funções/variáv
 
 Parâmetros são váriaveis que deixam sua função flexível para o seu uso. Elas são opcionais, porém é quase certeza que você vai usar funções parametrizadas e vamos entender um pouco sobre.
 
-Pense no parametro como uma entrada dentro de uma variável que sua função irá receber e processar, tal como nossa primeira função **recepcionar()** que recebe o parametro **\$nomePessoa** e printa ela na tela junto com mais algumas coisas.
+Pense no parâmetro como uma entrada dentro de uma variável que sua função irá receber e processar, tal como nossa primeira função **recepcionar()** que recebe o parâmetro **\$nomePessoa** e printa ela na tela junto com mais algumas coisas.
 
-#### Parametro com valor Padrão
+#### Parâmetro com valor Padrão
 
 ```php
 function greetings($name)
@@ -126,14 +126,14 @@ function greetings($name)
 greetings('DanielHe4rt');
 ```
 
-Caso eu não passe nenhum parametro dentro da chamada de **greetings()** ele irá dar erro e dizer que é algo **necessário** para que a aplicação continue sendo executada. Pra evitar que algo do tipo aconteça caso for um parametro que possa ser opcional, você deve atribuir um valor inicial sendo **\$name = "danielhe4rt"**.
+Caso eu não passe nenhum parâmetro dentro da chamada de **greetings()** ele irá dar erro e dizer que é algo **necessário** para que a aplicação continue sendo executada. Pra evitar que algo do tipo aconteça caso for um parâmetro que possa ser opcional, você deve atribuir um valor inicial sendo **\$name = "danielhe4rt"**.
 
 Olha o exemplo abaixo:
 
 ```php
-function greetings($name = "danielhe4rt")
+function greetings($name = 'danielhe4rt')
 {
-    echo "Hello " . $name;
+    echo 'Hello ' . $name;
 }
 
 greetings();
@@ -154,9 +154,9 @@ Vamos falar sobre o assunto que toda comunidade de desenvolvedores aborda quando
 
 O PHP não te obriga a colocar os tipos de dados que devem ser usados em funções, porém à partir da versão 7 eles deram essa opção de tipagem.
 
-Quando falamos em tipagem, pensamos logo em linguagens altamente tipadas como Java, C, C# etc. Essas linguagens te pedem que você declare as váriaveis já com algum tipo pré-definido. Já no PHP vocẽ só coloca um \$ e um nome e pronto.
+Quando falamos em tipagem, pensamos logo em linguagens altamente tipadas como Java, C, C# etc. Essas linguagens te pedem que você declare as variáveis já com algum tipo pré-definido. Já no PHP vocẽ só coloca um `$` e um nome e pronto.
 
-Agora vamos entender os tipos que vocẽ pode usar nas funções, sendo eles: string, int, bool, array, float e classes.
+Agora vamos entender os tipos que você pode usar nas funções, sendo eles: `string`, `int`, `bool`, `array`, `float` e `classes`.
 
 Vamos pros exemplos e esclarecer essa bagunça acima:
 
@@ -164,9 +164,9 @@ Vamos pros exemplos e esclarecer essa bagunça acima:
 function greetings(string $name, bool $welcome = false)
 {
     if ($welcome) {
-        echo "Hello " . $name;
+        echo 'Hello ' . $name;
     } else {
-        echo "Get the fuck out of here " . $name;
+        echo 'Get the fuck out of here ' . $name;
     }
 
 }
@@ -176,8 +176,8 @@ greetings('DanielHe4rt', true);
 
 No exemplo, foram usadas duas variáveis com seus respectivos tipos atribuidos, sendo:
 
-- \$name - uma String;
-- \$welcome - um Boleano;
+- `$name` - uma String;
+- `$welcome` - um Booleano;
 
 Agora que você atribuiu tipos, você sabe exatamente o que essa função espera que você envie e o seu desenvolvimento vai ser mais semântico e legível tanto por você quando para outras pessoas.
 
@@ -201,7 +201,7 @@ function twoNumbersSum(int $x, int $y)
 
 $result = twoNumbersSum(5,13);
 
-echo "Result: " . $result;
+echo 'Result: ' . $result;
 // Result: 18
 ```
 
