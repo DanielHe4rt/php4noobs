@@ -50,7 +50,7 @@ var_dump(new stdClass());
 Vamos executar o arquivo acima para vermos qual é a saída desse código utilizando o comando abaixo: <br>
 
 ```bash
-[21:10:37] danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php saida2.php
+danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php saida2.php
 string(4) "Olá"
 int(123)
 object(stdClass)#1 (0) {
