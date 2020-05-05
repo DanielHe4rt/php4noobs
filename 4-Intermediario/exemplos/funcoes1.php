@@ -1,8 +1,8 @@
 <?php
 
-function greetings($name = "danielhe4rt")
+function greetings($name = 'danielhe4rt')
 {
-    echo "Hello " . $name;
+    echo 'Hello ' . $name;
 }
 
 greetings();

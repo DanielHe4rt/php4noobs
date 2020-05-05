@@ -45,7 +45,8 @@
 ### Módulo Intermediário
 
 1. [Funções/Métodos](/4-Intermediario/1-Funcoes.md)
-2. [Funções de manipulação de String](4-Intermediario/2-Funcoes-strings.md)
+2. [Funções de manipulação de Strings](4-Intermediario/2-Funcoes-strings.md)
+3. [Funções de manipulação de Arrays](4-Intermediario/3-Funcoes-arrays.md)
 
 ## Como Contribuir
 
