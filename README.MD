@@ -35,7 +35,7 @@
 5. [Operadores Aritméticos](/3-Basico/5-Operadores-aritmeticos.md)
 6. [Operadores Bitwise (bit a bit)](/3-Basico/6-Operadores-bitwise.md)
 7. [Operadores de Atribuição](/3-Basico/7-Operadores-atribuicao.md)
-8. [Operadores de Comparação](/3-Basico/8-Operadores-comparacao.md)
+8. [Comparação de Valores](/3-Basico/8-Operadores-comparacao.md)
 9. [Operadores de String](/3-Basico/9-Operadores-string.md)
 10. [Operadores de Arrays](/3-Basico/10-Operadores-arrays.md)
 11. [Operadores Lógicos](/3-Basico/11-Operadores-logicos.md)
@@ -63,6 +63,6 @@ são **extremamente apreciadas**
 
 - **Daniel Reis (danielhe4rt)** - _Developer & Founder of He4rt Developers_ - [Twitter](https://twitter.com/danielhe4rt)
 
-- **João Oliveira (Akashi)** - _Developer & Member of He4rt Developers_ - [Twitter](https://twitter.com/zJoaoOliveira)
+- **Daniel Rodrigues (geekcom)** - _Developer & Member of He4rt Developers_ - [Twitter](https://twitter.com/geekcom2), [PHP.net](https://people.php.net/geekcom)
 
 <p align="center">Made with 💜</p>
