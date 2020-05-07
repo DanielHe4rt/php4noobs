@@ -18,10 +18,10 @@ e `false` se os valores forem diferentes.
 ```php
 <?php
 
-echo (0 == false).PHP_EOL; //true
-echo ('123' == 123).PHP_EOL; //true
-echo ('um' == 1).PHP_EOL; //false
-echo (123.0 == 123).PHP_EOL; //true
+echo (0 == false) . PHP_EOL; //true
+echo ('123' == 123) . PHP_EOL; //true
+echo ('um' == 1) . PHP_EOL; //false
+echo (123.0 == 123) . PHP_EOL; //true
 
 /**
 retorna: 1
@@ -41,10 +41,10 @@ Se os valores forem diferentes o retorno é `true`, se forem iguais o retorno é
 ```php
 <?php
 
-echo (0 != false).PHP_EOL; //false
-echo ('123' != 123).PHP_EOL; //false
-echo ('um' != 1).PHP_EOL; //true
-echo (123.0 != 123).PHP_EOL; //false
+echo (0 != false) . PHP_EOL; //false
+echo ('123' != 123) . PHP_EOL; //false
+echo ('um' != 1) . PHP_EOL; //true
+echo (123.0 != 123) . PHP_EOL; //false
 
 /**
 retorna:  
@@ -63,10 +63,10 @@ você pode chamar isso de: "testar se é o valor é idêntico".
 ```php
 <?php
 
-echo (0 === false).PHP_EOL; //false
-echo ('123' === 123).PHP_EOL; //false
-echo ('um' === 1).PHP_EOL; //false
-echo (123.0 === 123).PHP_EOL; //false
+echo (0 === false) . PHP_EOL; //false
+echo ('123' === 123) . PHP_EOL; //false
+echo ('um' === 1) . PHP_EOL; //false
+echo (123.0 === 123) . PHP_EOL; //false
 
 //É tudo falso :(, por isso não retorna nada
 ```
@@ -80,10 +80,10 @@ e de novo o PHP vai verificar o [tipo](3-Tipos-de-dados.md) do valor.
 ```php
 <?php
 
-echo (0 !== false).PHP_EOL; //tre
-echo ('123' !== 123).PHP_EOL; //true
-echo ('um' !== 1).PHP_EOL; //true
-echo (123.0 !== 123).PHP_EOL; //true
+echo (0 !== false) . PHP_EOL; //tre
+echo ('123' !== 123) . PHP_EOL; //true
+echo ('um' !== 1) . PHP_EOL; //true
+echo (123.0 !== 123) . PHP_EOL; //true
 
 /**
 retorna: 1 
@@ -105,10 +105,10 @@ O PHP suporta quatro operadores maiores/menores que
 ```php
 <?php
 
-echo (2 < 3).PHP_EOL; //true
-echo (2 > 3).PHP_EOL; //false
-echo (2 <= 3).PHP_EOL; //true
-echo (2 >= 3).PHP_EOL; //false
+echo (2 < 3) . PHP_EOL; //true
+echo (2 > 3) . PHP_EOL; //false
+echo (2 <= 3) . PHP_EOL; //true
+echo (2 >= 3) . PHP_EOL; //false
 
 /**
 retorna: 1 
