@@ -5,7 +5,7 @@ O PHP suporta várias opções de comparação de valores, vamos aprender sobre 
 - `true` significa verdadeiro e `false` é falso;
 - Um `1` é a mesma coisa que `true`;
 - Zero `0` é a mesma coisa que `false`;
-- `<br>` é uma tag HTML que serve para pular linhas.
+- `PHP_EOL` é uma constante do PHP que serve para quebrar linhas.
 
 Agora sim, vamos aos comparadores de valor no PHP.
 
@@ -18,10 +18,10 @@ e `false` se os valores forem diferentes.
 ```php
 <?php
 
-echo (0 == false).'<br>'; //true
-echo ('123' == 123).'<br>'; //true
-echo ('um' == 1).'<br>'; //false
-echo (123.0 == 123).'<br>'; //true
+echo (0 == false).PHP_EOL; //true
+echo ('123' == 123).PHP_EOL; //true
+echo ('um' == 1).PHP_EOL; //false
+echo (123.0 == 123).PHP_EOL; //true
 
 /**
 retorna: 1
@@ -41,10 +41,10 @@ Se os valores forem diferentes o retorno é `true`, se forem iguais o retorno é
 ```php
 <?php
 
-echo (0 != false). '<br>'; //false
-echo ('123' != 123). '<br>'; //false
-echo ('um' != 1). '<br>'; //true
-echo (123.0 != 123). '<br>'; //false
+echo (0 != false).PHP_EOL; //false
+echo ('123' != 123).PHP_EOL; //false
+echo ('um' != 1).PHP_EOL; //true
+echo (123.0 != 123).PHP_EOL; //false
 
 /**
 retorna:  
@@ -63,10 +63,10 @@ você pode chamar isso de: "testar se é o valor é idêntico".
 ```php
 <?php
 
-echo (0 === false).'<br>'; //false
-echo ('123' === 123).'<br>'; //false
-echo ('um' === 1).'<br>'; //false
-echo (123.0 === 123).'<br>'; //false
+echo (0 === false).PHP_EOL; //false
+echo ('123' === 123).PHP_EOL; //false
+echo ('um' === 1).PHP_EOL; //false
+echo (123.0 === 123).PHP_EOL; //false
 
 //É tudo falso :(, por isso não retorna nada
 ```
@@ -80,10 +80,10 @@ e de novo o PHP vai verificar o [tipo](3-Tipos-de-dados.md) do valor.
 ```php
 <?php
 
-echo (0 !== false).'<br>'; //tre
-echo ('123' !== 123).'<br>'; //true
-echo ('um' !== 1).'<br>'; //true
-echo (123.0 !== 123).'<br>'; //true
+echo (0 !== false).PHP_EOL; //tre
+echo ('123' !== 123).PHP_EOL; //true
+echo ('um' !== 1).PHP_EOL; //true
+echo (123.0 !== 123).PHP_EOL; //true
 
 /**
 retorna: 1 
@@ -96,7 +96,7 @@ retorna: 1
 
 O PHP suporta quatro operadores maiores/menores que
 
-- `>` maior que;
+- `<` menor que;
 - `>` maior que;
 - `<=` menor ou igual a;
 - `>=` maior ou igual a.
@@ -105,10 +105,10 @@ O PHP suporta quatro operadores maiores/menores que
 ```php
 <?php
 
-echo (2 < 3).'<br>'; //true
-echo (2 > 3).'<br>'; //false
-echo (2 <= 3).'<br>'; //true
-echo (2 >= 3).'<br>'; //false
+echo (2 < 3).PHP_EOL; //true
+echo (2 > 3).PHP_EOL; //false
+echo (2 <= 3).PHP_EOL; //true
+echo (2 >= 3).PHP_EOL; //false
 
 /**
 retorna: 1 
