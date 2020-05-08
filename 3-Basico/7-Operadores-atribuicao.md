@@ -90,48 +90,6 @@ echo $resultado;
 
 //Retorna: "0"
 ```
-## Operador de concatenação `.`
-
-Concatenar significa **juntar as coisas**, no PHP existe um operador pra isso, é o ponto `.`
-dá pra usar esse operador de forma abreviada também.
-
-#### Só concatenando
-
-```php
-<?php
-
-$euQuero = 'Eu quero ser um programador' . ' PHP';
-
-echo $euQuero;
-
-//Retorna: "Eu quero ser um programador PHP"
-```
-
-#### Concatenando de forma abreviada
-
-```php
-<?php
-
-$euQuero = 'Eu quero ser um programador';
-$euQuero .= ' PHP';
-
-echo $euQuero;
-
-//Retorna: "Eu quero ser um programador PHP"
-```
-
-#### Concatenando variáveis
-
-```php
-<?php
-
-$euQuero = 'Eu quero ser um programador';
-$php = ' PHP';
-
-echo $euQuero . $php;
-
-//Retorna: "Eu quero ser um programador PHP"
-```
 
 ## Operador de incremento `++` e decremento `--`
 
@@ -147,9 +105,9 @@ A mesma regra serve para o operador de decremento `--`.
 
 $variavelInteira = 10;
 
-echo 'O valor da variável foi incrementado e agora é  = ' . ++$variavelInteira . '<br>';
-echo 'O valor da variável foi incrementado, mas ainda não mudou então continua sendo = ' . $variavelInteira++ . '<br>';
-echo 'O valor da variável agora é  = ' . $variavelInteira . '<br>';
+echo 'O valor da variável foi incrementado e agora é  = ' . ++$variavelInteira . PHP_EOL;
+echo 'O valor da variável foi incrementado, mas ainda não mudou então continua sendo = ' . $variavelInteira++ . PHP_EOL;
+echo 'O valor da variável agora é  = ' . $variavelInteira . PHP_EOL;
 
 /** -- Retorna
 O valor da variável foi incrementado e agora é = 11
@@ -162,4 +120,4 @@ O valor da variável agora é = 12
  
 - Algumas linguagens usam o sinal `+`, para concatenar;
 - Quando não precisar interpretar variáveis use aspas simples `''`, isso poupa processamento;
-- `<br>` é uma tag HTML que serve para pular linhas.
+- `PHP_EOL` é uma constante do PHP que serve para quebrar linhas.
