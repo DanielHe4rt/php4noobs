@@ -36,7 +36,7 @@
 6. [Operadores Bitwise (bit a bit)](/3-Basico/6-Operadores-bitwise.md)
 7. [Operadores de Atribuição](/3-Basico/7-Operadores-atribuicao.md)
 8. [Comparação de Valores](/3-Basico/8-Operadores-comparacao.md)
-9. [Operadores de String](/3-Basico/9-Operadores-string.md)
+9. [Combinação de Strings](/3-Basico/9-Combinacao-strings.md)
 10. [Operadores de Arrays](/3-Basico/10-Operadores-arrays.md)
 11. [Operadores Lógicos](/3-Basico/11-Operadores-logicos.md)
 12. [Operador de execução](/3-Basico/12-Execucao.md)
