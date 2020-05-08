@@ -1,0 +1,17 @@
+name: Xulieta
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+jobs:
+  xulieta:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Composer require Xulieta
+      run: |
+        composer global require --no-progress codelicia/xulieta
+    - name: Detect sample code errors
+      run: |
+        ~/.composer/vendor/codelicia/xulieta/bin/xulieta check:erromeu .
