@@ -29,6 +29,15 @@
         "maintenance",
         "ideas"
       ]
+    },
+    {
+      "login": "arthurabreu00",
+      "name": "Arthur Tavares",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/40744942?v=4",
+      "profile": "https://github.com/arthurabreu00",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
