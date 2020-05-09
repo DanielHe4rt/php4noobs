@@ -17,6 +17,18 @@
         "video",
         "review"
       ]
+    },
+    {
+      "login": "geekcom",
+      "name": "Daniel Rodrigues",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/3955933?v=4",
+      "profile": "https://twitter.com/geekcom2",
+      "contributions": [
+        "code",
+        "review",
+        "maintenance",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
