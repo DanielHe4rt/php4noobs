@@ -76,7 +76,8 @@ Nosso obrigado vai pra essas pessoas incríveis ([emoji key](https://allcontribu
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://danielheart.dev"><img src="https://avatars3.githubusercontent.com/u/6912596?v=4" width="100px;" alt=""/><br /><sub><b>Daniel Reis</b></sub></a><br /><a href="https://github.com/DanielHe4rt/php4noobs/commits?author=DanielHe4rt" title="Code">💻</a> <a href="#maintenance-DanielHe4rt" title="Maintenance">🚧</a> <a href="#ideas-DanielHe4rt" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://www.twitch.tv/danielhe4rt/videos" title="Videos">📹</a> <a href="https://github.com/DanielHe4rt/php4noobs/pulls?q=is%3Apr+reviewed-by%3ADanielHe4rt" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="https://danielheart.dev"><img src="https://avatars3.githubusercontent.com/u/6912596?v=4" width="100px;" alt=""/><br /><sub><b>Daniel Reis</b></sub></a><br /><a href="https://github.com/DanielHe4rt/php4noobs/commits?author=DanielHe4rt" title="Code">💻</a> <a href="#maintenance-DanielHe4rt" title="Maintenance">🚧</a> <a href="#ideas-DanielHe4rt" title="Ideas, Planning, & Feedback">🤔</a> <a href="#video-DanielHe4rt" title="Videos">📹</a> <a href="https://github.com/DanielHe4rt/php4noobs/pulls?q=is%3Apr+reviewed-by%3ADanielHe4rt" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="https://twitter.com/geekcom2"><img src="https://avatars2.githubusercontent.com/u/3955933?v=4" width="100px;" alt=""/><br /><sub><b>Daniel Rodrigues</b></sub></a><br /><a href="https://github.com/DanielHe4rt/php4noobs/commits?author=geekcom" title="Code">💻</a> <a href="https://github.com/DanielHe4rt/php4noobs/pulls?q=is%3Apr+reviewed-by%3Ageekcom" title="Reviewed Pull Requests">👀</a> <a href="#maintenance-geekcom" title="Maintenance">🚧</a> <a href="#ideas-geekcom" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
