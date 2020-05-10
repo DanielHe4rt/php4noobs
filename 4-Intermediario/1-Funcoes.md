@@ -80,7 +80,7 @@ function AlterarUsuario()
 
 function DeletarUsuarioAutenticado()
 {
-}z
+}
 ```
 
 Essa padronização é bastante usada, porém não é a recomendação para escrita de funções e sim para classes.
