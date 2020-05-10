@@ -8,6 +8,11 @@ A função **`strlen()`** conta a quantidade de caracteres dentro de uma string.
 
 [Link para documentação](https://www.php.net/manual/pt_BR/function.strlen.php)
 
+Retornos Esperados:
+
+- **Sucesso**: int
+- **Erro**: null
+
 ### Exemplos
 
 Exemplo #1 CountingNameCharacters
