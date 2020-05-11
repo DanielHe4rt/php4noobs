@@ -63,7 +63,7 @@ Pra isso, temos que evitar nomes de funções:
 
 Sim, coisas como essa realmente acontecem em cenários reais e você tem o DEVER de seguir um padrão de desenvolvimento pra ajudar tanto a você que está trabalhando no projeto quanto as próximas pessoas que forem mexer no seu código.
 
-Tá, mas como podemos padronizar essas funções? Vamos falar primeiro sobre **PascalCase e camelCase**.
+Tá, mas como podemos padronizar essas funções? Vamos falar primeiro sobre **PascalCase,snake_case e camelCase**.
 
 ### PascalCase
 
@@ -84,6 +84,35 @@ function DeletarUsuarioAutenticado()
 ```
 
 Essa padronização é bastante usada, porém não é a recomendação para escrita de funções e sim para classes.
+
+## snake_case
+
+O snake_case consista-se em escrever a variável sem capitalização e separando as palavras por **"\_"**.
+
+Exemplos:
+
+```php
+function recepcionar_usuario()
+{
+}
+
+function alterar_usuario()
+{
+}
+
+function deletar_usuario_autenticado()
+{
+}
+```
+
+Esta padronização, já foi mais popular no passado, mas provavelmente em sua jornada como programador PHP, irá se deparar com diversas vezes com este padrão, visto que temos ainda grandes ecossistemas como Worpress que o utiliza como o seu padrão. Dentro da linguagem ainda há DIVERSAS, funções nativas utilizando este padrão, segue um breve exemplo:
+
+```php
+ preg_replace("(\w+)", "He4rth Developers", "Devs");
+ is_int(10);
+```
+
+O snake_case, deve ser utilizado para variáveis e funções. Deve se tomar cuidado para não mistura-lo, com outras padronizações.
 
 ### camelCase
 
