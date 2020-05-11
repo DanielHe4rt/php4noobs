@@ -87,7 +87,7 @@ Essa padronização é bastante usada, porém não é a recomendação para escr
 
 ## snake_case
 
-O snake_case consista-se em escrever a variavel sem capitalização e separando as palavras por **"\_"**.
+O snake_case consista-se em escrever a variável sem capitalização e separando as palavras por **"\_"**.
 
 Exemplos:
 
@@ -108,11 +108,11 @@ function deletar_usuario_autenticado()
 Esta padronização, já foi mais popular no passado, mas provavelmente em sua jornada como programador PHP, irá se deparar com diversas vezes com este padrão, visto que temos ainda grandes ecossistemas como Worpress que o utiliza como o seu padrão. Dentro da linguagem ainda há DIVERSAS, funções nativas utilizando este padrão, segue um breve exemplo:
 
 ```php
-    preg_replace();
-    is_int()
+ preg_replace("(\w+)", "He4rth Developers", "Devs");
+ is_int(10);
 ```
 
-O snake_case, deve ser utilizado para variaveis e funções. Deve se tomar cuidado para não mistura-lo, com outras padronizações.
+O snake_case, deve ser utilizado para variáveis e funções. Deve se tomar cuidado para não mistura-lo, com outras padronizações.
 
 ### camelCase
 
