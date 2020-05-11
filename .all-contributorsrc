@@ -38,6 +38,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "EHER",
+      "name": "Alexandre Eher",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/398034?v=4",
+      "profile": "http://about:blank",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
