@@ -56,6 +56,15 @@
       "contributions": [
         "review"
       ]
+    },
+    {
+      "login": "airtonzanon",
+      "name": "Airton Zanon",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/6540546?v=4",
+      "profile": "https://airton.dev",
+      "contributions": [
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
