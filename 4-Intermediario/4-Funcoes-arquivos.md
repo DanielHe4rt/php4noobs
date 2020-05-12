@@ -6,12 +6,12 @@ Nesse tópico, iremos abordar algumas funções importantes para manipulação d
 
 A função **fopen()** abre um buffer de arquivo baseado em um **diretório** e **modo** passado por parametros.
 
-Argumentos/Parametros:
+Argumentos/Parâmetros:
 
 - Diretório onde você deseja buscar o arquivo;
 - Modo de leitura/escrita.
 
-| Modo | Descricao                                                                                                                                                                                                                                                                                    |
+| Modo | Descrição                                                                                                                                                                                                                                                                                    |
 | ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 'r'  | Abre somente para leitura; coloca o ponteiro do arquivo no começo do arquivo.                                                                                                                                                                                                                |
 | 'r+' | Abre para leitura e escrita; coloca o ponteiro do arquivo no começo do arquivo.                                                                                                                                                                                                              |
@@ -40,7 +40,7 @@ $file = fopen($directory, "a+");
 
 A função **fclose()** fecha um buffer de arquivo. Essa função deve ser usada em todo fim de leitura/escrita de arquivos para evitar vazamento de memória (memory leak).
 
-Argumentos/Parametros:
+Argumentos/Parâmetros:
 
 - Buffer da função fopen() ou fsockopen();
 
@@ -63,9 +63,9 @@ fclose($buffer);
 
 ## fwrite
 
-A função **fwrite()** escreve em um buffer de arquivo algum dado que você insira como parametro.
+A função **fwrite()** escreve em um buffer de algum arquivo passado como parâmetro.
 
-Argumentos/Parametros:
+Argumentos/Parâmetros:
 
 - Buffer da função fopen() ou fsockopen();
 - String a ser escrita.
@@ -75,7 +75,7 @@ Argumentos/Parametros:
 ### Exemplos
 
 Exemplo #1
-Fechando um arquivo (?)
+Abrindo, escrevendo e fechando um arquivo (?)
 
 ```php
 // test.txt (vazio)
@@ -103,7 +103,7 @@ A função **feof()** checa se o buffer aberto está na última linha do arquivo
 
 Essa função é usada para auxiliar em leitura de arquivos. Em maiores casos serão usados junto com o fread ou algo que mude o ponteiro do arquivo e comumente serão vistos em laços **while**.
 
-Argumentos/Parametros:
+Argumentos/Parâmetros:
 
 - Buffer da função fopen() ou fsockopen();
 
@@ -144,7 +144,7 @@ A leitura é interrompida caso uma das condições abaixo seja atingida.
     3. um pacote tornou-se disponível (para network streams);
     4. 8192 bytes (ou a quantidade de bytes necessárias pro que você irá ler) foram lidos (depois de abrir um stream)
 
-Argumentos/Parametros:
+Argumentos/Parâmetros:
 
 - Buffer da função fopen() ou fsockopen();
 - A quantidade de bytes a serem lidos (caso não tenha ideia, coloque por padrão 8192).
