@@ -30,7 +30,7 @@ Exemplo #1
 Abrindo um arquivo (?)
 
 ```php
-// test.php (vazio)
+// test.txt (vazio)
 $directory = "test.txt";
 $file = fopen($directory, "a+");
 // Result: buffer ativo com o seu arquivo para ser escrito é isso nd d+
