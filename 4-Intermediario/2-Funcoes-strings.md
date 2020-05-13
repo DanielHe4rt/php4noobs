@@ -226,7 +226,7 @@ Esta função ainda há duas variantes que são o [**`ltrim()`**](https://www.ph
 
 ## strtoupper
 
-A função **`strtoupper()`** converte todos os caracteres para maiúsculas. Esta função é muito utilizada, para tratar a entrada de dados do usuário ou mostrar destacar uma mensagem, para apresenta-la de forma mais amigável.
+A função **`strtoupper()`** converte todos os caracteres para maiúsculas. Esta função é muito utilizada, para tratar a entrada de dados do usuário ou destacar uma mensagem, para apresenta-la de forma mais amigável.
 
 Argumentos/Parâmetros:
 
