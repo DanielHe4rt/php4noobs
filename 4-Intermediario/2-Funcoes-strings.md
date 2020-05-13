@@ -191,12 +191,12 @@ Procurando uma ocorrência, a partir de uma posição:
 
 ## trim
 
-A função **`trim()`** retira espaços adjacentes (do lado esquerdo e direito). Esta função é muito utilizada, para tratar os dados de entrada de dados do úsuario.
+A função **`trim()`** remove espaços adjacentes (do lado esquerdo e direito). Esta função é muito utilizada, para tratar a entrada de dados do usuário.
 
 Argumentos/Parâmetros:
 
 - String a ser limpa.
-- Tipo de espaço a ser retirado (Não precisamos nos preocupar por agora).
+- Tipo de espaço a ser retirado (Não precisamos, nos preocupar por agora).
 
 Retornos Esperados:
 
@@ -222,11 +222,11 @@ $string  = '    He4rt Developers  ';
 trim($string,'\t'); // retorna He4rt Developers (sem espaços)
 ```
 
-Esta função ainda há duas variativas que são o [**`ltrim()`**](https://www.php.net/manual/pt_BR/function.ltrim.php), que retira apenas o espaços ao início (esquerda) da string. O outro é o [**`rtrim()`**](https://www.php.net/manual/pt_BR/function.rtrim.php) que remove o espaço ao final da string
+Esta função ainda há duas variantes que são o [**`ltrim()`**](https://www.php.net/manual/pt_BR/function.ltrim.php), que retira apenas os espaços ao início (esquerda) da string. O outro é o [**`rtrim()`**](https://www.php.net/manual/pt_BR/function.rtrim.php) que remove o espaço ao final da string.
 
 ## strtoupper
 
-A função **`strtoupper()`** converte todos os caracteres para maiúsculas. Esta função é muito utilizada, para tratar os dados de entrada de dados do úsuario ou mostrar destacar uma mensagem para apresenta-la de forma mais amigável.
+A função **`strtoupper()`** converte todos os caracteres para maiúsculas. Esta função é muito utilizada, para tratar a entrada de dados do usuário ou mostrar destacar uma mensagem, para apresenta-la de forma mais amigável.
 
 Argumentos/Parâmetros:
 
@@ -241,7 +241,6 @@ Retornos Esperados:
 ### Exemplos
 
 Exemplo #1
-Espaçamento com espaço.
 
 ```php
 $string  = 'Developers';
