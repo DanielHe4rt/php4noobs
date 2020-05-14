@@ -188,3 +188,61 @@ Procurando uma ocorrência, a partir de uma posição:
     $posicaoInicial = 4; // ou seja, buscando a partir de ..."lopers".
     $posicao = strpos($stringCompleta, $buscandoPor, $posicaoInicial); // retorna 7
 ```
+
+## trim
+
+A função **`trim()`** remove espaços adjacentes (do lado esquerdo e direito). Esta função é muito utilizada, para tratar a entrada de dados do usuário.
+
+Argumentos/Parâmetros:
+
+- String a ser limpa.
+- Tipo de espaço a ser retirado (Não precisamos, nos preocupar por agora).
+
+Retornos Esperados:
+
+- **Sucesso**: string
+
+[Link para documentação](https://www.php.net/manual/pt_BR/function.trim.php)
+
+### Exemplos
+
+Exemplo #1
+Espaçamento com espaço.
+
+```php
+$string  = '  He4rt Developers ';
+trim($string); // retorna He4rt Developers (sem espaços)
+```
+
+Exemplo #2
+Espaçamento com tab.
+
+```php
+$string  = '    He4rt Developers  ';
+trim($string,'\t'); // retorna He4rt Developers (sem espaços)
+```
+
+Esta função ainda há duas variantes que são o [**`ltrim()`**](https://www.php.net/manual/pt_BR/function.ltrim.php), que retira apenas os espaços ao início (esquerda) da string. O outro é o [**`rtrim()`**](https://www.php.net/manual/pt_BR/function.rtrim.php) que remove o espaço ao final da string.
+
+## strtoupper
+
+A função **`strtoupper()`** converte todos os caracteres para maiúsculas. Esta função é muito utilizada, para tratar a entrada de dados do usuário ou destacar uma mensagem, para apresenta-la de forma mais amigável.
+
+Argumentos/Parâmetros:
+
+- String a ser transformada.
+
+Retornos Esperados:
+
+- **Sucesso**: string
+
+[Link para documentação](https://www.php.net/manual/pt_BR/function.strtoupper.php)
+
+### Exemplos
+
+Exemplo #1
+
+```php
+$string  = 'Developers';
+strtoupper($string); // retorna DEVELOPERS
+```
