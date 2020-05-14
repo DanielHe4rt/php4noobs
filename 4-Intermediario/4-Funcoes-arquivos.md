@@ -111,7 +111,7 @@ Argumentos/Parâmetros:
 
 ### Exemplos
 
-Exemplo #1 Checando se o arquivo
+Exemplo #1 Checando se o arquivo está na última linha
 
 ```php
 // test.txt (2 linhas)
