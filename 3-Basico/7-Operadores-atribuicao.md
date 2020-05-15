@@ -1,6 +1,6 @@
 # 3.7 Operadores de Atribuição
 
-Uma atribuição é uma maneira de guardar um valor na memória e referenciá-lo com um
+Uma atribuição é uma maneira de guardar um valor na memória e referencia-lo com um
 identificador, por exemplo: uma variável ou uma constante.
 
 ## Atribuição `=`
