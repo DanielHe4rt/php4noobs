@@ -14,4 +14,4 @@ jobs:
         composer global require --no-progress codelicia/xulieta
     - name: Detect sample code errors
       run: |
-        ~/.composer/vendor/codelicia/xulieta/bin/xulieta check:erromeu .
+        ~/.composer/vendor/codelicia/xulieta/bin/xulieta check:erromeu --output=checkstyle . | cs2pr
