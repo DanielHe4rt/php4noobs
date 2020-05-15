@@ -18,7 +18,7 @@ Retornos Esperados:
 Exemplo #1 CountingNameCharacters
 
 ```php
-$name = 'danielhe4rt';
+$name = 'danielhe4rt'
 
 echo 'O nome tem ' . strlen($name) . ' caracteres';
 // Resultado
