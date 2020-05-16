@@ -1,17 +1,21 @@
 name: Xulieta
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+
+on: [push, pull_request]
+
 jobs:
   xulieta:
+    name: Codelicia/Xulieta
     runs-on: ubuntu-latest
+
     steps:
     - uses: actions/checkout@v2
+    - uses: shivammathur/setup-php@v2
+      with:
+        php-version: '7.4'
+        tools: cs2pr
+
     - name: Composer require Xulieta
-      run: |
-        composer global require --no-progress codelicia/xulieta
+      run: composer global require --no-progress codelicia/xulieta
+
     - name: Detect sample code errors
-      run: |
-        ~/.composer/vendor/codelicia/xulieta/bin/xulieta check:erromeu .
+      run: ~/.composer/vendor/codelicia/xulieta/bin/xulieta check:erromeu --output=checkstyle . | cs2pr
