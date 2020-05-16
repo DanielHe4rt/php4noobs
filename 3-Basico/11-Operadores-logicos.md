@@ -10,13 +10,12 @@ Verdadeiro `true`, se ambos os operandos (valores a serem testados), forem verda
 ```php
 <?php
 
-$a = 2;
-$b = 2;
+$a = true;
+$b = true;
 
-echo $a && $b;
+var_dump($a && $b);
 
-
-//Retorna: 1, que significa true
+//Retorna: bool(true)
 ```
 
 ## OU `or`, `||`
@@ -27,13 +26,12 @@ Este operador lógico é conhecido como: **OU Inclusivo**, e vai retornar `true`
 ```php
 <?php
 
-$a = 0;
+$a = false;
 $b = true;
 
-echo $a || $b;
+var_dump($a || $b);
 
-
-//Retorna: 1
+//Retorna: bool(true)
 ```
 
 ## XOR `^`, `xor`
@@ -44,25 +42,23 @@ Este operador lógico é conhecido como: **OU Exclusivo**, e vai retornar `true`
 ```php
 <?php
 
-$a = 1;
-$b = 1;
+$a = true;
+$b = true;
 
-echo $a ^ $b;
+var_dump($a ^ $b);
 
-
-//Retorna: 0, ou seja, falso, pois ambos os operandos é verdadeiro;
+//Retorna: int(0) zero, ou seja, falso, pois ambos os operandos é verdadeiro;
 ```
 
 ```php
 <?php
 
-$a = 1;
-$b = 0;
+$a = true;
+$b = false;
 
-echo $a ^ $b;
+var_dump($a ^ $b);
 
-
-//Retorna: 1, ou seja, true, pois apenas um dos operandos é verdadeiro;
+//Retorna: int(1), ou seja, true, pois apenas um dos operandos é verdadeiro;
 ```
 
 ## NÃO `!`, `not`
@@ -74,12 +70,17 @@ echo $a ^ $b;
 
 $a = true;
 
-echo !$a;
+var_dump(!$a);
 
-//Retorna: nada, pois é falso, aqui negamos uma variável verdadeira e ela se tornou falsa.
+//Retorna: bool(false), aqui negamos uma variável verdadeira e ela se tornou falsa.
 ```
 
 ## Preste muita atenção pois:
 
 Os símbolos `&&`, `||` e `^` têm maior ordem de precedência, e são avaliados primeiro que `and`, `or`, e `xor`.
 Ná prática eles fazem a mesma coisa, mas os símbolos sempre vão ser avaliados primeiro nas expressões, evite mistura-los.
+
+#### Notas
+
+- Nos exemplos deste tópico usamos a função `var_dump()`, caso você tenha esquecido como ela funciona, clica [AQUI](/3-Basico/1-Saida.md);
+- Lembre-se que: `0` é `false` (falso) e `1` é `true` (verdadeiro).
