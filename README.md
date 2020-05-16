@@ -83,7 +83,7 @@ Nosso obrigado vai pra essas pessoas incríveis ([emoji key](https://allcontribu
     <td align="center"><a href="https://github.com/arthurabreu00"><img src="https://avatars1.githubusercontent.com/u/40744942?v=4" width="100px;" alt=""/><br /><sub><b>Arthur Tavares</b></sub></a><br /><a href="https://github.com/DanielHe4rt/php4noobs/commits?author=arthurabreu00" title="Code">💻</a></td>
     <td align="center"><a href="http://about:blank"><img src="https://avatars0.githubusercontent.com/u/398034?v=4" width="100px;" alt=""/><br /><sub><b>Alexandre Eher</b></sub></a><br /><a href="https://github.com/DanielHe4rt/php4noobs/commits?author=EHER" title="Code">💻</a></td>
     <td align="center"><a href="https://twitter.com/malukenho"><img src="https://avatars2.githubusercontent.com/u/3275172?v=4" width="100px;" alt=""/><br /><sub><b>Jefersson Nathan</b></sub></a><br /><a href="https://github.com/DanielHe4rt/php4noobs/pulls?q=is%3Apr+reviewed-by%3Amalukenho" title="Reviewed Pull Requests">👀</a></td>
-    <td align="center"><a href="https://airton.dev"><img src="https://avatars1.githubusercontent.com/u/6540546?v=4" width="100px;" alt=""/><br /><sub><b>Airton Zanon</b></sub></a><br /><a href="https://github.com/DanielHe4rt/php4noobs/pulls?q=is%3Apr+reviewed-by%3Aairtonzanon" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="https://airton.dev"><img src="https://avatars1.githubusercontent.com/u/6540546?v=4" width="100px;" alt=""/><br /><sub><b>Airton Zanon</b></sub></a><br /><a href="https://github.com/DanielHe4rt/php4noobs/pulls?q=is%3Apr+reviewed-by%3Aairtonzanon" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/DanielHe4rt/php4noobs/commits?author=airtonzanon" title="Code">💻</a></td>
   </tr>
 </table>
 
