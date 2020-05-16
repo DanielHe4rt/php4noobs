@@ -21,7 +21,7 @@ echo $a && $b;
 
 ## OU `or`, `||`
 
-Este operador lógico é conhecido como: **OU Inclusivo**, e vai retornar `true` se um dos operandos for verdadeiro.
+Este operador lógico é conhecido como: **OU Inclusivo**, e vai retornar `true` se um dos operandos for verdadeiro, ou ambos.
 
 ### Exemplo
 ```php
