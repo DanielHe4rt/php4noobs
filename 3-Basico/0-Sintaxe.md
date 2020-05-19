@@ -10,7 +10,7 @@ Pontuação é algo obrigatório para escrita de textos formais, independente da
 
 Entenda que você estará trabalhando com uma língua, (como se fosse português ou inglês) e em ambas a pontuação deve ser respeitada para uma fácil interpretação.
 
-O PHP tem um interpretador que irá checar cada linha escrita com essas pontuações e caso você não siga essa regra de sintaxe, ele irá te retornar uma mensagem de erro indicando a linha e o tipo de "erro gramátical" que você cometeu.
+O PHP tem um interpretador que irá checar cada linha escrita com essas pontuações e caso você não siga essa regra de sintaxe, ele irá te retornar uma mensagem de erro indicando a linha e o tipo de "erro gramatical" que você cometeu.
 
 PS: jogue esse erro no google pra um melhor resultado.
 
@@ -18,7 +18,7 @@ PS: jogue esse erro no google pra um melhor resultado.
 
 Ponto e virgula é a declaração que uma linha de código foi finalizada no PHP.
 
-Declarações de código em PHP **devem** acabar com ponto e virgula **(;)** pois é exatamente esse caractére que indica pro interpretador executar essa linha de código.
+Declarações de código em PHP **devem** acabar com ponto e virgula **(;)** pois é exatamente esse caractere que indica pro interpretador executar essa linha de código.
 
 Declarações de código que não terminarem com ; indicam pro interpretador continuar para a próxima linha e caso a linha anterior **não tenha ;** ele emite um erro de sintaxe, também conhecido como **parse error**
 
@@ -41,7 +41,7 @@ echo "He4rtDevs é o " .
      "melhor grupo <3"
 ```
 
-No segundo exemplo incorreto, usamos um operador de concatenação (.) que indica pro código continuar executando aquela linha de código porém vimos que faltou o ponto e virgula e isso irá jogar uma excessão para o usuário assim que essa linha for executada.
+No segundo exemplo incorreto, usamos um operador de concatenação (.), que serve para "juntar" strings, porém vimos que faltou o ponto e virgula e isso irá jogar uma excessão para o usuário assim que essa linha for executada.
 
 ## Tags do PHP
 
@@ -59,17 +59,7 @@ Para que um script seja executado no PHP, primeiro ele deve identificar se há u
 
 ... onde o interpretador identifica que o bloco de código foi finalizado.
 
-Caso você tenha habilitado nas suas configurações a diretiva de **short_open_tags** você pode substituir a abertura padrão pela abaixo:
-
-```
-<?php ?>
-
-   \/
-
-<?    ?>
-```
-
-Caso você apenas queira imprimir algum dado, você pode usar a "tag de echo" com alguma variavel ou dado que você queira.
+Caso você apenas queira imprimir algum dado, dá pra usar a "tag de echo" com alguma variável ou informação que você queira.
 
 ```
 <?= "He4rtDevs" ?>
