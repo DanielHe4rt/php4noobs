@@ -28,6 +28,7 @@
 
 ### Módulo Básico
 
+0. [Sintaxe](/3-Basico/0-Sintaxe.md)
 1. [Funções de Saída](/3-Basico/1-Saida.md)
 2. [Comentários](/3-Basico/2-Comentarios.md)
 3. [Tipos de Dados](/3-Basico/3-Tipos-de-dados.md)
