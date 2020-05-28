@@ -1,8 +1,8 @@
 # 3.0 - Sintaxe
 
-Como em toda lingua, nós temos que entender e compreender como ela é escrita e isso se refere diretamente a gramática e suas regras. Na programação, temos também um conjunto de regras para que algo consiga ser lido e interpretado tanto pelo computador, quanto pela pessoa que estará lendo seu código.
+Como em toda língua, nós temos que entender e compreender como ela é escrita e isso se refere diretamente a gramática e suas regras. Na programação, temos também um conjunto de regras para que algo consiga ser lido e interpretado tanto pelo computador, quanto pela pessoa que estará lendo seu código.
 
-Código é feito de simbolos e caracteres e isso é chamado de sintaxe e nesse momento iremos entender as **regras** que devem ser seguidas para você programar no PHP.
+Código é feito de símbolos e caracteres e isso é chamado de sintaxe e nesse momento iremos entender as **regras** que devem ser seguidas para você programar no PHP.
 
 ## Pontuação
 
