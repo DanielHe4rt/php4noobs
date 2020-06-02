@@ -124,4 +124,4 @@ Array
 **/
 ```
 
-Ir para: [3.11 Operadores Lógicos](https://github.com/DanielHe4rt/php4noobs/blob/master/3-Basico/11-Operadores-logicos.md)
+Ir para: [3.11 Operadores Lógicos](11-Operadores-logicos.md)

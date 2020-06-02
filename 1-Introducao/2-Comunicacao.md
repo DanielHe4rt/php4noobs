@@ -2,4 +2,4 @@
 
 Como iremos inicialmente usar o Github para hospedar o curso, gostariamos de pedir para qualquer dúvida referente à alguma aula ou melhorias que você crie um ISSUE no nosso repositório, para que assim consigamos resolver e manter uma padronização de perguntas/respostas dentro do nosso projeto.
 
-Ir para: [2. Ambiente](https://github.com/DanielHe4rt/php4noobs/tree/master/2-Ambiente)
+Ir para: [2. Ambiente](../2-Ambiente)

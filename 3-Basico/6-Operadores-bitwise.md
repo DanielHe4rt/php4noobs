@@ -116,4 +116,4 @@ echo $a >> $b;
 - Um byte tem 8 bits;
 - Nao se preocupe com os operadores bit a bit por hora, basta que você conheça eles;
 
-Ir para: [3.7 Operadores de Atribuição](https://github.com/DanielHe4rt/php4noobs/blob/master/3-Basico/7-Operadores-atribuicao.md)
+Ir para: [3.7 Operadores de Atribuição](7-Operadores-atribuicao.md)

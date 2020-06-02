@@ -25,4 +25,4 @@ Zend Engine v3.3.11, Copyright (c) 1998-2018 Zend Technologies
     with Zend OPcache v7.3.11-0ubuntu0.19.10.3, Copyright (c) 1999-2018, by Zend Technologies
 ```
 
-Ir para: [2.4 Dicas Gerais](https://github.com/DanielHe4rt/php4noobs/blob/master/2-Ambiente/4-Dicas-gerais.md)
+Ir para: [2.4 Dicas Gerais](4-Dicas-gerais.md)

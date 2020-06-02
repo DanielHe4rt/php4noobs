@@ -11,4 +11,4 @@ Certifique-se de baixar o XAMPP com a **versão 7.4 do PHP** ou maior pois o cur
 
 <a href="https://www.apachefriends.org/pt_br/index.html">Clique aqui para baixar o XAMPP</a>
 
-Ir para: [2.3 Ambiente Linux](https://github.com/DanielHe4rt/php4noobs/blob/master/2-Ambiente/3-Ambiente-linux.md)
+Ir para: [2.3 Ambiente Linux](3-Ambiente-linux.md)

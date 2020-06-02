@@ -6,4 +6,4 @@ Aqui está uma lista de dicas que não necessariamente serão usadas no desenvol
 
 - Aprenda a pesquisar dúvidas no site **StackOverflow** pois ele é de longe o melhor amigo de qualquer desenvolvedor, seja o mais iniciante até o mais sênior.
 
-Ir para: [3 Básico](https://github.com/DanielHe4rt/php4noobs/tree/master/3-Basico)
+Ir para: [3 Básico](../3-Basico)

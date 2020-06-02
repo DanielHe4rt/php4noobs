@@ -59,4 +59,4 @@ object(stdClass)#1 (0) {
 
 Podemos ver que ele nos retornou alguns dados sobre o que inserimos dentro da função `var_dump()` e ele descreveu coisas que se fossem passados por referência, não seriam tão óbvias.
 
-Ir para: [3.2 Comentários](https://github.com/DanielHe4rt/php4noobs/blob/master/3-Basico/2-Comentarios.md)
+Ir para: [3.2 Comentários](2-Comentarios.md)

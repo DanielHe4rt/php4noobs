@@ -35,4 +35,4 @@ Porém se você é estudante de alguma instituição que forneça e-mails estuda
 
 Caso você tenha um e-mail estudantil, recomendo fortemente que você procure saber se ele está elegível a conseguir essa licença e você pode saber mais <a href="https://www.jetbrains.com/community/education/">clicando aqui.</a>
 
-Ir para: [2.2 Ambiente Windows](https://github.com/DanielHe4rt/php4noobs/blob/master/2-Ambiente/2-Ambiente-windows.md)
+Ir para: [2.2 Ambiente Windows](2-Ambiente-windows.md)
