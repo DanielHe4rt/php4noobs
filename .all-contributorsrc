@@ -66,6 +66,15 @@
         "review",
         "code"
       ]
+    },
+    {
+      "login": "Ryandgs",
+      "name": "Ryan Douglas da Silva",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/43894463?v=4",
+      "profile": "https://github.com/Ryandgs",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
