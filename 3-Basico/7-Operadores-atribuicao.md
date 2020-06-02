@@ -121,3 +121,5 @@ O valor da variável agora é = 12
 - Algumas linguagens usam o sinal `+`, para concatenar;
 - Quando não precisar interpretar variáveis use aspas simples `''`, isso poupa processamento;
 - `PHP_EOL` é uma constante do PHP que serve para quebrar linhas.
+
+Ir para: [3.8 Comparação de Valores](https://github.com/DanielHe4rt/php4noobs/blob/master/3-Basico/8-Operadores-comparacao.md)

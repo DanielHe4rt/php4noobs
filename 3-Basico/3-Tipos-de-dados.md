@@ -292,3 +292,5 @@ he4rtdevs
 ```
 
 Com isso podemos entender que é possível acessar tanto com a posição do nosso vetor quanto a uma chave específica atribuida.
+
+Ir para: [3.4 Variáveis](https://github.com/DanielHe4rt/php4noobs/blob/master/3-Basico/4-Variaveis.md)

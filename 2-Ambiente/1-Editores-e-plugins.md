@@ -34,3 +34,5 @@ PHPStorm é atualmente a melhor ferramente para produzir código PHP pois ela fo
 Porém se você é estudante de alguma instituição que forneça e-mails estudantis você pode conseguir uma licença de estudante pela JetBrains (empresa responsável pela ferramenta).
 
 Caso você tenha um e-mail estudantil, recomendo fortemente que você procure saber se ele está elegível a conseguir essa licença e você pode saber mais <a href="https://www.jetbrains.com/community/education/">clicando aqui.</a>
+
+Ir para: [2.2 Ambiente Windows](https://github.com/DanielHe4rt/php4noobs/blob/master/2-Ambiente/2-Ambiente-windows.md)
