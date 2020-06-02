@@ -84,3 +84,5 @@ Ná prática eles fazem a mesma coisa, mas os símbolos sempre vão ser avaliado
 
 - Nos exemplos deste tópico usamos a função `var_dump()`, caso você tenha esquecido como ela funciona, clica [AQUI](/3-Basico/1-Saida.md);
 - Lembre-se que: `0` é `false` (falso) e `1` é `true` (verdadeiro).
+
+Ir para: [3.12 Operador de Execução](12-Execucao.md)

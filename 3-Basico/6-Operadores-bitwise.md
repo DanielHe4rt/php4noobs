@@ -115,3 +115,5 @@ echo $a >> $b;
 - Bit é a menor unidade de informação na computação e pode ser 0 (zero) ou 1 (um), ligado ou desligado;
 - Um byte tem 8 bits;
 - Nao se preocupe com os operadores bit a bit por hora, basta que você conheça eles;
+
+Ir para: [3.7 Operadores de Atribuição](7-Operadores-atribuicao.md)

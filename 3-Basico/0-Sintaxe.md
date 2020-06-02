@@ -68,3 +68,5 @@ Caso você apenas queira imprimir algum dado, dá pra usar a "tag de echo" com a
 Todos os comandos **devem** ser encapsulados por alguma tag de abertura e fechamento do PHP ou ele irá jogar uma exception (excessão) para o usuário.
 
 Se o arquivo a ser lido tiver apenas um script em PHP, ele não necessita da tag de finalização **?>** e em algumas situações, não fechar a tag é considerado boa prática.
+
+Ir para: [3.1 Funções de Saída](1-Saida.md)

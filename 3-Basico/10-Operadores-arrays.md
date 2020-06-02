@@ -122,3 +122,6 @@ Array
     [2] => PHPSE
 )
 **/
+```
+
+Ir para: [3.11 Operadores Lógicos](11-Operadores-logicos.md)
