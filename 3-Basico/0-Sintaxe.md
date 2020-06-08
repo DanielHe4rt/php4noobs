@@ -1,8 +1,8 @@
 # 3.0 - Sintaxe
 
-Como em toda lingua, nós temos que entender e compreender como ela é escrita e isso se refere diretamente a gramática e suas regras. Na programação, temos também um conjunto de regras para que algo consiga ser lido e interpretado tanto pelo computador, quanto pela pessoa que estará lendo seu código.
+Como em toda língua, nós temos que entender e compreender como ela é escrita e isso se refere diretamente a gramática e suas regras. Na programação, temos também um conjunto de regras para que algo consiga ser lido e interpretado tanto pelo computador, quanto pela pessoa que estará lendo seu código.
 
-Código é feito de simbolos e caracteres e isso é chamado de sintaxe e nesse momento iremos entender as **regras** que devem ser seguidas para você programar no PHP.
+Código é feito de símbolos e caracteres e isso é chamado de sintaxe e nesse momento iremos entender as **regras** que devem ser seguidas para você programar no PHP.
 
 ## Pontuação
 
@@ -68,3 +68,5 @@ Caso você apenas queira imprimir algum dado, dá pra usar a "tag de echo" com a
 Todos os comandos **devem** ser encapsulados por alguma tag de abertura e fechamento do PHP ou ele irá jogar uma exception (excessão) para o usuário.
 
 Se o arquivo a ser lido tiver apenas um script em PHP, ele não necessita da tag de finalização **?>** e em algumas situações, não fechar a tag é considerado boa prática.
+
+Ir para: [3.1 Funções de Saída](1-Saida.md)

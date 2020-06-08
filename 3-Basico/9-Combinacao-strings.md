@@ -44,3 +44,5 @@ echo $euQuero . $php;
 #### Notas
  
 - Algumas linguagens de programação usam o sinal `+`, pra concatenar;
+
+Ir para: [3.10 Operadores de Arrays](10-Operadores-arrays.md)

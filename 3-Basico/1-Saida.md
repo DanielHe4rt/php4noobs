@@ -1,7 +1,7 @@
 # 3.1 - Funções de Saída
 
 Após o nosso ambiente montado com todas as ferramentas necessárias, iremos começar a ver algum código na prática. <br>
-Como iremos usar o nosso console em uma boa parte do curso, precisaremos de algumas funções para nos auxiliar a visualizar qualquer saída de dados do nosso código. E nessa lição, iremos conhecer essas funções.<br>
+Como iremos usar o nosso console em boa parte do curso, precisaremos de algumas funções para nos auxiliar a visualizar qualquer saída de dados do nosso código. E nessa lição, iremos conhecer essas funções.<br>
 
 ## Função -> echo()
 
@@ -35,7 +35,7 @@ He4rtDevs123456
 
 Descrição: coleta informações sobre a variável inserida.<br><br>
 
-Como vamos precisar entender que tipo de dados são passados por variáveis e muitas vezes por referencia de outras classes, vamos usar bastante a função var_dump para entender o que se passa naquele respectivo ambiente. Agora vamos ver um exemplo:
+Como vamos precisar entender que tipo de dados são passados por variáveis e muitas vezes por referência de outras classes, vamos usar bastante a função var_dump para entender o que se passa naquele respectivo ambiente. Agora vamos ver um exemplo:
 
 ```php
 <?php
@@ -57,4 +57,6 @@ object(stdClass)#1 (0) {
 }
 ```
 
-Podemos ver que ele nos retornou alguns dados sobre o que inserimos dentro da função var_dump e ele descreveu coisas que se fossem passados por referência, não seriam tão óbvias.
+Podemos ver que ele nos retornou alguns dados sobre o que inserimos dentro da função `var_dump()` e ele descreveu coisas que se fossem passados por referência, não seriam tão óbvias.
+
+Ir para: [3.2 Comentários](2-Comentarios.md)

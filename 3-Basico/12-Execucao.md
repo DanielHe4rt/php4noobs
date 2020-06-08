@@ -10,3 +10,5 @@ comando e são equivalentes a `shell_exec()`.
 $output = `ls -al`;
 echo "<pre>$output</pre>";
 ```
+
+Ir para: [3.12 Recapitulação](13-Recapitulacao.md)
