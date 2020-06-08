@@ -41,10 +41,11 @@
 10. [Operadores de Arrays](/3-Basico/10-Operadores-arrays.md)
 11. [Operadores Lógicos](/3-Basico/11-Operadores-logicos.md)
 12. [Operador de execução](/3-Basico/12-Execucao.md)
-13. [Namespace](/3-Basico/13-Namespace.md)
-14. [Extensões](/3-Basico/14-Extensoes.md)
-15. [Recapitulação](/3-Basico/15-Recapitulacao.md)
-
+13. [Estruturas de Controle](/3-Basico/13-Estruturas-de-controle.md)
+14. [Namespace (Em construção)](/3-Basico/13-Namespace.md)
+15. [Configurações (Em construção)](/3-Basico/14-Configs.md)
+16. [Extensões (Em construção)](/3-Basico/14-Extensoes.md)
+17. [Recapitulação (Em construção)](/3-Basico/15-Recapitulacao.md)
 
 ### Módulo Intermediário
 
