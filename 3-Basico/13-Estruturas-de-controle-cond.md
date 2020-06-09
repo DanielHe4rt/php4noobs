@@ -1,37 +1,37 @@
 # 3.13 Estruturas de Controle
 
-Estruturas de controle remetem a decisões de um trecho de código que deverá ser executado baseado em um teste lógico. Se você checar se a resposta seja VERDADEIRA ou FALSA, você precisará usar alguma das estruturas de controle de decisão.
+Estruturas de controle remetem a decisões de um trecho de código que deverá ser executado baseado em um teste lógico. Para verificar se a resposta é VERDADEIRA ou FALSA, você precisará usar alguma das estruturas de controle de decisão.
 
 Vamos exemplificar com pseudocódigo:
 
 Exemplo #1 - Trancando a casa
 
 ```
-- Vá até o seu portão
-- Tente trancar o portão
-- Se você tenha a CHAVE, faça
-    - Tranque Portão
-- Se NÃO
-    - Busque a chave
-    - Volte ao portão
-    - Tranque o portão
+- Vá até o seu portão.
+- Tente trancar o portão.
+- Se você tiver a CHAVE, faça:
+    - Tranque Portão.
+- Se NÃO:
+    - Busque a chave;
+    - Volte ao portão;
+    - Tranque o portão.
 ```
 
-Exemplo #2 - Trocar a Lampada
+Exemplo #2 - Trocar a Lâmpada
 
 ```
-- Ligue o interruptor
-- Se a LAMPADA NÃO acenda, faça
-    - Procure uma Lampada nova
-    - Remova a lampada queimada
-    - Insira a nova lampada
+- Ligue o interruptor.
+- Se a LÂMPADA NÃO acender, faça:
+    - Procure uma lâmpada nova;
+    - Remova a lâmpada queimada;
+    - Insira a nova lâmpada.
 ```
 
 Dei exemplos de como funcionaria estruturas de condições e agora vamos comentar sobre cada uma delas.
 
 ## Condição: if / else
 
-A estrutura condicional "if" recebe um valor e resolve, colocando a resposta como um valor BOLEANO. Ou seja: você poderá retornar apenas um valor VERDADEIRO, representado por **if (condição)** ou FALSO, representado por **else** (como os exemplos de SE dados acima).
+A estrutura condicional `if` recebe um valor e resolve, colocando a resposta como um valor BOOLEANO. Ou seja: você poderá retornar apenas um valor VERDADEIRO, representado por **if (condição)** ou FALSO, representado por **else** (como os exemplos de SE dados acima).
 
 Estrutura de código para a condição **IF/ELSE**:
 
@@ -85,7 +85,7 @@ if ($estouLogado) {
 // Result: "Continue acessando sua aplicação"
 ```
 
-Exemplo #4 - Condição com dois parametros
+Exemplo #4 - Condição com dois parâmetros
 
 ```php
 $usuario = "danielhe4rt";
@@ -222,7 +222,7 @@ switch($comando){
 
 O operador ternário ajuda na escrita de condições if/else diminuindo para uma única linha. Ou seja, será algo para ser usado quando você tem uma fácil comparação e um retorno SIMPLES.
 
-O operador ternário leva alguns simbolos para substituir o uso de parenteses e chaves, sendo eles o **?** e **:**
+O operador ternário leva alguns símbolos para substituir o uso de parênteses e chaves, sendo eles o **?** e **:**
 
 O Sinal de **?** sinaliza para o interpretador que tudo que for escrito anteriormente, será a condição a ser executada.
 
