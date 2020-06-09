@@ -12,7 +12,7 @@
   </a>
 </p>
 
-## ROADMAP 
+## ROADMAP
 
 ### Introdução
 
@@ -41,11 +41,12 @@
 10. [Operadores de Arrays](/3-Basico/10-Operadores-arrays.md)
 11. [Operadores Lógicos](/3-Basico/11-Operadores-logicos.md)
 12. [Operador de execução](/3-Basico/12-Execucao.md)
-13. [Estruturas de Controle](/3-Basico/13-Estruturas-de-controle.md)
-14. [Namespace (Em construção)](/3-Basico/13-Namespace.md)
-15. [Configurações (Em construção)](/3-Basico/14-Configs.md)
-16. [Extensões (Em construção)](/3-Basico/14-Extensoes.md)
-17. [Recapitulação (Em construção)](/3-Basico/15-Recapitulacao.md)
+13. [Estruturas de Controle - Condições](/3-Basico/13-Estruturas-de-controle-cond.md)
+14. [Estruturas de Controle - Loops (Em construção)](/3-Basico/13-Estruturas-de-controle-loops.md)
+15. [Namespace (Em construção)](/3-Basico/13-Namespace.md)
+16. [Configurações (Em construção)](/3-Basico/14-Configs.md)
+17. [Extensões (Em construção)](/3-Basico/14-Extensoes.md)
+18. [Recapitulação (Em construção)](/3-Basico/15-Recapitulacao.md)
 
 ### Módulo Intermediário
 
@@ -53,7 +54,6 @@
 2. [Funções de manipulação de Strings](4-Intermediario/2-Funcoes-strings.md)
 3. [Funções de manipulação de Arrays](4-Intermediario/3-Funcoes-arrays.md)
 4. [Funções de manipulação de Arquivos](4-Intermediario/4-Funcoes-arquivos.md)
- 	
 
 ## Como Contribuir
 
@@ -95,6 +95,7 @@ Nosso obrigado vai pra essas pessoas incríveis ([emoji key](https://allcontribu
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 Este projeto segue a especificação [all-contributors](https://github.com/all-contributors/all-contributors).

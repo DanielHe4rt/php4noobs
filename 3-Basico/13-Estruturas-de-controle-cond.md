@@ -1,0 +1,257 @@
+# 3.13 Estruturas de Controle
+
+Estruturas de controle remetem a decisões de um trecho de código que deverá ser executado baseado em um teste lógico. Se você checar se a resposta seja VERDADEIRA ou FALSA, você precisará usar alguma das estruturas de controle de decisão.
+
+Vamos exemplificar com pseudocódigo:
+
+Exemplo #1 - Trancando a casa
+
+```
+- Vá até o seu portão
+- Tente trancar o portão
+- Se você tenha a CHAVE, faça
+    - Tranque Portão
+- Se NÃO
+    - Busque a chave
+    - Volte ao portão
+    - Tranque o portão
+```
+
+Exemplo #2 - Trocar a Lampada
+
+```
+- Ligue o interruptor
+- Se a LAMPADA NÃO acenda, faça
+    - Procure uma Lampada nova
+    - Remova a lampada queimada
+    - Insira a nova lampada
+```
+
+Dei exemplos de como funcionaria estruturas de condições e agora vamos comentar sobre cada uma delas.
+
+## Condição: if / else
+
+A estrutura condicional "if" recebe um valor e resolve, colocando a resposta como um valor BOLEANO. Ou seja: você poderá retornar apenas um valor VERDADEIRO, representado por **if (condição)** ou FALSO, representado por **else** (como os exemplos de SE dados acima).
+
+Estrutura de código para a condição **IF/ELSE**:
+
+```
+if (condition) {
+    // condição verdadeira
+    // faça algo
+} else {
+    // condição falsa
+}
+```
+
+A estrutura acima representa exatamente como será feito em código e agora iremos a alguns exemplos:
+
+Exemplo #1 - Maior de idade
+
+```php
+$idade = 17;
+
+if ($idade >= 18) {
+    echo "Você é maior de idade";
+} else {
+    echo "Você é menor de idade";
+}
+// Result: "Você é menor de idade"
+```
+
+Exemplo #2 - Melhor grupo de Devs
+
+```php
+$grupo = "ZezinhoDevs";
+
+if ($grupo == "He4rtDevs") {
+    echo "Sim, esse é o melhor grupo de devs do brasil";
+} else {
+    echo "Isso nem existe velho tá maluco";
+}
+// Result: "Isso nem existe velho tá maluco"
+```
+
+Exemplo #3 - Retratando checagem de autenticação
+
+```php
+$estouLogado = true;
+
+if ($estouLogado) {
+    echo "Continue acessando sua aplicação";
+} else {
+    echo "Redirecionando para o login";
+}
+// Result: "Continue acessando sua aplicação"
+```
+
+Exemplo #4 - Condição com dois parametros
+
+```php
+$usuario = "danielhe4rt";
+$senha = "secret123";
+
+if ($usuario == "danielhe4rt" && $senha == "secret123") {
+    echo "Olá danielhe4rt, seja bem vindo";
+} else {
+    echo "Credenciais incorretas";
+}
+// Result: "Olá danielhe4rt, seja bem vindo"
+```
+
+## Condição: if / else if / else
+
+Quando vemos algum tipo de condição de if/else, o IDEAL é que seja duas possibilidades. Porém, toda linguagem de programação existe a condicional extra chamada **else if**, na qual adiciona mais uma possibilidade de retorno VERDADEIRA para a condição.
+
+Na prática, você pode ter N checagens para interpretar uma resposta retornando VERDADEIRO, até chegar na condição FALSA. Entenda o exemplo abaixo:
+
+```
+if (first condition) {
+    // condição verdadeira
+} else if(second condition) {
+    // condição verdadeira
+} else if(third condition) {
+    // condição verdadeira
+} else {
+    // condição falsa
+}
+```
+
+Você pode adicionar quantos Else if's você quiser no código, mas apenas se lembre de terminar usando else para ter uma interpretação de condição FALSA.
+
+Agora vamos a alguns exemplos:
+
+```php
+$userDaniel = "danielhe4rt";
+$passDaniel = "secret123";
+
+$userCaio = "caioarruda";
+$passCaio = "caiozin123";
+
+if ($userDaniel == "danielhe4rt" && $passDaniel == "secret123") {
+    echo "Olá danielhe4rt, seja bem vindo";
+} else if ($userCaio == "caiozin" && $passCaio == "321321") {
+    echo "Olá caiozin, seja bem vindo";
+} else {
+    echo "Credenciais incorretas";
+}
+```
+
+## Condição: switch-case
+
+O construtor **switch** parece bastante com a lógica do if/else if, porém há uma estrutura melhor para comportar o que você deseja colocar como valores predefinidos.
+
+A declaração há como base uma condição e N casos de uso dependendo do valor da inserido na condição e é finalizado após a palavra reservada **break** ser acionada, que pode ser interpretado como um fim do block de código..
+
+Caso não haja nenhuma opção elegível dentro dos casos citados, você pode usar a opção **default** para retornar um valor padrão.
+
+Um bom exemplo de quando usar o switch case é quando você está em um jogo/chat e há comandos onde um bot te responde baseado no que você inseriu no chat.
+
+Estrutura do switch-case:
+
+```
+switch (cond) {
+    case val1:
+        // faça algo
+        break;
+    case val2:
+        // faça algo
+        break;
+    case val3:
+        // faça algo
+        break;
+    defaut:
+        // faça algo quando nenhuma das opções for selecionada
+        break;
+}
+```
+
+Exemplo #1
+Lista de comandos
+
+```php
+$comando = "!he4rt";
+
+switch($comando){
+    case "!site":
+        echo "Link: https://heartdevs.com";
+        echo "Esse é o site oficial";
+        break;
+    case "!he4rt":
+        echo "Entre no nosso discord: https://discord.com/he4rt";
+        echo "Esse é o discord oficial";
+        break;
+    case "!comandos":
+        echo "Segue a lista de comandos";
+        echo "!he4rt !site";
+        break;
+    default:
+        echo "nada acontece feijoada";
+        break;
+}
+// return Entre no nosso discord: https://discord.com/he4rt Esse é o discord oficial
+```
+
+Exemplo #2
+Comando não existente
+
+```php
+$comando = "!teste";
+
+switch($comando){
+    case "!site":
+        echo "Link: https://heartdevs.com";
+        echo "Esse é o site oficial";
+        break;
+    case "!he4rt":
+        echo "Entre no nosso discord: https://discord.com/he4rt";
+        echo "Esse é o discord oficial";
+        break;
+    case "!comandos":
+        echo "Segue a lista de comandos";
+        echo "!he4rt !site";
+        break;
+    default:
+        echo "nada acontece feijoada";
+        break;
+}
+// return Nada acontece feijoada
+```
+
+## Condição: ternário
+
+O operador ternário ajuda na escrita de condições if/else diminuindo para uma única linha. Ou seja, será algo para ser usado quando você tem uma fácil comparação e um retorno SIMPLES.
+
+O operador ternário leva alguns simbolos para substituir o uso de parenteses e chaves, sendo eles o **?** e **:**
+
+O Sinal de **?** sinaliza para o interpretador que tudo que for escrito anteriormente, será a condição a ser executada.
+
+Após o sinal de **?** e entre o sinal de **:** é o que irá retornar se a condição for verdadeira e após o sinal de **:** é o que irá retornar caso a condição for falsa.
+
+Vamos a possíveis exemplos:
+
+```
+Modelos de ternário
+
+condition ? case true : case false;
+```
+
+Exemplo #1
+
+```php
+$nickname = 'danielhe4rt';
+
+$who = $nickname == "jorge123" ? "é o jorge online" : "não é o jorge online";
+
+echo $who; //  não é o jorge online
+
+```
+
+Exemplo #2
+
+```php
+$modoTeste = true;
+
+return $modoTeste  ? "MODO DESENVOLVIMENTO ATIVADO" : "MODO DESENVOLVIMENTO DESATIVADO";
+// return MODO DESENVOLVIMENTO ATIVADO
+```

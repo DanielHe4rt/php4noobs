@@ -1,6 +1,6 @@
 # 3.12 - Operador de Execução
 
-Os backticks ``` `` ```, também conhecidos como backquotes, executam o conteúdo fechado como um shell
+Os backticks ` `` `, também conhecidos como backquotes, executam o conteúdo fechado como um shell
 comando e são equivalentes a `shell_exec()`.
 `exec()`, `shell_exec()` e `system()`, todos são capazes de executar comandos no nível do shell.
 
@@ -11,4 +11,4 @@ $output = `ls -al`;
 echo "<pre>$output</pre>";
 ```
 
-Ir para: [3.12 Recapitulação](13-Recapitulacao.md)
+Ir para: [3.13 Estruturas de Controle: Condicioinais](13-Estruturas-de-controle-cond.md)
