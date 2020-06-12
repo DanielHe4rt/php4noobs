@@ -227,7 +227,8 @@ No PHP, também podemos criar função sem nome especifico, elas normalmente sã
 Para a sua utilização como callback, como citado anteriromente , vamos utilizar de exemplo a sua utilização na função `array_filter()`:
 
 ```php
-$numerosPares = array_filter([1,2,3,4], function($numero){
+$numerosPares = array_filter([1,2,3,4], function($numero)
+{
     return $numero % 2 == 0;
 }); // Resultado: [2,4]
 ```
@@ -247,7 +248,8 @@ Para a função utilizar alguma variavel do escopo anterior, é necessário pass
 
 ```php
 $mensagem = "He4rtDevs"
-$exemplo = function () use ($mensagem) {
+$exemplo = function () use ($mensagem)
+{
     echo $mensagem;
 };
 $exemplo(); // Resultado: He4rtDevs
