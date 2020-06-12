@@ -247,7 +247,7 @@ $funcaoExemplo('He4rtDevs'); //Resultado:  O Melhor grupo de desenvolvedores é 
 Para a função utilizar alguma variavel do escopo anterior, é necessário passar o complemento `use()`, como o exemplo a seguir:
 
 ```php
-$mensagem = "He4rtDevs"
+$mensagem = "He4rtDevs";
 $exemplo = function () use ($mensagem)
 {
     echo $mensagem;
