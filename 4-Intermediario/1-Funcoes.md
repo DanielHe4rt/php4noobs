@@ -216,6 +216,44 @@ O que eu pensava sobre isso:
 
 Hoje eu entendo que código não é escrito apenas para um compilador/interpretador mas sim para outros desenvolvedores que irão dar manutenção em algum momento no seu código.
 
+## Funções Anonimas
+
+[Documentação](https://www.php.net/manual/pt_BR/functions.anonymous.php)
+
+No PHP, também podemos criar função sem nome especifico, elas normalmente são utilizadas, como callback de alguma outra ação.
+
+É Importante saber, que as funções anonimas, enxergaram apenas escopo próprio, e não herdam automaticamente o escopo anterior, por este não se deve utilizar `$this` ou `globals` por exemplo, para realizar alguma ação dentro da função.\*\*
+
+Para a sua utilização como callback, como citado anteriromente , vamos utilizar de exemplo a sua utilização na função `array_filter()`:
+
+```php
+$numerosPares = array_filter([1,2,3,4], function($numero){
+    return $numero % 2 == 0;
+}); // Resultado: [2,4]
+```
+
+Porém támbem pode-se atribuir uma função anônima, a uma variavel, como:
+
+```php
+$funcaoExemplo = function($nome)
+{
+printf("Melhor grupo de desenvolvedores é a: %s\r\n", $nome);
+};
+
+$funcaoExemplo('He4rtDevs'); //Resultado:  O Melhor grupo de desenvolvedores é a He4rtDevs
+```
+
+Para a função utilizar alguma variavel do escopo anterior, é necessário passar o complemento `use()`, como o exemplo a seguir:
+
+```php
+$mensagem = "He4rtDevs"
+$exemplo = function () use ($mensagem) {
+    echo $mensagem;
+};
+$exemplo(); // Resultado: He4rtDevs
+
+```
+
 ## Funções de exemplo
 
 Abaixo estão algumas funções usando o que aprendemos até o momento sobre esse tópico.
