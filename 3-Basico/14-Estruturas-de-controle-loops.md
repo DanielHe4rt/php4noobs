@@ -1,0 +1,117 @@
+# 3.13 Estruturas de Controle: Loops
+
+As estruturas de controle relacionadas a Loops tendem a ter regras para continuar executando instruçõe do código até que essa regra seja quebrada.
+
+Em outras palavras, você tem uma condição que é interpretada como um boleano que é checada e enquanto ela for verdadeira, o bloco de código até que o valor a ser checado mude para falso.
+
+## Repetição: **for**
+
+O laço for funciona baseado em três argumentos dentro de parenteses, separados por virgulas como uma condição para ser executado até que essa condição acabe.
+
+Quando vemos uma condição que leva três argumentos no inicio, parece um pouco estranho. Mas vamos entender primeiro como funciona e como se aplica.
+
+Quando falamos dos argumentos, temos que entender primeiramente que o FOR trata-se de um loop baseado num incrementador/decrementador até que a condição seja realizada.
+
+```
+for (valor inicial; condição; incremento/decremento) {
+    // Faça algo maneiro aqui
+}
+
+for ($i = 0; $i < 10; $i++) {
+    // Faça algo maneiro aqui
+}
+```
+
+Agora falaremos dos parametros do for:
+
+#### Primeiro parametro: indice inicial no qual você quer trabalhar
+
+Esse indice é um número inteiro que você irá trabalhar com a incrementação ou decrementação
+
+#### Segundo parametro: condição para que o laço seja finalizado
+
+Se você tem um indice como primeiro parametro, a cada vez que esse loop rodar você tera incrementado ou decrementado e fazendo a mesma pergunta da condição até que ela seja satisfeita.
+
+#### Terceiro parametro: incrementador/decrementador
+
+Esse parametro será responsável por dizer ao loop se ele vai incrementar ou decrementar o indice do laço.
+
+Agora vamos para alguns exemplos:
+
+Exemplo #1 - Contando até 10
+
+```php
+$contador = 10;
+echo "Script pra contar até" . $contador . PHP_EOL;
+for($i = 1; $i <= 10; $i++){
+    echo $i . "... ";
+}
+echo PHP_EOL . "Script finalizado!";
+
+// Resultado
+// "Script pra contar até 10"
+// "1... 2... 3... 4... 5... 6... 7... 8... 9... 10..."
+// "Script Finalizado!"
+```
+
+Exemplo #2 - Tabuada do 5
+
+```php
+$multiplicador = 5;
+echo "Script pra imprimir a tabuada do" . $multiplicador . PHP_EOL;
+for($i = 1; $i <= 10; $i++){
+    echo $multiplicador . " x " . $i  . " = " ($multiplicador & $i) . PHP_EOL;
+}
+echo "Script finalizado!";
+
+// Resultado
+// "Script pra imprimir a tabuada do 5"
+// "5 x 1 = 5"
+// "5 x 2 = 10"
+// "5 x 3 = 15"
+// "5 x 4 = 20"
+// "5 x 5 = 25"
+// "5 x 6 = 30"
+// "5 x 7 = 35"
+// "5 x 8 = 40"
+// "5 x 9 = 45"
+// "5 x 10 = 50"
+// "Script Finalizado!"
+```
+
+## Repetição: **while**
+
+A estrutura de condição while leva uma condição boleana no começo que é executada eternamente enquanto o valor passado for verdadeiro.
+
+Ele só tem uma condição a ser lida e vai ficar em execução até que essa condição seja declarada como falsa.
+
+```
+while(condição){
+    // faça algo maneiro
+}
+```
+
+Vamos dar os mesmos do for só que com o laço while:
+
+Exemplo #1 Contando até 10
+
+```php
+$continuaLoop = true;
+$i = 1;
+echo "Script pra contar até 10"  . PHP_EOL;
+while ($continuaLoop){
+    echo $i . "... ";
+    if ($i == 10){
+        $continuaLoop = false;
+    }
+    $i++;
+}
+echo PHP_EOL . "Script finalizado!";
+
+// Resultado
+// "Script pra contar até 10"
+// "1... 2... 3... 4... 5... 6... 7... 8... 9... 10..."
+// "Script Finalizado!"
+```
+
+Vocês perceberam que eu usei mais código fazendo com o while do que com o for? Isso é por quê quando tratamos de situações incrementais, o laço for é a melhor solução pra isso. Porém, nada te impede de fazer a mesma coisa junto ao while.

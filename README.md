@@ -42,7 +42,7 @@
 11. [Operadores Lógicos](/3-Basico/11-Operadores-logicos.md)
 12. [Operador de execução](/3-Basico/12-Execucao.md)
 13. [Estruturas de Controle - Condições](/3-Basico/13-Estruturas-de-controle-cond.md)
-14. [Estruturas de Controle - Loops (Em construção)](/3-Basico/14-Estruturas-de-controle-loops.md)
+14. [Estruturas de Controle - Loops](/3-Basico/14-Estruturas-de-controle-loops.md)
 15. [Namespace (Em construção)](/3-Basico/15-Namespace.md)
 16. [Configurações (Em construção)](/3-Basico/16-Configs.md)
 17. [Extensões (Em construção)](/3-Basico/17-Extensoes.md)
