@@ -115,3 +115,107 @@ echo PHP_EOL . "Script finalizado!";
 ```
 
 Vocês perceberam que eu usei mais código fazendo com o while do que com o for? Isso é por quê quando tratamos de situações incrementais, o laço for é a melhor solução pra isso. Porém, nada te impede de fazer a mesma coisa junto ao while.
+
+Você também pode usar a expressão **while($i++ < $contador)** mas raramente é usado pra algo em códigos em produção.
+
+## Repetição: **foreach**
+
+O laço de repetição **foreach** é usado para iterar arrays ou objetos. O foreach funciona passando por cada elemento do array e atribuindo ele a variáveis do escopo da estrutura para uma melhor manipulação dos elementos.
+
+A estrutura do foreach levam dois ou três parametros para ser iterado, com a possiblidade de não declarar o valor do indice. Entenda abaixo:
+
+```php
+$names = ["waasleey","leozin044","rychillie","jpbrabo"];
+// Iteração sem a indíce
+foreach($names as $name){
+    echo $name . " ";
+}
+// Retorno: waasley leozin044 rychillie jpbrabo
+
+// Iteração com a indíce
+foreach($names as $key => $name){
+    echo $key . "." $name . " ";
+}
+// Retorno: 0.waasley 1.leozin044 2.rychillie 3.jpbrabo
+```
+
+Como primeiro parametro, o foreach espera um array ou objeto onde ele possa percorrer os indices.
+
+Como segundo parametro, será o nome da váriavel que receberá o valor da iteração. Porém caso você queira colocar o indice e valor da iteração, você deverá atribuir mais uma variável com o sinal de **igual maior =>**, colocando o nome da variável de indice atrás da seta e a variável com o valor a da iteração após a seta.
+
+```
+foreach ($array as $iteracao => $valor)
+```
+
+Você não necessáriamente precisa colocar o indíce, pois caso você não vá usar pra algo dentro do loop só irá consumir mais um espaço na memória.
+
+Exemplo #1 Iterando um objeto
+
+```php
+$pessoa = new StdClass;
+$pessoa->nome = "danielhe4rt";
+$pessoa->idade = 21;
+$pessoa->trabalho = "Fullstack Developer";
+
+foreach ($pessoa as $chave => $valor) {
+    echo "$chave: $valor" . PHP_EOL;
+}
+// Resultado:
+// nome: danielhe4rt
+// idade: 21
+// trabalho: Fullstack Developer
+```
+
+Exemplo #2 Iterando um objeto com chaves e valores
+
+```php
+$pessoa = [
+    "nome" => "danielhe4rt",
+    "idade" => 21,
+    "trabalho" => "Fullstack Developer"
+];
+foreach ($pessoa as $chave => $valor) {
+    echo "$chave: $valor" . PHP_EOL;
+}
+
+// Resultado:
+// nome: danielhe4rt
+// idade: 21
+// trabalho: Fullstack Developer
+```
+
+Exemplo #3 Iterando um objeto com chaves e valores
+
+```php
+$pessoa = [
+    "danielhe4rt",
+    21,
+    "Fullstack Developer"
+];
+foreach ($pessoa as $chave => $valor) {
+    echo "$chave: $valor" . PHP_EOL;
+}
+
+// Resultado:
+// 0: danielhe4rt
+// 1: 21
+// 2: Fullstack Developer
+```
+
+Exemplo #3 Iterando um objeto com chaves e valores
+
+```php
+$pessoa = [
+    "danielhe4rt",
+    21,
+    "Fullstack Developer"
+];
+foreach ($pessoa as $valor) {
+    echo "$valor" . PHP_EOL;
+}
+
+// Resultado:
+// danielhe4rt
+// 21
+// Fullstack Developer
+```
