@@ -1,12 +1,12 @@
 # 3.13 Estruturas de Controle: Loops
 
-As estruturas de controle relacionadas a Loops tendem a ter regras para continuar executando instruçõe do código até que essa regra seja quebrada.
+As estruturas de controle relacionadas a Loops tendem a ter regras para continuar executando instruções do código até que essa regra seja quebrada.
 
-Em outras palavras, você tem uma condição que é interpretada como um boleano que é checada e enquanto ela for verdadeira, o bloco de código até que o valor a ser checado mude para falso.
+Em outras palavras, você tem uma condição que é interpretada como um valor lógico que é checada e enquanto ela for verdadeira, o bloco de código até que o valor a ser checado mude para falso.
 
 ## Repetição: **for**
 
-O laço for funciona baseado em três argumentos dentro de parenteses, separados por virgulas como uma condição para ser executado até que essa condição acabe.
+O laço for funciona baseado em três argumentos dentro de parênteses, separados por vírgulas como uma condição para ser executado até que essa condição acabe.
 
 Quando vemos uma condição que leva três argumentos no inicio, parece um pouco estranho. Mas vamos entender primeiro como funciona e como se aplica.
 
@@ -22,19 +22,19 @@ for ($i = 0; $i < 10; $i++) {
 }
 ```
 
-Agora falaremos dos parametros do for:
+Agora falaremos dos parâmetros do for:
 
-#### Primeiro parametro: indice inicial no qual você quer trabalhar
+#### Primeiro parâmetro: índice inicial no qual você quer trabalhar
 
-Esse indice é um número inteiro que você irá trabalhar com a incrementação ou decrementação
+Esse índice é um número inteiro que você irá trabalhar com a incrementação ou decrementação
 
-#### Segundo parametro: condição para que o laço seja finalizado
+#### Segundo parâmetro: condição para que o laço seja finalizado
 
-Se você tem um indice como primeiro parametro, a cada vez que esse loop rodar você tera incrementado ou decrementado e fazendo a mesma pergunta da condição até que ela seja satisfeita.
+Se você tem um índice como primeiro parâmetro, a cada vez que esse loop rodar você tera incrementado ou decrementado e fazendo a mesma pergunta da condição até que ela seja satisfeita.
 
-#### Terceiro parametro: incrementador/decrementador
+#### Terceiro parâmetro: incrementador/decrementador
 
-Esse parametro será responsável por dizer ao loop se ele vai incrementar ou decrementar o indice do laço.
+Esse parâmetro será responsável por dizer ao loop se ele vai incrementar ou decrementar o índice do laço.
 
 Agora vamos para alguns exemplos:
 
@@ -43,7 +43,7 @@ Exemplo #1 - Contando até 10
 ```php
 $contador = 10;
 echo "Script pra contar até" . $contador . PHP_EOL;
-for($i = 1; $i <= 10; $i++){
+for($i = 1; $i <= $contador; $i++){
     echo $i . "... ";
 }
 echo PHP_EOL . "Script finalizado!";
@@ -58,7 +58,7 @@ Exemplo #2 - Tabuada do 5
 
 ```php
 $multiplicador = 5;
-echo "Script pra imprimir a tabuada do" . $multiplicador . PHP_EOL;
+echo "Script pra imprimir a tabuada do $multiplicador" . PHP_EOL;
 for($i = 1; $i <= 10; $i++){
     echo $multiplicador . " x " . $i  . " = " ($multiplicador & $i) . PHP_EOL;
 }
@@ -122,10 +122,12 @@ Você também pode usar a expressão **while($i++ < $contador)** mas raramente �
 
 O laço de repetição **foreach** é usado para iterar arrays ou objetos. O foreach funciona passando por cada elemento do array e atribuindo ele a variáveis do escopo da estrutura para uma melhor manipulação dos elementos.
 
-A estrutura do foreach levam dois ou três parametros para ser iterado, com a possiblidade de não declarar o valor do indice. Entenda abaixo:
+O foreach acontece enquanto tiver iteráveis dentro do array e pode parar com a condição **break**, caso não ele continua até o final do array.
+
+A estrutura do foreach levam dois ou três parâmetros para ser iterado, com a possiblidade de não declarar o valor do índice. Entenda abaixo:
 
 ```php
-$names = ["waasleey","leozin044","rychillie","jpbrabo"];
+$names = ["waasleey", "leozin044", "rychillie", "jpbrabo"];
 // Iteração sem a indíce
 foreach($names as $name){
     echo $name . " ";
@@ -139,9 +141,9 @@ foreach($names as $key => $name){
 // Retorno: 0.waasley 1.leozin044 2.rychillie 3.jpbrabo
 ```
 
-Como primeiro parametro, o foreach espera um array ou objeto onde ele possa percorrer os indices.
+Como primeiro parâmetro, o foreach espera um array ou objeto onde ele possa percorrer os índices.
 
-Como segundo parametro, será o nome da váriavel que receberá o valor da iteração. Porém caso você queira colocar o indice e valor da iteração, você deverá atribuir mais uma variável com o sinal de **igual maior =>**, colocando o nome da variável de indice atrás da seta e a variável com o valor a da iteração após a seta.
+Como segundo parâmetro, será o nome da váriavel que receberá o valor da iteração. Porém caso você queira colocar o índice e valor da iteração, você deverá atribuir mais uma variável com o sinal de **igual maior =>**, colocando o nome da variável de índice atrás da seta e a variável com o valor a da iteração após a seta.
 
 ```
 foreach ($array as $iteracao => $valor)
@@ -202,7 +204,7 @@ foreach ($pessoa as $chave => $valor) {
 // 2: Fullstack Developer
 ```
 
-Exemplo #3 Iterando um objeto com chaves e valores
+Exemplo #4 Iterando um objeto com chaves e valores
 
 ```php
 $pessoa = [
