@@ -1,28 +1,28 @@
 # 3.0 - Sintaxe
 
-Como em toda língua, nós temos que entender e compreender como ela é escrita e isso se refere diretamente a gramática e suas regras. Na programação, temos também um conjunto de regras para que algo consiga ser lido e interpretado tanto pelo computador, quanto pela pessoa que estará lendo seu código.
+Como em toda línguagem/idioma, nós temos que entender e compreender como ela é escrita e isso se refere diretamente à gramática e suas regras. Na programação, temos também um conjunto de regras para que algo consiga ser lido e interpretado tanto pelo computador, quanto pela pessoa que estará lendo seu código.
 
-Código é feito de símbolos e caracteres e isso é chamado de sintaxe e nesse momento iremos entender as **regras** que devem ser seguidas para você programar no PHP.
+Código é feito de símbolos e caracteres, isso é chamado de sintaxe e neste momento iremos entender as **regras** que devem ser seguidas para você programar no PHP.
 
 ## Pontuação
 
 Pontuação é algo obrigatório para escrita de textos formais, independente da língua que você estiver praticando e na programação ela também tem um papel fundamental.
 
-Entenda que você estará trabalhando com uma língua, (como se fosse português ou inglês) e em ambas a pontuação deve ser respeitada para uma fácil interpretação.
+Entenda que você estará trabalhando com uma línguagem, (como se fosse português ou inglês) e em ambas a pontuação deve ser respeitada para uma fácil interpretação.
 
 O PHP tem um interpretador que irá checar cada linha escrita com essas pontuações e caso você não siga essa regra de sintaxe, ele irá te retornar uma mensagem de erro indicando a linha e o tipo de "erro gramatical" que você cometeu.
 
-PS: jogue esse erro no google pra um melhor resultado.
+PS: Busque por esse erro no Google pra um melhor resultado.
 
-## Ponto e virgula (;)
+## Ponto e vírgula (;)
 
-Ponto e virgula é a declaração que uma linha de código foi finalizada no PHP.
+Ponto e vírgula é a declaração que uma linha de código foi finalizada no PHP.
 
-Declarações de código em PHP **devem** acabar com ponto e virgula **(;)** pois é exatamente esse caractere que indica pro interpretador executar essa linha de código.
+Declarações de código em PHP **devem** acabar com ponto e vírgula **(;)** pois é exatamente esse caractere que indica pro interpretador que essa linha de código terminou.
 
-Declarações de código que não terminarem com ; indicam pro interpretador continuar para a próxima linha e caso a linha anterior **não tenha ;** ele emite um erro de sintaxe, também conhecido como **parse error**
+Declarações de código que não terminarem com ; indicam pro interpretador continuar para a próxima linha e caso a linha anterior **não tenha ;** ele emite um erro de sintaxe, também conhecido como **parse error**.
 
-Exemplo Funcionais;
+Exemplo Funcionais:
 
 ```php
 echo "Eu sou um desenvolvedor do coração";
@@ -30,7 +30,7 @@ echo "Eu sou um desenvolvedor do coração";
 echo "He4rtDevs é o " . "melhor grupo <3";
 ```
 
-Exemplos não funcionais
+Exemplos não funcionais:
 
 ```
 echo "Eu sou um desenvolvedor do coração"
@@ -41,7 +41,7 @@ echo "He4rtDevs é o " .
      "melhor grupo <3"
 ```
 
-No segundo exemplo incorreto, usamos um operador de concatenação (.), que serve para "juntar" strings, porém vimos que faltou o ponto e virgula e isso irá jogar uma excessão para o usuário assim que essa linha for executada.
+No segundo exemplo incorreto, usamos um operador de concatenação (.), que serve para "juntar" strings, porém vimos que faltou o ponto e vírgula e isso irá jogar uma exception (excessão) para o usuário assim que essa linha for executada.
 
 ## Tags do PHP
 

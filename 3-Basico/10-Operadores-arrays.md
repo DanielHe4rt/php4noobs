@@ -2,13 +2,13 @@
 
 O PHP manda muito bem quando se trata de processamento de arrays/matrizes.
 Existem muitas funções internas para auxiliar nisso.
-Vejamos os operadores que podemos usar ao fazer **operações com arrays**.
+Vejamos os operadores que podemos usar ao fazer **operações com arrays:**
 
 ## União `+`
 
 Você pode unir um ou mais valores de arrays.
 
-### Exemplo
+### Exemplo:
 
 ```php
 <?php
@@ -33,9 +33,9 @@ Array
 
 ## Igualdade `==`
 
-Verifica se os valores dos arrays que são iguais.
+Verifica se os valores dos arrays passados são iguais.
 
-### Exemplo
+### Exemplo:
 
 ```php
 <?php
@@ -50,9 +50,9 @@ echo $array1 == $array2;
 
 ## Diferença `!=` ou `<>`
 
-Checa se os valores dos arrays que vamos testar são diferentes.
+Verifica se os valores dos arrays passados são diferentes.
 
-### Exemplo
+### Exemplo:
 ```php
 <?php
 
@@ -68,7 +68,7 @@ echo $array1 != $array2;
 
 Verifica se valores dos arrays são iguais e do mesmo tipo.
 
-### Exemplo
+### Exemplo:
 ```php
 <?php
 
@@ -81,9 +81,9 @@ echo $array1 === $array2;
 ```
 ## Não idêntico `!==`
 
-Verifica se valores dos arrays não são idênticos (valor e tipo do valor)
+Verifica se valores dos arrays não são idênticos (valor e tipo do valor).
 
-### Exemplo
+### Exemplo:
 ```php
 <?php
 
@@ -97,12 +97,11 @@ echo $array1 !== $array2;
 
 #### Notas
 
-- No PHP o índice de um array começa a partir de zero `0`;
+- No PHP, o índice de um array começa a partir de zero `0`;
 - Um retorno zero significa falso;
 - Arrays e matrizes são a mesma coisa;
 - A função `print_r()` é muito útil para testar arrays;
-- Se você tiver usando alguma versão antes do PHP 5.4 não vai dar certo escrever arrays como nos exemplos deste tópico,
-então faça assim:
+- Se você estiver usando alguma versão antes do PHP 5.4 não vai dar certo escrever arrays como nos exemplos deste tópico, então faça assim:
 
 ### Escrevendo um Array antes do PHP 5.4
 ```php

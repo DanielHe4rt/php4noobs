@@ -1,12 +1,12 @@
 # 3.11 Operadores Lógicos
 
-Operadores lógicos operam com valores [booleanos](3-Tipos-de-dados.md). Por isso, eles convertem valores para um Booleano antes de tentar a operação.
+Operadores lógicos operam com valores [booleanos](3-Tipos-de-dados.md). Por isso, eles convertem valores para um **Booleano** antes de tentar a operação.
 
 ## E `&&`, `and` 
 
 Verdadeiro `true`, se ambos os operandos (valores a serem testados), forem verdadeiros.
 
-### Exemplo
+### Exemplo:
 ```php
 <?php
 
@@ -22,7 +22,7 @@ var_dump($a && $b);
 
 Este operador lógico é conhecido como: **OU Inclusivo**, e vai retornar `true` se um dos operandos for verdadeiro, ou ambos.
 
-### Exemplo
+### Exemplo:
 ```php
 <?php
 
@@ -78,7 +78,7 @@ var_dump(!$a);
 ## Preste muita atenção pois:
 
 Os símbolos `&&`, `||` e `^` têm maior ordem de precedência, e são avaliados primeiro que `and`, `or`, e `xor`.
-Ná prática eles fazem a mesma coisa, mas os símbolos sempre vão ser avaliados primeiro nas expressões, evite mistura-los.
+Na prática eles fazem a mesma coisa, mas os símbolos sempre vão ser avaliados primeiro nas expressões, evite mistura-los.
 
 #### Notas
 

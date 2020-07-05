@@ -63,11 +63,9 @@ use Zend\Twitter;
 
 ## Alias em namespaces: `as`
 
-O uso de um namespace também permite alias. Isso é feito para reduzir o namespace
-ou para evitar colisões devido a nomes iguais. Isso é feito usando a
-palavra-chave `as`
+O uso de um namespace também permite [*alias*](https://pt.wikipedia.org/wiki/Alias_(comando)). Isso é feito usando a palavra-chave `as` para reduzir o namespace ou para evitar colisões devido a nomes iguais.
 
-### Exemplo de uso de alias em namespaces
+### Exemplo de uso de alias em namespaces:
 
 ```php
 <?php
@@ -81,6 +79,6 @@ use Zend\Twitter as Twit;
 #### Notas
  
 - Vimos algumas coisas aqui que estão relacionadas a orientação a objetos, não se preocupe com isso agora, teremos uma sessão só pra tratar disso.
-- Namespaces são case-insensitive, significa que tanto faz escrever com letras maiúsculas ou minúsculas, mas fique atento aos padrões de PSRs, falaremos sobre isso também.
+- Namespaces são [*case-insensitive*](https://pt.wikipedia.org/wiki/Case-sensitive), significa que tanto faz escrever com letras maiúsculas ou minúsculas, mas fique atento aos padrões de PSRs, falaremos sobre isso também.
 
 Ir para: [3.16 Configurações](16-Configs.md)

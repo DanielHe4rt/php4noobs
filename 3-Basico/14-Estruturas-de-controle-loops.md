@@ -2,7 +2,7 @@
 
 As estruturas de controle relacionadas a Loops tendem a ter regras para continuar executando instruções do código até que essa regra seja quebrada.
 
-Em outras palavras, você tem uma condição que é interpretada como um valor lógico que é checada e enquanto ela for verdadeira, o bloco de código até que o valor a ser checado mude para falso.
+Em outras palavras, você tem uma condição que é interpretada como um valor lógico que é checada e enquanto ela for verdadeira, o bloco de código é executado até que o valor a ser checado mude para falso.
 
 ## Repetição: **for**
 
@@ -24,21 +24,21 @@ for ($i = 0; $i < 10; $i++) {
 
 Agora falaremos dos parâmetros do for:
 
-#### Primeiro parâmetro: índice inicial no qual você quer trabalhar
+#### Primeiro parâmetro: índice inicial no qual você quer trabalhar.
 
-Esse índice é um número inteiro que você irá trabalhar com a incrementação ou decrementação
+Esse índice é um número inteiro onde você trabalhará com incrementação ou decrementação.
 
-#### Segundo parâmetro: condição para que o laço seja finalizado
+#### Segundo parâmetro: condição para que o laço seja finalizado.
 
-Se você tem um índice como primeiro parâmetro, a cada vez que esse loop rodar você tera incrementado ou decrementado e fazendo a mesma pergunta da condição até que ela seja satisfeita.
+Se você tem um índice como primeiro parâmetro, a cada vez que esse loop rodar você terá incrementado ou decrementado, fazendo a mesma pergunta da condição até que ela seja satisfeita.
 
-#### Terceiro parâmetro: incrementador/decrementador
+#### Terceiro parâmetro: incrementador/decrementador.
 
 Esse parâmetro será responsável por dizer ao loop se ele vai incrementar ou decrementar o índice do laço.
 
 Agora vamos para alguns exemplos:
 
-Exemplo #1 - Contando até 10
+## Exemplo #1 - Contando até 10:
 
 ```php
 $contador = 10;
@@ -54,7 +54,7 @@ echo PHP_EOL . "Script finalizado!";
 // "Script Finalizado!"
 ```
 
-Exemplo #2 - Tabuada do 5
+## Exemplo #2 - Tabuada do 5:
 
 ```php
 $multiplicador = 5;
@@ -81,7 +81,7 @@ echo "Script finalizado!";
 
 ## Repetição: **while**
 
-A estrutura de condição while leva uma condição boleana no começo que é executada eternamente enquanto o valor passado for verdadeiro.
+A estrutura de condição while leva uma condição booleana no começo que é executada eternamente enquanto o valor passado for verdadeiro.
 
 Ele só tem uma condição a ser lida e vai ficar em execução até que essa condição seja declarada como falsa.
 
@@ -91,9 +91,9 @@ while(condição){
 }
 ```
 
-Vamos dar os mesmos do for só que com o laço while:
+Vamos dar os mesmos exemplos da condição **for** só que com o laço **while**:
 
-Exemplo #1 Contando até 10
+## Exemplo #1 Contando até 10:
 
 ```php
 $continuaLoop = true;
@@ -114,17 +114,17 @@ echo PHP_EOL . "Script finalizado!";
 // "Script Finalizado!"
 ```
 
-Vocês perceberam que eu usei mais código fazendo com o while do que com o for? Isso é por quê quando tratamos de situações incrementais, o laço for é a melhor solução pra isso. Porém, nada te impede de fazer a mesma coisa junto ao while.
+Vocês perceberam que foi utilizado mais código fazendo com o while do que com o for? Isso é por quê quando tratamos de situações incrementais, o laço for é a melhor solução pra isso. Porém, nada te impede de fazer a mesma coisa junto ao while.
 
-Você também pode usar a expressão **while($i++ < $contador)** mas raramente é usado pra algo em códigos em produção.
+Você também pode usar a expressão **while($i++ < $contador)** mas raramente é usado pra algo em códigos que serão utilizados em produção.
 
 ## Repetição: **foreach**
 
-O laço de repetição **foreach** é usado para iterar arrays ou objetos. O foreach funciona passando por cada elemento do array e atribuindo ele a variáveis do escopo da estrutura para uma melhor manipulação dos elementos.
+O laço de repetição **foreach** é usado para iterar arrays ou objetos. O foreach funciona passando por cada elemento do array e atribuindo à ele variáveis do escopo da estrutura, para uma melhor manipulação dos elementos.
 
-O foreach acontece enquanto tiver iteráveis dentro do array e pode parar com a condição **break**, caso não ele continua até o final do array.
+O foreach acontece enquanto houver iteráveis dentro do array e pode parar com a condição **break**, caso não, ele continua até o final do array.
 
-A estrutura do foreach levam dois ou três parâmetros para ser iterado, com a possiblidade de não declarar o valor do índice. Entenda abaixo:
+A estrutura do foreach leva dois ou três parâmetros para ser iterado, com a possiblidade de não declarar o valor do índice. Entenda abaixo:
 
 ```php
 $names = ["waasleey", "leozin044", "rychillie", "jpbrabo"];
@@ -136,7 +136,7 @@ foreach($names as $name){
 
 // Iteração com a indíce
 foreach($names as $key => $name){
-    echo $key . "." $name . " ";
+    echo $key . "." . $name . " ";
 }
 // Retorno: 0.waasley 1.leozin044 2.rychillie 3.jpbrabo
 ```
@@ -149,9 +149,9 @@ Como segundo parâmetro, será o nome da váriavel que receberá o valor da iter
 foreach ($array as $iteracao => $valor)
 ```
 
-Você não necessáriamente precisa colocar o indíce, pois caso você não vá usar pra algo dentro do loop só irá consumir mais um espaço na memória.
+Não necessáriamente precisamos colocar o indíce, pois caso não seja usado para algo dentro do loop, só irá consumir mais um espaço na memória.
 
-Exemplo #1 Iterando um objeto
+## Exemplo #1 Iterando um objeto:
 
 ```php
 $pessoa = new StdClass;
@@ -168,7 +168,7 @@ foreach ($pessoa as $chave => $valor) {
 // trabalho: Fullstack Developer
 ```
 
-Exemplo #2 Iterando um objeto com chaves e valores
+## Exemplo #2 Iterando um objeto com chaves e valores:
 
 ```php
 $pessoa = [
@@ -186,7 +186,7 @@ foreach ($pessoa as $chave => $valor) {
 // trabalho: Fullstack Developer
 ```
 
-Exemplo #3 Iterando um objeto com chaves e valores
+## Exemplo #3 Iterando um objeto com chaves e valores:
 
 ```php
 $pessoa = [
@@ -204,7 +204,7 @@ foreach ($pessoa as $chave => $valor) {
 // 2: Fullstack Developer
 ```
 
-Exemplo #4 Iterando um objeto com chaves e valores
+## Exemplo #4 Iterando um objeto com chaves e valores:
 
 ```php
 $pessoa = [

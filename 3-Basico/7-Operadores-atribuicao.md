@@ -1,6 +1,6 @@
 # 3.7 Operadores de Atribuição
 
-Uma atribuição é uma maneira de guardar um valor na memória e referencia-lo com um
+Uma atribuição é uma maneira de guardar um valor na memória e referenciá-lo com um
 identificador, por exemplo: uma variável ou uma constante.
 
 ## Atribuição `=`
@@ -21,10 +21,9 @@ echo $resultado;
 ```
 ## Formas abreviadas de atribuição
 
-Também dá pra escrever uma atribuição de forma abreviada, essa forma funciona com
-qualquer operador aritmético: `+`, `-`, `*`, `/`, `%`, etc.
+Também é possível escrever uma atribuição de forma abreviada, essa forma funciona com qualquer operador aritmético: `+`, `-`, `*`, `/`, `%`, etc.
 
-### Exemplos de atribuição abreviada
+### Exemplos de atribuição abreviada:
 
 #### Soma `+=`
 
@@ -78,7 +77,7 @@ echo $resultado;
 //Retorna: "5"
 ```
 
-#### Módulo(retorna o resto da divisão) `%=`
+#### Módulo (retorna o resto da divisão) `%=`
 
 ```php
 <?php
@@ -94,11 +93,10 @@ echo $resultado;
 ## Operador de incremento `++` e decremento `--`
 
 O PHP suporta operadores de incremento e decremento, a ordem do operador é importante aqui.
-Colocar um `++` antes de uma variável em um `echo` **incrementa a variável em um
-antes da avaliação**. Colocar o operador após a variável incrementa `após a avaliação`.
-A mesma regra serve para o operador de decremento `--`.
+Colocar um `++` antes de uma variável em um `echo` incrementa a variável em um
+`antes da avaliação`. Colocar o operador após a variável incrementa `após a avaliação`. A mesma regra serve para o operador de decremento `--`.
 
-#### Exemplo de incremento e decremento
+#### Exemplo de incremento e decremento:
 
 ```php
 <?php

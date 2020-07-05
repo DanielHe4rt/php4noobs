@@ -1,6 +1,6 @@
 # 3.3 - Tipos de dados
 
-Programação é uma constante troca de dados entre a memória e o processador, onde a memória PRECISA saber o que está sendo enviado para existir uma melhor forma de processar essa informação e conhecer os tipos de dados padrões vai ajudar a você entender um conceito muito básico da programação de baixo nível (não muito bem aplicada em PHP, masss): a tipagem. <br>
+Programação é uma constante troca de dados entre a memória e o processador, onde a memória PRECISA saber o que está sendo enviado para reservar espaço, armazenar e enviar ao processador para interpretar o código. Conhecer os tipos de dados padrões vai ajudar você a entender um conceito muito básico da programação de baixo nível (não muito bem aplicada em PHP, masss...): a tipagem. <br>
 
 Por que você deveria perder tempo com isso já que o PHP não te obriga a fazer essa parte de tipagem?<br>
 Os tipos de dados são MUITO importantes para que sua aplicação não quebre por um erro bobo onde você "deveria tá mandando um número inteiro em vez de um flutuante".<br>
@@ -9,8 +9,8 @@ Vamos entender os tipos escalares do PHP:
 
 ## Boleanos
 
-Este é o tipo mais simples. Um booleano expressa um valor de verdade. Ele pode ser TRUE ou FALSE e são valores case-insensitives. <br>
-Vamos usar a função de saida **var_dump()** para entender um pouco de como o interpretador o dado boolean no código abaixo:
+Este é o tipo mais simples. Um booleano expressa um valor de verdade. Ele pode ser **TRUE** ou **FALSE** e são valores [*case-insensitives*.](https://pt.wikipedia.org/wiki/Case-sensitive)<br>
+Vamos usar a função de saida **var_dump()** para entender um pouco de como é interpretado o dado **boolean** no código abaixo:
 
 ```php
 <?php
@@ -24,7 +24,7 @@ var_dump(fAlSe);
 
 <p align="center"><i>Arquivo encontrado em: exemplos/tipos0.php</i></p>
 
-Você pode executar o exemplo acima com o comando abaixo:<br>
+Você pode executar o exemplo acima com o seguinte comando:<br>
 
 ```
 danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php tipos0.php
@@ -83,7 +83,7 @@ echo $c . "\n";
 
 <p align="center"><i>Arquivo encontrado em: exemplos/tipos2.php</i></p>
 
-Você pode executar o exemplo acima com o comando abaixo:<br>
+Você pode executar o exemplo acima com o seguinte comando:<br>
 
 ```console
 danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php tipos2.php
@@ -94,16 +94,16 @@ danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php tipos2.php
 
 ## Strings
 
-Uma string é uma série de caracteres, onde um caractere é o mesmo que um byte. 
+Uma string é uma série de caracteres, onde 1 caractere é o mesmo que 1 byte para armazenamento na memória. 
 Isso significa que o PHP possui suporte a um conjunto de apenas 256 caracteres, e, portanto, não possui suporte nativo a Unicode.
-Veja mais detalhes do tipo string.
+Veja mais detalhes do tipo string:
 
 Uma string é um conjunto de caracteres, formando uma frase e/ou palavra ou até mesmo um caractere único.
 
 Uma string pode ser especificada de quatro formas diferentes, porém só iremos usar duas. Sendo elas com:
 
-- Aspas Simples
-- Aspas Duplas
+- Aspas Simples;
+- Aspas Duplas.
 
 Nós já passamos por uma string nos exemplos anteriores de output com **echo** então vai ser mais fácil o entendimento. Segue o exemplo abaixo:
 
@@ -122,8 +122,8 @@ danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php tipos3.php
 He4rtDevs <3Melhor grupo do mundo para devs iniciantes
 ```
 
-Podemos ver que a linha não foi quebrada e isso não irá acontecer se você não usar uma sequencia de escape, na qual já apareceu em um exemplo nessa sessão.
-A sequencia **\n** significa que a partir desse ponto será uma nova linha no nosso console e pode ser colocado em qualquer parte da string. Segue o exemplo abaixo:
+Podemos ver que a linha não foi quebrada e isso não irá acontecer se você não usar uma sequência de escape, na qual já apareceu em um exemplo nesta sessão.
+A sequência **\n** significa que a partir deste ponto será uma nova linha no nosso console e pode ser colocado em qualquer parte da string. Segue o exemplo abaixo:
 
 ```php
 <?php
@@ -155,7 +155,7 @@ Com essa base você já consegue fazer vários exemplos com strings e sempre ten
 
 ## Arrays (Vetores)
 
-Um array no PHP é na verdade um mapa ordenado. Um mapa é um tipo que relaciona valores a chaves. Este tipo é otimizado para várias usos diferentes: ele pode ser tratado como um array, uma lista (vetor), hashtable (que é uma implementação de mapa), dicionário, coleção, pilha, fila e provavelmente mais. Assim como existe a possibilidade dos valores do array serem outros arrays, árvores e arrays multidimensionais.
+Um array no PHP é na verdade um mapa ordenado. Um mapa é um tipo que relaciona valores à chaves. Este tipo é otimizado para vários usos diferentes: ele pode ser tratado como um array, uma lista (vetor), hashtable (que é uma implementação de mapa), dicionário, coleção, pilha, fila e provavelmente mais. Assim como existe a possibilidade dos valores do array serem outros arrays, árvores e arrays multidimensionais.
 
 Um array pode ser criado com o construtor de linguagem **array()** ou por **[]**. Ele leva qualquer quantidade de pares separados por vírgula chave => valor como argumentos.
 
@@ -168,7 +168,7 @@ array(
 )
 ```
 
-Caso vocẽ não queira uma "chave", ele será usado o mapa incremental padrão de vetores, começando pelo 0,1,2,3... Veja os exemplos abaixo:
+Caso você não queira uma "chave", ele utilizará o mapa incremental padrão de vetores, começando pelo 0,1,2,3... Veja os exemplos abaixo:
 
 ```php
 <?php
@@ -211,7 +211,7 @@ array(2) {
 
 Mostramos dois jeitos de declarar arrays e os dois estão **certos**, porém usando **[]** é um jeito mais simples de expressar um array.
 
-Agora vamos para outro exemplo de como ficaria se vocẽ não colocasse chaves nos seus arrays:
+Agora vamos para outro exemplo de como ficaria se você não colocasse chaves nos seus arrays:
 
 ```php
 <?php
@@ -255,9 +255,9 @@ Vamos comparar o resultado abaixo com o nosso último teste acima e anotar algum
 - No primeiro usamos chaves como string
 - No segundo usamos chaves incrementais padrões de um array
 
-Ao colocar um dado dentro de um array sem uma chave, ele automáticamente atribui o primeiro valor incremental, sendo ele iniciado **sempre** do 0.
+Ao colocar um dado dentro de um array sem uma chave, ele automaticamente atribui o primeiro valor incremental, sendo ele iniciado **sempre** do 0.
 
-Agora vamos entender como mostrar a saída de um vetor. Vamos declarar dois vetores e trabalhar em cima deles:
+Agora vamos entender como mostrar a saída de um vetor. Vamos declarar dois vetores e trabalhar com eles:
 
 ```php
 <?php
@@ -291,6 +291,6 @@ danielhe4rt
 he4rtdevs
 ```
 
-Com isso podemos entender que é possível acessar tanto com a posição do nosso vetor quanto a uma chave específica atribuida.
+Com isso podemos entender que é possível acessar tanto com a posição do nosso vetor quanto a uma chave específica atribuída.
 
 Ir para: [3.4 Variáveis](4-Variaveis.md)
