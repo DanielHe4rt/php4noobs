@@ -88,11 +88,13 @@ Nosso obrigado vai pra essas pessoas incríveis ([emoji key](https://allcontribu
     <td align="center"><a href="https://airton.dev"><img src="https://avatars1.githubusercontent.com/u/6540546?v=4" width="100px;" alt=""/><br /><sub><b>Airton Zanon</b></sub></a><br /><a href="https://github.com/DanielHe4rt/php4noobs/pulls?q=is%3Apr+reviewed-by%3Aairtonzanon" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/DanielHe4rt/php4noobs/commits?author=airtonzanon" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Ryandgs"><img src="https://avatars1.githubusercontent.com/u/43894463?v=4" width="100px;" alt=""/><br /><sub><b>Ryan Douglas da Silva</b></sub></a><br /><a href="https://github.com/DanielHe4rt/php4noobs/commits?author=Ryandgs" title="Code">💻</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/ribeirohenrique"><img src="https://avatars0.githubusercontent.com/u/25642342?v=4" width="100px;" alt=""/><br /><sub><b>Henrique Mendes</b></sub></a><br /><a href="https://github.com/DanielHe4rt/php4noobs/commits?author=ribeirohenrique" title="Code">💻</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
-
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 Este projeto segue a especificação [all-contributors](https://github.com/all-contributors/all-contributors).
