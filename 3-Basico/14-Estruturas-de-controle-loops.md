@@ -136,7 +136,7 @@ foreach($names as $name){
 
 // Iteração com a indíce
 foreach($names as $key => $name){
-    echo $key . "." $name . " ";
+    echo $key . "." . $name . " ";
 }
 // Retorno: 0.waasley 1.leozin044 2.rychillie 3.jpbrabo
 ```
