@@ -11,8 +11,7 @@ Agora sim, vamos aos comparadores de valor no PHP.
 
 ## Igualdade `==`
 
-O operador **igual duplo** `==` compara dois valores e retorna `true`, se forem iguais,
-e `false` se os valores forem diferentes.
+O operador **igual duplo** `==` compara dois valores e retorna `true`, se forem iguais, e `false` se os valores forem diferentes.
 
 ### Exemplo
 ```php
@@ -56,8 +55,7 @@ retorna:
 
 ## Idêntico `===` 
 
-O PHP também pode testar se um valor é igual e do mesmo [tipo](3-Tipos-de-dados.md),
-você pode chamar isso de: "testar se é o valor é idêntico".
+O PHP também pode testar se um valor é igual e do mesmo [tipo](3-Tipos-de-dados.md), você pode chamar isso de: "testar se o valor é idêntico".
 
 ### Exemplo
 ```php
@@ -73,8 +71,7 @@ echo (123.0 === 123) . PHP_EOL; //false
 
 ## Não idêntico `!==`
 
-Da pra testar também se o valor não é idêntico, basta usar o operador `!==`, chame isso de: "testar se o valor não é idêntico",
-e de novo o PHP vai verificar o [tipo](3-Tipos-de-dados.md) do valor.
+É possível testar também se o valor não é idêntico, basta usar o operador `!==`, chame isso de: "testar se o valor não é idêntico", e novamente o PHP vai verificar o [tipo](3-Tipos-de-dados.md) do valor.
 
 ### Exemplo
 ```php
@@ -94,7 +91,7 @@ retorna: 1
 ```
 ## Maior/menor que
 
-O PHP suporta quatro operadores maiores/menores que
+O PHP suporta quatro operadores maiores/menores que:
 
 - `<` menor que;
 - `>` maior que;

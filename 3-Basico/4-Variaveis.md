@@ -5,13 +5,13 @@ Pra começar, todos sabemos que para guardar informação as linguagens de progr
 No PHP existe a "tipagem dinâmica", onde você pode criar a variável sem precisar declarar seu tipo(float, string, int) e também você pode alterar o tipo de variável enquanto o programa roda, não importando o tipo anterior.
 Antes de alguns exemplos, vamos determinar algumas regras para nomeação de variáveis.
 
-- Toda variável no PHP é declarada por \$ e em seguida o nome da variável;
-- O jeito correto e válido para declarar o nome de uma variável no PHP é iniciar por sublinhado também chamado de underscore ou letra, após isso, seguido de qualquer número de letras, números ou sublinhados;
-- As variáveis no PHP são case-sensitive, então, $He4rt não é o mesmo que $he4rt;
-- O $this é uma variável que não pode ser atribuida, você irá entender o que significa $this nos próximos módulos do curso;
-- Você pode juntar duas variveis, strings ou qualquer tipo com a concatenação, que é usado o sinal ( . ) entre os elementos (exemplo abaixo).
+- Toda variável no PHP é declarada por **\$** e em seguida o nome da variável;
+- O jeito correto e válido para declarar o nome de uma variável no PHP é iniciar por sublinhado (também chamado de underscore) ou letra, seguido de qualquer letra, números ou sublinhados;
+- As variáveis no PHP são [*case-sensitives*](https://pt.wikipedia.org/wiki/Case-sensitive), então, $He4rt não é o mesmo que $he4rt;
+- O $this é uma variável que não pode ser atribuída, você irá entender o que significa $this nos próximos módulos do curso;
+- Você pode juntar duas variáveis, strings ou qualquer tipo com a concatenação, que é usado o sinal ( . ) entre os elementos (exemplo abaixo).
 
-Lembrando que para atribuirmos um valor a uma variável passamos o sinal de ( = ) e o seu valor.
+Lembrando que para atribuirmos um valor à uma variável passamos o sinal de ( = ) e o seu valor.
 
 ```php
 <?php
@@ -33,11 +33,11 @@ Eu amo a He4rt Developers
 
 ## Observações
 
-- Como vocês podem ver, o PHP por possuir [case-sensitive](https://pt.wikipedia.org/wiki/Case-sensitive), as variáveis $He4rt,$he4rt,$he4rT e $HE4RT não são a mesma coisa;
-- É preciso sempre utilizar ponto e virgula no final de cada declaração ( ; ), se porventura você esquecer, irá dar erro;
-- Lembrando que é sempre bom se antenar as boas práticas, use variáveis que condizem com o código escrito, não utilize nomes como $a, $b, \$c e se torne um programador alfabético.
+- Como vocês podem ver, o PHP por possuir [*case-sensitive*](https://pt.wikipedia.org/wiki/Case-sensitive), as variáveis $He4rt,$he4rt,$he4rT e $HE4RT não são a mesma coisa;
+- É preciso sempre utilizar ponto e vírgula no final de cada declaração ( ; ), se porventura você esquecer, irá dar erro;
+- Lembrando que é sempre bom se antenar as boas práticas, use variáveis que façam sentido com o código escrito, não utilize nomes como $a, $b, \$c e se torne um programador alfabético.
 
-Como eu expliquei antes, variáveis podem mudar o valor no tempo de execução, ou seja, durante a execução do código, vamos para mais um exemplo!
+Como foi explicado antes, variáveis podem mudar o valor no tempo de execução, ou seja, durante a execução do código. Vamos para mais um exemplo:
 
 ```php
 <?php

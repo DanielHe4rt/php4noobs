@@ -30,7 +30,7 @@ danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php operadoresA2.php
 ```
 
 ## Subtração
-Realize a subtração de duas ou mais variáveis.
+Realiza a subtração de duas ou mais variáveis.
 
 ```php
 $a = 100; //a = 100
@@ -50,7 +50,7 @@ danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php operadoresA3.php
 ```
 
 ## Multiplicação
-Multiplicação de duas ou mais variáveis.
+Multiplica duas ou mais variáveis.
 
 ```php
 $a = 500; //a = 500
@@ -70,7 +70,7 @@ danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php operadoresA3.php
 ```
 
 ## Divisão
-Divisão de duas ou mais variáveis.
+Divide duas ou mais variáveis.
 
 ```php
 $a = 100; //a = 100
@@ -109,7 +109,7 @@ _Resultado_
 
 ## Considerações
 
-<p>No PHP também é possivel fazer varias operações matemáticas na mesma linha(como uma expressão), veja exemplos abaixo.</p>
+<p>No PHP também é possível fazer diversas operações matemáticas na mesma linha(como uma expressão), veja exemplos abaixo.</p>
 
 ## Exemplo
 
@@ -165,7 +165,7 @@ echo $num2 . "\n";
 
 ```
 
-* O operador exponencial `**`, retorna o resultado de uma variável elevada a outra, funciona a partir do PHP 5.6.
+* O operador exponencial `**`, retorna o resultado de uma variável elevada a outra, implementada a partir do PHP 5.6.
 ```php
 $a = 10; // a = 5
 $b = 2; // b = 5
@@ -180,10 +180,10 @@ echo $exponencial;
 
 ![Resultado do Oitavo Exemplo](https://i.imgur.com/S8RXKIc.png)
 
-Sendo que os operadores de uma expressão tem a mesma prioridade,a expressão será lida da esquerda para direita e será determinada pelo o que vier primeiro.
+Sendo que os operadores de uma expressão tem a mesma prioridade, a expressão será lida da esquerda para direita e será determinada pelo o que vier primeiro.
 
 Supondo que temos a expressão -> ( a + a1 / b \* c % d ).
 
-Primeiro será efetuada a divisão( / ), depois a multiplicação( \* ), depois o módulo ( % ) e depois o restante.
+Primeiro será efetuada a divisão ( / ), depois a multiplicação ( \* ), depois o módulo ( % ) e depois o restante.
 
 Ir para: [3.6 Operadores BitWise](6-Operadores-bitwise.md)

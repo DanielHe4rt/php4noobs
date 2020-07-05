@@ -9,10 +9,9 @@ Operadores Bitwise permitem a avaliação e modificação de bits específicos e
 - Deslocar à esquerda `<<`
 - Deslocar à direita `>>`
 
-### Explicando melhor
+## Explicando melhor
 
-Os operadores bitwise: `&`, `|`, `^` comparam dois valores inteiros utilizando suas
-representações binárias, e retornam um novo valor.
+Os operadores bitwise: `&` , `|` , `^` comparam dois valores inteiros utilizando suas representações binárias, e retornam um novo valor.
 Cada bit será comparado e a formação desse novo valor depende do operador que você usar.
 
 ## Exemplos
@@ -63,7 +62,7 @@ echo 9 ^ 7;
 ```
 
 ## Operador Não `~`
-`Inverte bits` zeros em bits uns; e bits uns em bits zeros.
+Tem a função de `Inverter bits`. O bit que era 0 se torna 1; e o bit que era 1 se torna 0.
 
 ```php
 <?php

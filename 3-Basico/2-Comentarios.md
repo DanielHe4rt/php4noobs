@@ -9,7 +9,7 @@ Existem duas formas de comentar no PHP, vamos conhecer as duas e entender quando
 
 ### Comentário de linha única
 
-Os comentários de linha única são iniciados com duas barras "**//**" no nosso querido PHP.
+Os comentários de linha única são iniciados com duas barras " **//** " no nosso querido PHP.
 Veja o exemplo abaixo:
 
 ```php
@@ -23,7 +23,7 @@ echo "He4rtDevs <3";
 
 <center><i>Arquivo encontrado em: exemplos/comentarios1.php</i></center>
 
-Você pode executar o exemplo acima com o comando abaixo:<br>
+Você pode executar o exemplo acima com o seguinte comando:<br>
 
 ```bash
 danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php comentarios1.php

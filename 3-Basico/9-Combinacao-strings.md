@@ -1,7 +1,6 @@
 # 3.9 Combinação/concatenação de Strings
 
-Concatenar significa **juntar as coisas**, no PHP existe um operador que faz isso, é o ponto `.` e
-dá pra usar esse operador de forma abreviada também, vamos aprender como ele funciona.
+Concatenar significa **juntar as coisas**, no PHP existe um operador que faz isso, é o ponto `.` e é possível utilizar este operador de forma abreviada também, vamos aprender como ele funciona:
 
 ### Só concatenando `.`
 

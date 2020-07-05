@@ -1,10 +1,10 @@
 # 3.13 Estruturas de Controle
 
-Estruturas de controle remetem a decisões de um trecho de código que deverá ser executado baseado em um teste lógico. Para verificar se a resposta é VERDADEIRA ou FALSA, você precisará usar alguma das estruturas de controle de decisão.
+Estruturas de controle remetem a decisões de um trecho de código que deverá ser executado baseado em um teste lógico. Para verificar se a resposta é **VERDADEIRA** ou **FALSA**, você precisará usar alguma das estruturas de controle de decisão.
 
-Vamos exemplificar com pseudocódigo:
+Vamos exemplificar com [pseudocódigo](https://pt.wikipedia.org/wiki/Pseudoc%C3%B3digo):
 
-Exemplo #1 - Trancando a casa
+## Exemplo #1 - Trancando a casa:
 
 ```
 - Vá até o seu portão.
@@ -17,7 +17,7 @@ Exemplo #1 - Trancando a casa
     - Tranque o portão.
 ```
 
-Exemplo #2 - Trocar a Lâmpada
+## Exemplo #2 - Trocar a Lâmpada:
 
 ```
 - Ligue o interruptor.
@@ -27,11 +27,11 @@ Exemplo #2 - Trocar a Lâmpada
     - Insira a nova lâmpada.
 ```
 
-Dei exemplos de como funcionaria estruturas de condições e agora vamos comentar sobre cada uma delas.
+Foram dados exemplos de como funcionaria estruturas de condições, agora vamos analisar cada uma delas.
 
-## Condição: if / else
+## Condição: if / else:
 
-A estrutura condicional `if` recebe um valor e resolve, colocando a resposta como um valor BOOLEANO. Ou seja: você poderá retornar apenas um valor VERDADEIRO, representado por **if (condição)** ou FALSO, representado por **else** (como os exemplos de SE dados acima).
+A estrutura condicional `if` recebe um valor e resolve, colocando a resposta como um valor **BOOLEANO**. Ou seja: você poderá retornar apenas um valor **VERDADEIRO**, representado por **if (condição)** ou **FALSO**, representado por **else** (como os exemplos de SE dados acima).
 
 Estrutura de código para a condição **IF/ELSE**:
 
@@ -44,9 +44,9 @@ if (condition) {
 }
 ```
 
-A estrutura acima representa exatamente como será feito em código e agora iremos a alguns exemplos:
+A estrutura acima representa exatamente como será feito em código, abaixo alguns exemplos:
 
-Exemplo #1 - Maior de idade
+## Exemplo #1 - Maior de idade:
 
 ```php
 $idade = 17;
@@ -59,7 +59,7 @@ if ($idade >= 18) {
 // Result: "Você é menor de idade"
 ```
 
-Exemplo #2 - Melhor grupo de Devs
+## Exemplo #2 - Melhor grupo de Devs:
 
 ```php
 $grupo = "ZezinhoDevs";
@@ -72,7 +72,7 @@ if ($grupo == "He4rtDevs") {
 // Result: "Isso nem existe velho tá maluco"
 ```
 
-Exemplo #3 - Retratando checagem de autenticação
+## Exemplo #3 - Retratando checagem de autenticação:
 
 ```php
 $estouLogado = true;
@@ -85,7 +85,7 @@ if ($estouLogado) {
 // Result: "Continue acessando sua aplicação"
 ```
 
-Exemplo #4 - Condição com dois parâmetros
+## Exemplo #4 - Condição com dois parâmetros:
 
 ```php
 $usuario = "danielhe4rt";
@@ -99,9 +99,9 @@ if ($usuario == "danielhe4rt" && $senha == "secret123") {
 // Result: "Olá danielhe4rt, seja bem vindo"
 ```
 
-## Condição: if / else if / else
+## Condição: if / else if / else:
 
-Quando vemos algum tipo de condição de if/else, o IDEAL é que seja duas possibilidades. Porém, toda linguagem de programação existe a condicional extra chamada **else if**, na qual adiciona mais uma possibilidade de retorno VERDADEIRA para a condição.
+Quando vemos algum tipo de condição de if/else, o IDEAL é que sejam duas possibilidades de escolha. Porém, toda linguagem de programação existe a condicional extra chamada **else if**, na qual adiciona mais uma possibilidade de retorno VERDADEIRA para a condição.
 
 Na prática, você pode ter N checagens para interpretar uma resposta retornando VERDADEIRO, até chegar na condição FALSA. Entenda o exemplo abaixo:
 
@@ -117,9 +117,9 @@ if (first condition) {
 }
 ```
 
-Você pode adicionar quantos Else if's você quiser no código, mas apenas se lembre de terminar usando else para ter uma interpretação de condição FALSA.
+Você pode adicionar quantos Else if's você quiser no código, mas lembre-se de terminar usando else para ter uma interpretação de condição FALSA.
 
-Agora vamos a alguns exemplos:
+Abaixo alguns exemplos:
 
 ```php
 $userDaniel = "danielhe4rt";
@@ -137,15 +137,15 @@ if ($userDaniel == "danielhe4rt" && $passDaniel == "secret123") {
 }
 ```
 
-## Condição: switch-case
+## Condição: switch-case:
 
 O construtor **switch** parece bastante com a lógica do if/else if, porém há uma estrutura melhor para comportar o que você deseja colocar como valores predefinidos.
 
-A declaração há como base uma condição e N casos de uso dependendo do valor da inserido na condição e é finalizado após a palavra reservada **break** ser acionada, que pode ser interpretado como um fim do block de código..
+A declaração tem como base uma condição e N casos de uso dependendo do valor inserido na condição, e é finalizado após a palavra reservada **break** ser acionada, que pode ser interpretado como o fim de um bloco de código...
 
 Caso não haja nenhuma opção elegível dentro dos casos citados, você pode usar a opção **default** para retornar um valor padrão.
 
-Um bom exemplo de quando usar o switch case é quando você está em um jogo/chat e há comandos onde um bot te responde baseado no que você inseriu no chat.
+Um bom exemplo de quando usar o **switch case** é quando você está em um jogo/chat e há comandos onde um bot te responde baseado no que você inseriu no chat.
 
 Estrutura do switch-case:
 
@@ -166,7 +166,7 @@ switch (cond) {
 }
 ```
 
-Exemplo #1
+## Exemplo #1
 Lista de comandos
 
 ```php
@@ -192,7 +192,7 @@ switch($comando){
 // return Entre no nosso discord: https://discord.com/he4rt Esse é o discord oficial
 ```
 
-Exemplo #2
+## Exemplo #2
 Comando não existente
 
 ```php
@@ -228,7 +228,7 @@ O Sinal de **?** sinaliza para o interpretador que tudo que for escrito anterior
 
 Após o sinal de **?** e entre o sinal de **:** é o que irá retornar se a condição for verdadeira e após o sinal de **:** é o que irá retornar caso a condição for falsa.
 
-Vamos a possíveis exemplos:
+Abaixo alguns exemplos:
 
 ```
 Modelos de ternário
@@ -236,7 +236,7 @@ Modelos de ternário
 condition ? case true : case false;
 ```
 
-Exemplo #1
+## Exemplo #1
 
 ```php
 $nickname = 'danielhe4rt';
@@ -247,7 +247,7 @@ echo $who; //  não é o jorge online
 
 ```
 
-Exemplo #2
+## Exemplo #2
 
 ```php
 $modoTeste = true;

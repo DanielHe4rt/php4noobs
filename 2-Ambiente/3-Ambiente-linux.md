@@ -1,6 +1,6 @@
 ## 2.3 Ambiente Linux
 
-Nosso ambiente de desenvolvimento nas distribuições Linux serão bem simples de se instalar (Linux tem dessas né).
+Nosso ambiente de desenvolvimento nas distribuições Linux será bem simples de se instalar (Linux tem dessas né).
 
 Vamos instalar o PHP com alguns pacotes extras para ajudar no desenvolvimento posteriormente sendo eles:
 
