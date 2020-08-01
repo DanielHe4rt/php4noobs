@@ -228,7 +228,7 @@ Mas afinal, como vamos utilizar no dia a dia, para a sua utilização como callb
 `:
 
 ```php
-// Buscando criando um novo vetor(array) apenas com números, pares entre 1,2,3,4.
+// Buscando e criando um novo vetor(array) apenas com números, pares entre 1,2,3,4.
 $numerosPares = array_filter([1,2,3,4], function($numero)
 {
     return $numero % 2 == 0;
@@ -258,7 +258,7 @@ $exemplo(); // Resultado: He4rtDevs
 
 ```
 ### Callbacks
-Bom com alguns conceitos, explicados, para muito de vocês, pode ter ficado com um nó na cabeça, mas afinal o que é um **CALLBACK** ?
+Bom com alguns conceitos explicados, pode ter ficado com um nó na cabeça, mas afinal o que é um **CALLBACK** ?
 
 Resumidamente, é um nome para uma função, que vai ser passada como paramêtro dentro de outra função, calma... Vamos aos exemplos.
 
