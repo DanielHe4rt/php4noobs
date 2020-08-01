@@ -287,7 +287,7 @@ Bom, explicando de uma maneira, mais declarativa, podemos interpretar, como quan
         if($doce !== null){
             return "Ebaaa $filho, ganhou um $doce."; 
         }else if($castigo !== null){
-            return "Que pena! $filho vai ficar $castigo." 
+            return "Que pena! $filho vai ficar $castigo.";
         }
     });
 
