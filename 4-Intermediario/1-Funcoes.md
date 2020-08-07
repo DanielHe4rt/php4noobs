@@ -282,6 +282,11 @@ function pedirParaLavarLouca($filho, $callback)
     }
 }
 
+function lavouLouca()
+{
+    return true;
+}
+
 $filho = 'Joãozinho';
 pedirParaLavarLouca($filho, function($doce, $castigo) use ($filho)
 {
