@@ -271,26 +271,26 @@ Bom, explicando de uma maneira, mais declarativa, podemos interpretar, como quan
     - "Filho, por favor lave a louça para mim, enquanto vou ao mercado. Se fizer lhe dou um doce. Se não, vou te colocar de castigo."
 
 ```php
-    function pedirParaLavarLouca($filho, $callback){
-        $resultado = lavouLouca();
+function pedirParaLavarLouca($filho, $callback)
+{
+    $resultado = lavouLouca();
 
-        if($resultado === true){
-            echo $callback('pirulito', null);  // Resultado: Ebaaa Joãozinho, ganhou um pirulito.
-        }else{
-            echo $callback(null, '1 Semana sem video game'); // Resultado: Que pena! Joãozinho vai ficar 1 Semana sem video game.
-        }
+    if($resultado === true) {
+        echo $callback('pirulito', null);  // Resultado: Ebaaa Joãozinho, ganhou um pirulito.
+    } else {
+        echo $callback(null, '1 Semana sem video game'); // Resultado: Que pena! Joãozinho vai ficar 1 Semana sem video game.
     }
+}
 
-    $filho = 'Joãozinho';
-    pedirParaLavarLouca($filho, function($doce, $castigo) use ($filho){
-
-        if($doce !== null){
-            return "Ebaaa $filho, ganhou um $doce."; 
-        }else if($castigo !== null){
-            return "Que pena! $filho vai ficar $castigo.";
-        }
-    });
-
+$filho = 'Joãozinho';
+pedirParaLavarLouca($filho, function($doce, $castigo) use ($filho)
+{
+    if($doce !== null) {
+        return "Ebaaa $filho, ganhou um $doce."; 
+    } else if($castigo !== null) {
+        return "Que pena! $filho vai ficar $castigo.";
+    }
+});
 ```
 
 ## Funções de exemplo
