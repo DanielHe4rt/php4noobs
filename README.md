@@ -45,12 +45,24 @@
 14. [Estruturas de Controle - Loops](/3-Basico/14-Estruturas-de-controle-loops.md)
 15. [Namespace](/3-Basico/15-Namespace.md)
 
+
 ### Módulo Intermediário
 
-1. [Funções/Métodos](/4-Intermediario/1-Funcoes.md)
-2. [Funções de manipulação de Strings](4-Intermediario/2-Funcoes-strings.md)
-3. [Funções de manipulação de Arrays](4-Intermediario/3-Funcoes-arrays.md)
-4. [Funções de manipulação de Arquivos](4-Intermediario/4-Funcoes-arquivos.md)
+0. [Introdução (Em construção)]()
+0. [Classes (Em construção)]()
+0. [Tipos de métodos (Em construção)]()
+0. [Getters (Em construção)]()
+0. [Setters (Em construção)]()
+0. [Polimorfismo (Em construção)]()
+0. [Herança (Em construção)]()
+0. [Interfaces (Em construção)]()
+
+### Módulo de funções
+
+1. [Funções/Métodos](/99-Functions/1-Funcoes.md)
+2. [Funções de manipulação de Strings](/99-Functions/2-Funcoes-strings.md)
+3. [Funções de manipulação de Arrays](/99-Functions/3-Funcoes-arrays.md)
+4. [Funções de manipulação de Arquivos](/99-Functions/4-Funcoes-arquivos.md)
 
 ## Como Contribuir
 
