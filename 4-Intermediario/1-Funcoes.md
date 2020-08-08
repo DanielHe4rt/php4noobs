@@ -220,13 +220,15 @@ Hoje eu entendo que código não é escrito apenas para um compilador/interpreta
 
 [Documentação](https://www.php.net/manual/pt_BR/functions.anonymous.php)
 
-No PHP, também podemos criar função sem nome especifico, elas normalmente são utilizadas, como callback de alguma outra ação.
+No PHP, também podemos criar função sem nome especifico, elas normalmente são utilizadas, como [**callback**](###callbacks) de alguma outra ação.
 
 É Importante saber, que as funções anônimas, enxergaram apenas escopo próprio, e não herdam automaticamente o escopo anterior, por este motivo não se deve utilizar `$this` ou `globals` por exemplo, para realizar alguma ação dentro da função.
 
-Para a sua utilização como callback, como citado anteriromente , vamos utilizar de exemplo a sua utilização na função `array_filter()`:
+Mas afinal, como vamos utilizar no dia a dia, para a sua utilização como callback, como citado anteriromente , vamos utilizar de exemplo a sua utilização na função `array_filter()
+`:
 
 ```php
+// Buscando e criando um novo vetor(array) apenas com números, pares entre 1,2,3,4.
 $numerosPares = array_filter([1,2,3,4], function($numero)
 {
     return $numero % 2 == 0;
@@ -254,6 +256,46 @@ $exemplo = function () use ($mensagem)
 };
 $exemplo(); // Resultado: He4rtDevs
 
+```
+### Callbacks
+Bom com alguns conceitos explicados, pode ter ficado com um nó na cabeça, mas afinal o que é um **CALLBACK** ?
+
+Resumidamente, é um nome para uma função, que vai ser passada como paramêtro dentro de outra função, calma... Vamos aos exemplos.
+
+Primeiramente, vamos tentar algo mais simples, por exemplo podemos passar uma função da propria linguagem para execução de uma tarefa:
+```php
+    array_map('trim',['  oi tudo bem ? ', ' Como vai você?', 'Beleza ?  ']); // Resultado: ['oi tudo bem?', 'Como vai você ?', 'Beleza ?']
+```
+
+Bom, explicando de uma maneira, mais declarativa, podemos interpretar, como quando sua mãe fala explicitamente para você:
+    - "Filho, por favor lave a louça para mim, enquanto vou ao mercado. Se fizer lhe dou um doce. Se não, vou te colocar de castigo."
+
+```php
+function pedirParaLavarLouca($filho, $callback)
+{
+    $resultado = lavouLouca();
+
+    if($resultado === true) {
+        echo $callback('pirulito', null);  // Resultado: Ebaaa Joãozinho, ganhou um pirulito.
+    } else {
+        echo $callback(null, '1 Semana sem video game'); // Resultado: Que pena! Joãozinho vai ficar 1 Semana sem video game.
+    }
+}
+
+function lavouLouca()
+{
+    return true;
+}
+
+$filho = 'Joãozinho';
+pedirParaLavarLouca($filho, function($doce, $castigo) use ($filho)
+{
+    if($doce !== null) {
+        return "Ebaaa $filho, ganhou um $doce."; 
+    } else if($castigo !== null) {
+        return "Que pena! $filho vai ficar $castigo.";
+    }
+});
 ```
 
 ## Funções de exemplo
