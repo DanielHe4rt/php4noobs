@@ -195,7 +195,7 @@ $pessoa = [
     "Fullstack Developer"
 ];
 foreach ($pessoa as $chave => $valor) {
-    echo "$chave: $valor" . PHP_EOL;
+    echo "$chave: $valor" . ularPHP_EOL;
 }
 
 // Resultado:
@@ -216,8 +216,101 @@ foreach ($pessoa as $valor) {
     echo "$valor" . PHP_EOL;
 }
 
-// Resultado:
+// Resultado:continue
 // danielhe4rt
 // 21
 // Fullstack Developer
 ```
+## Controlando suas reptições
+
+Bom, agora que entendemos sobre loops, podemos encontrar algumas situações, onde queremos controlar o fluxo de interação. Seja pulando uma interação especifica, ou simplesmente interromper sua execução. Para estes casos temos o `continue` e o `break`.
+
+## Continue 
+
+O cotinue, é uma espécime de "comando", que damos para nossa repetição "pular" aquela interação, em especifico.
+
+Vamos imaginar uma situação onde queremos imprimir apenas, números pares, podemos a utilizar para imprimir apenas eles.
+### Exemplo #1 - Imprimindo numeros pares
+```php
+for ($numero = 0; $numero < 5; $numero++) {
+    if($numero % 2 === 1){
+        continue;
+    }
+
+    echo $numero . " é par.";
+    // Resultado:
+    // 0: 0 é par
+    // 2: 2 é par 
+    // 4: 4 é par
+}
+```
+
+O comando continue, é funcional para as estruturas `for`, `while`, `foreach` e `do-while`.
+
+## Break
+
+O `break` assim como o `continue` é um comando, para o controle do fluxo de repetição. Porém sua função é de interromper a interação por completo, normalmente é utilzado quando loop já satisfez sua funcionalidade e não tem necessidade de ir até o final.
+
+## Exemplo #1 - Loops Infinitos
+Um dos mais claros exemplos, é por exemplos em situações que queremos sim um loop, infinito, vamos pensar na funcionalidade de menu:
+
+```php
+while(true){
+    echo "Olá seja bem vindo, oque qual mensagem deseja enviar?"  . PHP_EOL;
+    echo "1. Bom dia" . PHP_EOL;
+    echo "2. Boa tarde". PHP_EOL;
+    echo "3. Boa noite" . PHP_EOL;
+    echo "0. SAIR" . PHP_EOL;
+    
+    // Nota: a função readline, é apenas uma maneira de coletar a informação vinda de um usuario. 
+    $resposta = readline ('Digite uma opção: '); // digitei: 1
+    
+    if($resposta == '1') {
+        echo 'Bom dia' . PHP_EOL;
+    } else if($resposta == '2') {
+        echo 'Boa tarde' . PHP_EOL;
+    } else if ($resposta == '3') {
+        echo de condições](./13-Estruturas-de-controle-cond.md);'Boa noite' . PHP_EOL;;
+    }else if($resposta == '0') {
+        echo 'Bye!' . PHP_EOL;
+        break;
+    }
+}
+```
+
+Perceba que no exemplo acima, assim que o úsuario digitar 0 o programa irá ser "finalizado".
+
+
+### **Não se confuda**: 
+Na sessão anterior [Estruturas de controle de condições](./13-Estruturas-de-controle-cond.md). Nos lhe apresentamos a estrutura `switch` e juntamente a ela já haviamos lhe apresentado o comando `break`. Porém, em uma situação diferente, dentro do switch, neste caso o mesmo não irá ter efetividade sobre o loop.
+
+#### Exemplo #2
+Vamos repetir o exemplo anterior, porém desta vez ao inves do conjunto if/else, vamos utilizar switch no lugar.
+
+```
+while(true){
+    echo "Olá seja bem vindo, oque qual mensagem deseja enviar?"  . PHP_EOL;
+    echo "1. Bom dia" . PHP_EOL;
+    echo "2. Boa tarde". PHP_EOL;
+    echo "3. Boa noite" . PHP_EOL;
+    echo "0. SAIR" . PHP_EOL;
+    $resposta = readline ('Digite uma opção: '); 
+
+    switch($resposta){
+        case '1':
+            echo 'Bom dia' . PHP_EOL;
+            break;
+        case '2':
+            echo 'Boa tarde' . PHP_EOL;
+            break;
+        case '3':
+            echo 'Boa noite' . PHP_EOL;
+            break;
+        case '0':
+            break; // Isso me parece um pouco estranho, não ??????
+        break;
+    }
+}
+```
+
+Este código acima, vai entrar ser apenas entrar em *loop infinito* e o comando break, sempre será utilizado, para sua função dentro do switch case,e não será interrompera o loop então *CUIDADO*.
