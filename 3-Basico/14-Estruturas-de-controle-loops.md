@@ -195,7 +195,7 @@ $pessoa = [
     "Fullstack Developer"
 ];
 foreach ($pessoa as $chave => $valor) {
-    echo "$chave: $valor" . ularPHP_EOL;
+    echo "$chave: $valor" . PHP_EOL;
 }
 
 // Resultado:
@@ -216,7 +216,7 @@ foreach ($pessoa as $valor) {
     echo "$valor" . PHP_EOL;
 }
 
-// Resultado:continue
+// Resultado:
 // danielhe4rt
 // 21
 // Fullstack Developer
