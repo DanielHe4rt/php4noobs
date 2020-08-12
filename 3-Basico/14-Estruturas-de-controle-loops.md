@@ -270,7 +270,7 @@ while(true){
     } else if($resposta == '2') {
         echo 'Boa tarde' . PHP_EOL;
     } else if ($resposta == '3') {
-        echo de condições](./13-Estruturas-de-controle-cond.md);'Boa noite' . PHP_EOL;;
+        echo 'Boa noite' . PHP_EOL;;
     }else if($resposta == '0') {
         echo 'Bye!' . PHP_EOL;
         break;
