@@ -33,4 +33,10 @@ Para verificar os módulos instalados, basta rodar o comando abaixo:
 $ php -m
 ```
 
+Para identificar os arquivos de configuração do PHP (php.ini), basta rodar o comando abaixo:
+
+```bash
+$ php --ini
+```
+
 Ir para: [2.4 Dicas Gerais](4-Dicas-gerais.md)
