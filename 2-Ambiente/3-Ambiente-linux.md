@@ -12,10 +12,15 @@ sudo apt install php php-mysql php-zip php-curl
 
 Caso sua distribuição não seja baseada no Debian (apt) você deve usar o gerenciador de pacotes apropriado para a sua distribuição (yum, pacman, zypper, ...).
 
-Após finalizar a instalação dos pacotes você pode ir no seu terminal e digitar **php -v** para ter uma visualização do seu php.
+Após finalizar com sucesso a instalação do PHP e dos pacotes, você conferir a versão instalada rodando o comando abaixo:
 
 ```bash
-danielhe4rt@he4rt:~/dev/he4rt/php4noobs$ php -v
+$ php -v
+```
+
+O retorno do comando acima deve exibir algo parecido com:
+
+```bash
 PHP 7.4.11-0ubuntu0.19.10.3 (cli) (built: Feb 12 2020 15:22:33) ( NTS )
 Copyright (c) 1997-2018 The PHP Group
 Zend Engine v3.3.11, Copyright (c) 1998-2018 Zend Technologies
