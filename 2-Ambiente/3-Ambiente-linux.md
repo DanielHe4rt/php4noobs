@@ -2,12 +2,7 @@
 
 Nosso ambiente de desenvolvimento nas distribuições Linux será bem simples de se instalar (Linux tem dessas né).
 
-Vamos instalar o PHP com alguns pacotes extras para ajudar no desenvolvimento posteriormente sendo eles:
-
-- php 7.4^
-- php-mysql
-- php-zip
-- php-curl
+Vamos instalar o PHP com alguns pacotes extras para ajudar no desenvolvimento posteriormente.
 
 Pra instalar tudo de uma vez, basta rodar o comando abaixo:
 
