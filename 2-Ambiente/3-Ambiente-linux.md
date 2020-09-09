@@ -2,7 +2,7 @@
 
 Nosso ambiente de desenvolvimento nas distribuições Linux será bem simples de se instalar (Linux tem dessas né).
 
-Vamos instalar o PHP com alguns pacotes extras para ajudar no desenvolvimento posteriormente.
+Vamos instalar o PHP com alguns módulos para ajudar no desenvolvimento posteriormente.
 
 Pra instalar tudo de uma vez, basta rodar o comando abaixo:
 
@@ -12,7 +12,7 @@ sudo apt install php php-mysql php-zip php-curl
 
 Caso sua distribuição não seja baseada no Debian (apt) você deve usar o gerenciador de pacotes apropriado para a sua distribuição (yum, pacman, zypper, ...).
 
-Após finalizar com sucesso a instalação do PHP e dos pacotes, você conferir a versão instalada rodando o comando abaixo:
+Após finalizar com sucesso a instalação do PHP e dos módulos, você conferir a versão instalada rodando o comando abaixo:
 
 ```bash
 $ php -v
@@ -27,7 +27,7 @@ Zend Engine v3.3.11, Copyright (c) 1998-2018 Zend Technologies
     with Zend OPcache v7.3.11-0ubuntu0.19.10.3, Copyright (c) 1999-2018, by Zend Technologies
 ```
 
-Para verificar os pacotes extras instalados, basta rodar o comando abaixo:
+Para verificar os módulos instalados, basta rodar o comando abaixo:
 
 ```bash
 $ php -m
