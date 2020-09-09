@@ -15,6 +15,8 @@ Pra instalar tudo de uma vez, basta rodar o comando abaixo:
 sudo apt install php php-mysql php-zip php-curl
 ```
 
+Caso sua distribuição não seja baseada no Debian (apt) você deve usar o gerenciador de pacotes apropriado para a sua distribuição (yum, pacman, zypper, ...).
+
 Após finalizar a instalação dos pacotes você pode ir no seu terminal e digitar **php -v** para ter uma visualização do seu php.
 
 ```bash
