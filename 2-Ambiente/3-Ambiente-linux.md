@@ -12,7 +12,7 @@ sudo apt install php php-mysql php-zip php-curl
 
 Caso sua distribuição não seja baseada no Debian (apt) você deve usar o gerenciador de pacotes apropriado para a sua distribuição (yum, pacman, zypper, ...).
 
-Após finalizar com sucesso a instalação do PHP e dos módulos, você conferir a versão instalada rodando o comando abaixo:
+Após finalizar com sucesso a instalação do PHP e dos módulos, você pode conferir a versão instalada rodando o comando abaixo:
 
 ```bash
 $ php -v
