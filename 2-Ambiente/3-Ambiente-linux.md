@@ -2,12 +2,7 @@
 
 Nosso ambiente de desenvolvimento nas distribuições Linux será bem simples de se instalar (Linux tem dessas né).
 
-Vamos instalar o PHP com alguns pacotes extras para ajudar no desenvolvimento posteriormente sendo eles:
-
-- php 7.4^
-- php-mysql
-- php-zip
-- php-curl
+Vamos instalar o PHP com alguns módulos para ajudar no desenvolvimento posteriormente.
 
 Pra instalar tudo de uma vez, basta rodar o comando abaixo:
 
@@ -15,14 +10,33 @@ Pra instalar tudo de uma vez, basta rodar o comando abaixo:
 sudo apt install php php-mysql php-zip php-curl
 ```
 
-Após finalizar a instalação dos pacotes você pode ir no seu terminal e digitar **php -v** para ter uma visualização do seu php.
+Caso sua distribuição não seja baseada no Debian (apt) você deve usar o gerenciador de pacotes apropriado para a sua distribuição (yum, pacman, zypper, ...).
+
+Após finalizar com sucesso a instalação do PHP e dos módulos, você pode conferir a versão instalada rodando o comando abaixo:
 
 ```bash
-danielhe4rt@he4rt:~/dev/he4rt/php4noobs$ php -v
+$ php -v
+```
+
+O retorno do comando acima deve exibir algo parecido com:
+
+```bash
 PHP 7.4.11-0ubuntu0.19.10.3 (cli) (built: Feb 12 2020 15:22:33) ( NTS )
 Copyright (c) 1997-2018 The PHP Group
 Zend Engine v3.3.11, Copyright (c) 1998-2018 Zend Technologies
     with Zend OPcache v7.3.11-0ubuntu0.19.10.3, Copyright (c) 1999-2018, by Zend Technologies
+```
+
+Para verificar os módulos instalados, basta rodar o comando abaixo:
+
+```bash
+$ php -m
+```
+
+Para identificar os arquivos de configuração do PHP (php.ini), basta rodar o comando abaixo:
+
+```bash
+$ php --ini
 ```
 
 Ir para: [2.4 Dicas Gerais](4-Dicas-gerais.md)
