@@ -26,7 +26,7 @@ Array
     [0] => PHPBA
     [1] => PHPSP
     [2] => PHPSE
-    [4] => he4rtdevs
+    [3] => he4rtdevs
 )
 **/
 ```
