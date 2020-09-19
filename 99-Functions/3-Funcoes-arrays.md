@@ -173,7 +173,7 @@ Argumentos/Parâmetros:
 
 - Primeiro array a ser comparado.
 
-[Link para documentação](https://www.php.net/manual/pt_BR/function.array-diff)
+[Link para documentação](https://www.php.net/manual/pt_BR/function.array-sum.php)
 
 ### Exemplos
 
