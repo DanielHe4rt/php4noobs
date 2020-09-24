@@ -1,4 +1,4 @@
-# 4.1 - Funções de manipulação de String
+# 4.2 - Funções de manipulação de String
 
 Nesse tópico, iremos abordar algumas funções importantes para manipulação de string e deixar links úteis para você pesquisar mais sobre caso queira.
 
@@ -246,3 +246,5 @@ Exemplo #1
 $string  = 'Developers';
 strtoupper($string); // retorna DEVELOPERS
 ```
+
+Ir para: [4.3 - Funções de manipulação de Arrays](3-Funcoes-arrays.md)
