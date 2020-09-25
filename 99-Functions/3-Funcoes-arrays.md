@@ -227,3 +227,5 @@ $result = array_replace($names, $nick1, $nick2);
 //    'JuhBotelho',
 // ]
 ```
+
+Ir para: [4.4 - Funções de manipulação de Arquivos](4-Funcoes-arquivos.md)

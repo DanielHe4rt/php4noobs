@@ -337,3 +337,5 @@ function authenticateUser(string $username, string $password)
     return 'Login Successful';
 }
 ```
+
+Ir para: [4.2 - Funções de manipulação de String](2-Funcoes-strings.md)
