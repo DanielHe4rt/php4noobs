@@ -228,4 +228,132 @@ $result = array_replace($names, $nick1, $nick2);
 // ]
 ```
 
+## array_map
+
+A função **`array_map`** compõe o grupo das excelentes funções de transformação no PHP. Espera 1 callback e 1 ou N arrays como argumento. Pode ser utilizado no lugar de um foreach por exemplo e deixa explicito que um novo array será gerado.
+
+Argumentos/Parâmetros:
+- Função que será executada para cada elemento do array (Recebe como parâmetro o elemento que está sendo iterado)
+- Array a ser iterado
+- ...
+
+[Link para documentação](https://www.php.net/manual/pt_BR/function.array-map)
+
+### Exemplos
+
+Exemplo #1
+Função nativa
+
+```php
+$languages = array_map('strtoupper', ['php', 'elixir', 'clojure']);
+
+// Result
+//
+// [
+//  "PHP",
+//  "ELIXIR",
+//  "CLOJURE"
+// ]
+```
+
+Exemplo #2
+Função personalizada
+
+```php
+$languages = array_map(function($language) {
+    return md5(ucfirst($language));
+}, ['php', 'elixir', 'clojure']);
+
+// Result
+// 
+// [
+//  "2ec543bde83a1a3ed7eb0676e664a8bc",
+//  "a12eb062eca9d1e6c69fcf8b603787c3",
+//  "3ce4a9c4043142965234ee0c40cef1d0"
+// ]
+```
+
+Exemplo #3
+Combinação de arrays
+
+```php
+$languages = array_map(function($language1, $language2) {
+    return sprintf('%s - %s', ucfirst($language1), ucfirst($language2));
+}, ['php', 'elixir', 'clojure'], ['haskell', 'c#', 'java']);
+
+// Result
+//
+// [
+//  "Php - Haskell",
+//  "Elixir - C#",
+//  "Clojure - Java"
+// ]
+```
+
+## array_filter
+
+Similar à função anterior o **`array_filter`** cria um novo array mas dessa vez esperando uma condição. É de fato um filtro.
+
+Argumentos/Parâmetros:
+- Array a ser iterado
+- Função que será executada para cada elemento do array (Recebe como parâmetro o elemento que está sendo iterado)
+- ...
+
+[Link para documentação](https://www.php.net/manual/pt_BR/function.array-filter)
+
+### Exemplos
+Exemplo #1 
+Retornar somente valores que forem diferente de dada condição
+
+```php
+$drinks = array_filter(['tequila', 'vodka', 'whisky'], function($drink){
+    return $drink != 'tequila';
+});
+
+// Result
+//
+// [
+//  'vodka',
+//  'whisky'
+// ]
+```
+
+Exemplo #2
+Retornar somente números (utilizando função nativa como callback)
+```php
+$numbers = array_filter(['teste', 123456, '123', 0, 'lisp'], 'is_numeric');
+
+// Result
+// [
+//  123456,
+//  123,
+//  0
+// ]
+
+```
+
+## array_reduce
+
+A função **`array_reduce`** reduz um array de N elementos para 1 único elemento. Muito útil para cálculos ou operações que resultam em um único valor
+
+Argumentos/Parâmetros:
+- Array a ser iterado
+- Função que será executada para cada elemento do array (Recebe uma variável acumuladora e o elemento que está sendo iterado)
+
+[Link para documentação](https://www.php.net/manual/pt_BR/function.array-reduce)
+
+### Exemplos
+Exemplo #1 Soma de todos os itens de um array
+
+```php
+$total = array_reduce([10, 20, 10], function($somatoria, $valor){
+    $somatoria += $valor;
+    return $somatoria;
+});
+
+// Result
+//
+// 40
+```
+
 Ir para: [4.4 - Funções de manipulação de Arquivos](4-Funcoes-arquivos.md)
