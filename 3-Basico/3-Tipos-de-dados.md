@@ -234,6 +234,7 @@ var_dump($array2);
 ```
 
 <p align="center"><i>Arquivo encontrado em: exemplos/tipos6.php</i></p>
+
 ```console
 danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php tipos6.php
 array(2) {
