@@ -77,7 +77,7 @@ echo (123.0 === 123) . PHP_EOL; //false
 ```php
 <?php
 
-echo (0 !== false) . PHP_EOL; //tre
+echo (0 !== false) . PHP_EOL; //true
 echo ('123' !== 123) . PHP_EOL; //true
 echo ('um' !== 1) . PHP_EOL; //true
 echo (123.0 !== 123) . PHP_EOL; //true
