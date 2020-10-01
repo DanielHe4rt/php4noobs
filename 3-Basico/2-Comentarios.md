@@ -49,7 +49,7 @@ Veja o exemplo abaixo:
  * e mostrar o nome do melhor grupo de devs do mundo
  *
  * @author danielhe4rt - hey@danielheart.dev // Opcional
- * @return string // Opcional
+ * @return void // Opcional
  */
 
 echo "He4rtDevs <3";
