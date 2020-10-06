@@ -255,3 +255,25 @@ $modoTeste = true;
 return $modoTeste  ? "MODO DESENVOLVIMENTO ATIVADO" : "MODO DESENVOLVIMENTO DESATIVADO";
 // return MODO DESENVOLVIMENTO ATIVADO
 ```
+
+## Condição: coalescência nula
+
+O operador de coalescência nula (**??**) fornece uma forma conveniente de retornar o valor antes do sinal de **??** caso o valor exista e não seja **NULL** ou retorna o valor após o sinal de **??**.
+
+É especialmente útil quando queremos retornar um valor padrão caso uma chave não exista em um array associativo, pois é um ótimo substituto para o operador ternário ou uma estrutura de if/else nesses casos.
+
+## Exemplo
+
+```php
+$descricaoPorCodigo = array(
+    1 => 'Este usuário já existe.',
+    2 => 'Senha incorreta.',
+    3 => 'Este usuário está bloqueado.',
+);
+
+// Exemplo utilizando operador ternário - Retorna 'Alguma coisa deu errado', pois a chave 5 não existe
+return isset($descricaoPorCodigo[5]) ? $descricaoPorCodigo[5] : 'Alguma coisa deu errado.';
+
+// A lógica acima pode ser simplicada utilizando o operador de coalescência nula
+return $descricaoPorCodigo[5] ?? 'Alguma coisa deu errado.';
+```
