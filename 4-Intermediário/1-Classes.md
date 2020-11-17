@@ -9,10 +9,11 @@ As classes são responsáveis por criarem estruturas e comportamentos para conce
 <?php
 
 class Bola {
-    private cor; //propriedade
-    private tamanho; //propriedade
+    private $cor; //propriedade
+    private $tamanho; //propriedade
 
-    public function quicar() { //método
+    public function quicar() //método
+    { 
         //iniciar ação de quicar
     }
 }
