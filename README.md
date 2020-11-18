@@ -49,7 +49,7 @@
 ### Módulo Intermediário
 
 0. [Introdução (Em construção)]()
-0. [Classes (Em construção)]()
+1. [Classes](/4-Intermediário/1-Classes.md)
 0. [Tipos de métodos (Em construção)]()
 0. [Getters (Em construção)]()
 0. [Setters (Em construção)]()
