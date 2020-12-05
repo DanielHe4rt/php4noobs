@@ -247,4 +247,167 @@ $string  = 'Developers';
 strtoupper($string); // retorna DEVELOPERS
 ```
 
+## strtolower
+
+A função **`strtolower()`** converte todos os caracteres para minúsculo. Esta função é muito utilizada, para tratar a entrada de dados do usuário ou destacar uma mensagem, para apresenta-la de forma mais amigável.
+
+Argumentos/Parâmetros:
+
+- String a ser transformada.
+
+Retornos Esperados:
+
+- **Sucesso**: string
+
+[Link para documentação](https://www.php.net/manual/pt_BR/function.strtolower.php)
+
+### Exemplos
+
+Exemplo #1
+
+```php
+$string  = 'DEVelopers';
+strtolower($string); // retorna developers
+```
+
+## str_contains
+
+A função **`str_contains()`** Verifica se uma string está contida na outra. Muito utilizada para identificar se neste texto X, há palavra Y ?
+Argumentos/Parâmetros:
+
+- (string) Palheiro.
+- (string) Agulha
+
+Retornos Esperados:
+
+- **Contido**: true
+- **Não contido**: false
+
+[Link para documentação](https://www.php.net/manual/pt_BR/function.str-contains.php)
+
+### Exemplos
+
+Exemplo #1
+
+```php
+$palheiro = 'He4rt devs é o melhor grupo';
+$agulha = 'devs';
+$contem  = str_contains($palheiro, $agulha); // retorna true
+
+```
+
+Exemplo #2
+
+```php
+$string  = 'He4rt devs é o melhor grupo';
+$buscandoPor = 'developers';
+$contem = str_contains($stringCompleta, $buscandoPor); // retorna false
+
+```
+
+Exemplo #3
+
+Uma String vazia sempre está continda em qualquer string
+
+```php
+$string  = 'He4rt devs é o melhor grupo';
+$buscandoPor = '';
+$contem = str_contains($stringCompleta, $buscandoPor); // retorna true
+
+```
+
+## str_starts_with
+
+A função **`str_starts_with()`**  Verifica se uma string *COMEÇA* com outra string.
+Argumentos/Parâmetros:
+
+- (string) Palheiro.
+- (string) Agulha
+
+Retornos Esperados:
+
+- **Contido**: true
+- **Não contido**: false
+
+[Link para documentação](https://www.php.net/manual/pt_BR/function.str-starts-with.php)
+
+### Exemplos
+
+Exemplo #1
+
+```php
+$string = 'He4rt devs é o melhor grupo';
+$buscandoPor = 'He4rt';
+$contem  = str_starts_with($string, $buscandoPor); // retorna true
+
+```
+
+Exemplo #2
+
+```php
+$string  = 'He4rt devs é o melhor grupo';
+$buscandoPor = 'devs';
+$contem = str_starts_with($stringCompleta, $buscandoPor); // retorna false
+
+```
+
+Exemplo #3
+
+Uma String vazia sempre está continda em qualquer string
+
+```php
+$string  = 'He4rt devs é o melhor grupo';
+$buscandoPor = '';
+$contem = str_starts_with($stringCompleta, $buscandoPor); // retorna true
+
+```
+
+
+## str_ends_with
+
+A função **`str_ends_with()`**  Verifica se uma string *TERMINA* com outra string.
+Argumentos/Parâmetros:
+
+- (string) Palheiro.
+- (string) Agulha
+
+Retornos Esperados:
+
+- **Contido**: true
+- **Não contido**: false
+
+[Link para documentação](https://www.php.net/manual/pt_BR/function.str-starts-with.php)
+
+### Exemplos
+
+Exemplo #1
+
+```php
+$string = 'He4rt devs é o melhor grupo';
+$buscandoPor = 'grupo';
+$contem  = str_ends_with($string, $buscandoPor); // retorna true
+
+```
+
+Exemplo #2
+
+```php
+$string  = 'He4rt devs é o melhor grupo';
+$buscandoPor = 'devs';
+$contem = str_ends_with($stringCompleta, $buscandoPor); // retorna false
+
+```
+
+Exemplo #3
+
+Uma String vazia sempre está continda em qualquer string
+
+```php
+$string  = 'He4rt devs é o melhor grupo';
+$buscandoPor = '';
+$contem = str_ends_with($stringCompleta, $buscandoPor); // retorna true
+
+```
+
+
 Ir para: [4.3 - Funções de manipulação de Arrays](3-Funcoes-arrays.md)
