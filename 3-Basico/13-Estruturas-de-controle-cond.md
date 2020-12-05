@@ -273,7 +273,7 @@ $result = match (true) {
     default => 'Criança',
 };
 
-echo $result // "Jovem Adulto" 
+echo $result; // "Jovem Adulto"
 ```
 ## Condição: ternário
 
