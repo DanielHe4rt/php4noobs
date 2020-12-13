@@ -254,7 +254,7 @@ Outra vantagem do **match**, é a relização de operações, entre cenário pos
 ### Exemplo 01
 ```php
 $comando = "!he4rt";
-echo match("heart devs") {
+echo match($comando) {
     "!site" => "Link: https://heartdevs.com",
     "!he4rt", "!discord" => "Entre no nosso discord: https://discord.com/he4rt",
     default => "nada acontece feijoada"
@@ -262,6 +262,16 @@ echo match("heart devs") {
 ```
 
 ### Exemplo 02
+Caso, não seja uma opção assertiva, sempre caíra no 'default':
+```php
+echo match("heart devs") {
+    "!site" => "Link: https://heartdevs.com",
+    "!he4rt", "!discord" => "Entre no nosso discord: https://discord.com/he4rt",
+    default => "nada acontece feijoada"
+}; // "Entre no nosso discord: https://discord.com/he4rt"
+```
+
+### Exemplo 03
 Neste exemplo, vamos classificar a idade do usuario. Em vez de escrevermos um switch ou if/else gigansteco, podemos reduzir esta logica a apenas 6 linhas.
 ```php
 
