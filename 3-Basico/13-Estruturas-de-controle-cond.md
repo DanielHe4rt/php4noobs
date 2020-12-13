@@ -268,7 +268,7 @@ echo match("heart devs") {
     "!site" => "Link: https://heartdevs.com",
     "!he4rt", "!discord" => "Entre no nosso discord: https://discord.com/he4rt",
     default => "nada acontece feijoada"
-}; // "Entre no nosso discord: https://discord.com/he4rt"
+}; // "nada acontece feijoada"
 ```
 
 ### Exemplo 03
