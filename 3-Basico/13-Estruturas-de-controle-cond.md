@@ -44,6 +44,9 @@ if (condition) {
 }
 ```
 
+[Link para documentação - IF](https://www.php.net/manual/pt_BR/control-structures.if.php)
+[Link para documentação - ELSE](https://www.php.net/manual/pt_BR/control-structures.else.php)
+
 A estrutura acima representa exatamente como será feito em código, abaixo alguns exemplos:
 
 ## Exemplo #1 - Maior de idade:
@@ -119,8 +122,11 @@ if (first condition) {
 
 Você pode adicionar quantos Else if's você quiser no código, mas lembre-se de terminar usando else para ter uma interpretação de condição FALSA.
 
+[Link para documentação](https://www.php.net/manual/pt_BR/control-structures.elseif.php)
+
 Abaixo alguns exemplos:
 
+### Exemplo 01:
 ```php
 $userDaniel = "danielhe4rt";
 $passDaniel = "secret123";
@@ -132,6 +138,24 @@ if ($userDaniel == "danielhe4rt" && $passDaniel == "secret123") {
     echo "Olá danielhe4rt, seja bem vindo";
 } else if ($userCaio == "caiozin" && $passCaio == "321321") {
     echo "Olá caiozin, seja bem vindo";
+} else {
+    echo "Credenciais incorretas";
+}
+```
+
+### Exemplo 02:
+Você também pode utilizar, elseif (a palavra junta). A lógica é a mesma.
+```php
+$userDanoel = "danoelCoracion";
+$passDanoel = "Pssword";
+
+$userArthur = "arthurabreu00";
+$passArthur = "tutututututsussuussusw";
+
+if ($userDanoel == "danoelCoracion" && $passDanoel == "Pssword") {
+    echo "Olá danoelCoracion, seja bem vindo";
+} elseif ($userArthur == "arthurdeabreu" && $passArthur == "321321") {
+    echo "Olá Arthur, seja bem vindo";
 } else {
     echo "Credenciais incorretas";
 }
@@ -218,6 +242,49 @@ switch($comando){
 // return Nada acontece feijoada
 ```
 
+## Condição: match
+O Match é uma novidade do PHP 8, com ela ganhamos uma nova opção para fazer comparações multiplas, além dos classico if e else e do switch, visto anteriomente.
+
+O **match** apróxima-se bastante do switch, em sua lógica. Onde ele pecorre as opções e retorna a primeira que é compativel com suas condicionais. As diferenças entre eles é sua sintaxe mais elegante e suas operações sempre, são acompanhadas pela comparação com os tipos (===).
+
+Outra vantagem do **match**, é a relização de operações, entre cenário positivos (Exemplo 02), onde podemos fazer novas comparações, para encontrar um resultado esperado.
+
+[Link para documentação](https://www.php.net/manual/en/control-structures.match.php)
+
+### Exemplo 01
+```php
+$comando = "!he4rt";
+echo match($comando) {
+    "!site" => "Link: https://heartdevs.com",
+    "!he4rt", "!discord" => "Entre no nosso discord: https://discord.com/he4rt",
+    default => "nada acontece feijoada"
+}; // "Entre no nosso discord: https://discord.com/he4rt"
+```
+
+### Exemplo 02
+Caso, não seja uma opção assertiva, sempre caíra no 'default':
+```php
+echo match("heart devs") {
+    "!site" => "Link: https://heartdevs.com",
+    "!he4rt", "!discord" => "Entre no nosso discord: https://discord.com/he4rt",
+    default => "nada acontece feijoada"
+}; // "nada acontece feijoada"
+```
+
+### Exemplo 03
+Neste exemplo, vamos classificar a idade do usuario. Em vez de escrevermos um switch ou if/else gigansteco, podemos reduzir esta logica a apenas 6 linhas.
+```php
+
+$idade = 21;
+$result = match (true) {
+    $idade >= 65 => 'Idoso',
+    $idade >= 25 => 'Adulto',
+    $idade >= 18 => 'Jovem adulto',
+    default => 'Criança',
+};
+
+echo $result; // "Jovem Adulto"
+```
 ## Condição: ternário
 
 O operador ternário ajuda na escrita de condições if/else diminuindo para uma única linha. Ou seja, será algo para ser usado quando você tem uma fácil comparação e um retorno SIMPLES.
@@ -261,6 +328,8 @@ return $modoTeste  ? "MODO DESENVOLVIMENTO ATIVADO" : "MODO DESENVOLVIMENTO DESA
 O operador de coalescência nula (**??**) fornece uma forma conveniente de retornar o valor antes do sinal de **??** caso o valor exista e não seja **NULL** ou retorna o valor após o sinal de **??**.
 
 É especialmente útil quando queremos retornar um valor padrão caso uma chave não exista em um array associativo, pois é um ótimo substituto para o operador ternário ou uma estrutura de if/else nesses casos.
+
+[Link para documentação](https://www.php.net/manual/pt_BR/language.operators.comparison.php#language.operators.comparison.coalesce)
 
 ## Exemplo
 
