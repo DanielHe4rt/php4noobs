@@ -2,7 +2,7 @@
 
 ## O que é ?
 
-A OO como se costuma chamar é um dos paradigma de programação surpotado pelo PHP.
+A OO como se costuma chamar é um dos paradigmas de programação surpotado pelo PHP.
 
 ### Aqui estão alguns exemplos de paradigmas:
 
