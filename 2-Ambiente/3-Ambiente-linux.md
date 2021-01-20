@@ -39,4 +39,4 @@ Para identificar os arquivos de configuração do PHP (php.ini), basta rodar o c
 $ php --ini
 ```
 
-Ir para: [2.4 Dicas Gerais](4-Dicas-gerais.md)
+Ir para: [2.4 Ambiente MacOS](4-Ambiente-macos.md)
