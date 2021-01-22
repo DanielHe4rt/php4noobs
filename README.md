@@ -24,7 +24,8 @@
 1. [Editores de textos e plugins](/2-Ambiente/1-Editores-e-plugins.md)
 2. [Ambiente Windows](/2-Ambiente/2-Ambiente-windows.md)
 3. [Ambiente Linux](/2-Ambiente/3-Ambiente-linux.md)
-4. [Dicas Gerais](/2-Ambiente/4-Dicas-gerais.md)
+4. [Ambiente MacOS](/2-Ambiente/4-Ambiente-macos.md)
+5. [Dicas Gerais](/2-Ambiente/5-Dicas-gerais.md)
 
 ### Módulo Básico
 
@@ -45,17 +46,16 @@
 14. [Estruturas de Controle - Loops](/3-Basico/14-Estruturas-de-controle-loops.md)
 15. [Namespace](/3-Basico/15-Namespace.md)
 
-
 ### Módulo Intermediário
 
 0. [Introdução (Em construção)]()
 1. [Classes](/4-Intermediário/1-Classes.md)
-0. [Tipos de métodos (Em construção)]()
-0. [Getters (Em construção)]()
-0. [Setters (Em construção)]()
-0. [Polimorfismo (Em construção)]()
-0. [Herança (Em construção)]()
-0. [Interfaces (Em construção)]()
+2. [Tipos de métodos (Em construção)]()
+3. [Getters (Em construção)]()
+4. [Setters (Em construção)]()
+5. [Polimorfismo (Em construção)]()
+6. [Herança (Em construção)]()
+7. [Interfaces (Em construção)]()
 
 ### Módulo de funções
 
@@ -107,6 +107,7 @@ Nosso obrigado vai pra essas pessoas incríveis ([emoji key](https://allcontribu
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 Este projeto segue a especificação [all-contributors](https://github.com/all-contributors/all-contributors).
