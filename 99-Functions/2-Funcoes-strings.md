@@ -459,5 +459,25 @@ echo $string;
 // Meu pe esta quente
 ```
 
+## ucfirst
+
+A função **`ucfirst()`** altera a primeira letra da string para maiúscula.
+
+Argumentos/Parâmetros:
+
+- String a ser transformada.
+
+
+[Link para documentação](https://www.php.net/manual/pt_BR/function.ucfirst)
+
+### Exemplos
+
+Exemplo #1
+
+```php
+$string  = 'daniel';
+ucfirst($string); // retorna Daniel
+```
+
 
 Ir para: [4.3 - Funções de manipulação de Arrays](3-Funcoes-arrays.md)
