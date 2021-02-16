@@ -356,4 +356,23 @@ $total = array_reduce([10, 20, 10], function($somatoria, $valor){
 // 40
 ```
 
+## explode
+
+A função **`explode()`** retorna um array de strings à partir de uma string, separando essa string a partir de uma condição
+
+[Link para documentação](https://www.php.net/manual/pt_BR/function.explode)
+
+### Exemplos
+
+Exemplo #1
+RandomExample
+
+```php
+$string = "Eu gostaria de separar essa string em espaços";
+$arraySeparado = explode(' ', $string);
+
+print_r($arraySeparado); // Array ( [0] => Eu [1] => gostaria [2] => de [3] => separar [4] => essa [5] => string [6] => em [7] => espaços )
+```
+
+
 Ir para: [4.4 - Funções de manipulação de Arquivos](4-Funcoes-arquivos.md)
