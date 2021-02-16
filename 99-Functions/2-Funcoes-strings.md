@@ -409,5 +409,55 @@ $contem = str_ends_with($stringCompleta, $buscandoPor); // retorna true
 
 ```
 
+## preg_replace
+
+A função **`preg_replace()`** substitui caracteres de uma string e te retorna uma nova string baseado em um Ragex.
+
+Argumentos/Parâmetros:
+
+- String ou array de parâmetros a serem substituídos;
+- Regex que irá repor os caracteres substituídos;
+- String a ser substituida.
+
+[Link para documentação](https://www.php.net/manual/pt_BR/function.preg-replace.php)
+
+### Exemplos
+
+Exemplo #1
+Remove Some Word
+
+```php
+$string = 'Meu pé está quente';
+
+echo preg_replace('/pé/', '', $string);
+// Resultado:
+// Meu está quente
+```
+
+Exemplo #2 
+Remove HTML Tags
+
+```php
+$string = '<html><div><span>Hello World</span></div></html>';
+
+echo reg_replace('/<[^<>]+>/', '', $string);
+
+// Resultado:
+// Hello World
+```
+
+Exemplo #3
+Remove Special Characters
+
+```php
+$string = 'Meu pé está quente';
+
+preg_replace(array("/(á|à|ã|â|ä)/","/(Á|À|Ã|Â|Ä)/","/(é|è|ê|ë)/","/(É|È|Ê|Ë)/","/(í|ì|î|ï)/","/(Í|Ì|Î|Ï)/","/(ó|ò|õ|ô|ö)/","/(Ó|Ò|Õ|Ô|Ö)/","/(ú|ù|û|ü)/","/(Ú|Ù|Û|Ü)/","/(ñ)/","/(Ñ)/"),explode(" ","a A e E i I o O u U n N"), $string);
+
+echo $string;
+// Resultado:
+// Meu pe esta quente
+```
+
 
 Ir para: [4.3 - Funções de manipulação de Arrays](3-Funcoes-arrays.md)
