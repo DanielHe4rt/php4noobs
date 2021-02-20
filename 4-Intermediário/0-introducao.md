@@ -58,6 +58,18 @@ Diferente do procedural onde se chama funções para manipulação de dados já 
   - Exemplo:
     - Objeto carro pode apontar hora para o objeto ferrari, hora outra para o objeto Uno.
 
+## Classe vs Objeto:
+
+- class: Estrutura que definirá seus objetos personalizados
+
+  - Anatomia: `php <?php class Nome { //corpo }`
+  - Membros: - Atributos - Dados - Comportamentos - Métodos(funções) > Para acessar um membro use '->' ou '::'(Falaremos disso mais a frente);
+    > Basicamente a classe define um tipo ou uma estrutura de dados, tipo este de acordo com suas necessidades.
+        Uma classe representa no código uma abstração da realidade. É trazer conceitos da vida real para dentro do seu software
+
+- Objeto: Toda instância de uma classe é um objeto mas nem todo objeto é uma instância.
+  - Quando um dado é gerado a partir de uma classe, este dado é chamado de objeto
+
 ### Conslusão:
 
 **Sim no começo, ao se deparar a primeira vez com OO é um pouco confuso, mas nada como a prática e a mão na massa para deixar tudo mais claro. Os próximos tópicos irão te levar a isso.
