@@ -1,6 +1,5 @@
 # 4.1 - Classes
 
-
 ## O que é ?
 
 As classes são responsáveis por criarem estruturas e comportamentos para conceitos das aplicações e do mundo real, elas são compostas basicamente por propriedades e métodos. As propriedades funcionam como característias de um objeto (representa uma analogia aos objetos do mundo real) e os métodos representam suas funcionalidades. Podemos ter como exemplo uma bola, onde definimos sua cor, seu tamanho como características e seu comportamento poderia ser quicar, veja este exemplo:
@@ -9,11 +8,11 @@ As classes são responsáveis por criarem estruturas e comportamentos para conce
 <?php
 
 class Bola {
-    private $cor; //propriedade
-    private $tamanho; //propriedade
+    public $cor; //propriedade
+    public $tamanho; //propriedade
 
     public function quicar() //método
-    { 
+    {
         //iniciar ação de quicar
     }
 }
@@ -27,9 +26,18 @@ As classes devem ser instânciadas para serem usadas, uma instância deve ser cr
 $bola = new Bola();
 ```
 
-e seus métodos chamados através da sintaxe:
+> ### Nota:
+
+> - Podemos observar neste caso que $bola é um objeto instância da classe Bola();
+
+Seus métodos e atributos podem ser chamados e acessados através do operador '->'.
+Sintaxe:
 
 ```php
+//Atributo:
+echo $bola->cor;
+echo $bola->tamanho;
+
+//Métodos:
 $bola->quicar();
 ```
-
