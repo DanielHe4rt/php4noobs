@@ -13,13 +13,13 @@ A OO como se costuma chamar, é um dos paradigmas de programação surpotado pel
 - Concorrente;
 - Reativo.
 
-### Certo, mas o que são paradigmas de programação ?
+## Certo, mas o que são paradigmas de programação ?
 
 Bom, na programação paradigmas são formas de se fazer algo, um padrão, uma conduta.
 No PHP se costuma escrever códigos usando os paradigmas Procedural e/ou Orientado a Objetos.
 Mesmo que na teoria a OO foi o sucessor do paradigma procedural, na prática é comum misturar os dois.
 
-#### Um pouco sobre estes paradigmas:
+### Um pouco sobre estes paradigmas:
 
 - O Procedural consiste em:
   - Chamada de procedimenmtos para manipulação de dados, interpretação sequencial etc.
@@ -27,7 +27,7 @@ Mesmo que na teoria a OO foi o sucessor do paradigma procedural, na prática é 
   - Estrutura de dados com atributos e métodos.
     Na OO é necessário pensar diferente, fazendo abstrações da realidade para o código(Neste caso transformando coisas e objetos do mundo real em Classes no PHP).
 
-### Orientação a Objetos de forma bem resumida:
+# Orientação a Objetos de forma bem resumida:
 
 Em OO a estrutura do dado possui métodos(funções) dentro deles, ou seja o dado é quem tem seus respectivos métodos e atributos.
 Diferente do procedural onde se chama funções para manipulação de dados já existentes;
