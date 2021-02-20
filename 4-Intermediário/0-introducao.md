@@ -62,7 +62,7 @@ Diferente do procedural onde se chama funções para manipulação de dados já 
 
 - class: Estrutura que definirá seus objetos personalizados
 
-  - Anatomia: `php <?php class Nome { //corpo }`
+  - Anatomia: `<?php class Nome { //corpo }`
   - Membros: - Atributos - Dados - Comportamentos - Métodos(funções) > Para acessar um membro use '->' ou '::'(Falaremos disso mais a frente);
     > Basicamente a classe define um tipo ou uma estrutura de dados, tipo este de acordo com suas necessidades.
         Uma classe representa no código uma abstração da realidade. É trazer conceitos da vida real para dentro do seu software
