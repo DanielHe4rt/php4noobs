@@ -43,7 +43,7 @@ Diferente do procedural onde se chama funções para manipulação de dados já 
 
 - Encapsulamento:
 
-  - Ter detalhes de implementação escondidos e mostrar somente quando necessário a partir dos "métodos mágicos"(Conteúdo para os próximos capítulos).
+  - Ter detalhes de implementação escondidos e mostrar somente quando necessário a partir dos "métodos mágicos" (conteúdo para os próximos capítulos).
   - Determinar o que será enxergado e o que não será.
     O encapsulamento portanto é uma forma de dar visibilidade(public, private, protected) para esses atributos e métodos de acordo com as nossas necessidades.
 
