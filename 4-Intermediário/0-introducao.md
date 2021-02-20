@@ -70,7 +70,7 @@ Diferente do procedural onde se chama funções para manipulação de dados já 
 - Objeto: Toda instância de uma classe é um objeto mas nem todo objeto é uma instância.
   - Quando um dado é gerado a partir de uma classe, este dado é chamado de objeto
 
-### Conslusão:
+### Conclusão:
 
 **Sim no começo, ao se deparar a primeira vez com OO é um pouco confuso, mas nada como a prática e a mão na massa para deixar tudo mais claro. Os próximos tópicos irão te levar a isso.
 Bons estudos !!**
