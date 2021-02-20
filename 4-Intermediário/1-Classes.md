@@ -26,9 +26,9 @@ As classes devem ser instânciadas para serem usadas, uma instância deve ser cr
 $bola = new Bola();
 ```
 
-### Nota:
+> ### Nota:
 
-- Podemos observar neste caso que $bola é um objeto instância da classe Bola();
+> - Podemos observar neste caso que $bola é um objeto instância da classe Bola();
 
 Seus métodos e atributos podem ser chamados e acessados através do operador '->'.
 Sintaxe:
