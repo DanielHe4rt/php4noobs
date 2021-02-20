@@ -24,7 +24,7 @@ Mesmo que na teoria a OO foi o sucessor do paradigma procedural, na prática é 
 - O Procedural consiste em:
   - Chamada de procedimenmtos para manipulação de dados, interpretação sequencial etc.
 - Orientação a Objetos:
-  - Estrutura de dados com atributos e métodos([Dê uma olhada aqui](/1-Classes.md)).
+  - Estrutura de dados com atributos e métodos.
     Na OO é necessário pensar diferente, fazendo abstrações da realidade para o código(Neste caso transformando coisas e objetos do mundo real em Classes no PHP).
 
 #### Orientação a Objetos de forma bem resumida:
