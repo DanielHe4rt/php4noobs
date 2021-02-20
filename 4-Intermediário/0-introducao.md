@@ -19,7 +19,7 @@ Bom, na programação paradigmas são formas de se fazer algo, um padrão, uma c
 No PHP se costuma escrever códigos usando os paradigmas Procedural e/ou Orientado a Objetos.
 Mesmo que na teoria a OO foi o sucessor do paradigma procedural, na prática é comum misturar os dois.
 
-#### Um pouco sobre estes paradigmas:
+### Um pouco sobre estes paradigmas:
 
 - O Procedural consiste em:
   - Chamada de procedimenmtos para manipulação de dados, interpretação sequencial etc.
