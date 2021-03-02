@@ -50,7 +50,7 @@
 
 0. [Introdução](/4-Intermediário/0-introducao.md)
 1. [Classes](/4-Intermediário/1-Classes.md)
-2. [Tipos de métodos (Em construção)]()
+2. [Modificadores de Acesso](/4-Intermediário/2-Modificadores-de-acesso.md)
 3. [Getters (Em construção)]()
 4. [Setters (Em construção)]()
 5. [Polimorfismo (Em construção)]()
