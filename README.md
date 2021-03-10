@@ -50,7 +50,7 @@
 
 0. [Introdução](/4-Intermediário/0-introducao.md)
 1. [Classes](/4-Intermediário/1-Classes.md)
-3. [Construtores e Destrutores](/4-Intermediário/3-Construtores-e-destrutores.md)
+2. [Construtores e Destrutores](/4-Intermediário/2-Construtores-e-destrutores.md)
 3. [Modificadores de Acesso](/4-Intermediário/3-Modificadores-de-acesso.md)
 4. [Getters (Em construção)]()
 5. [Setters (Em construção)]()
