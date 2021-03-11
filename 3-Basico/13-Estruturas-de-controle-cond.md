@@ -346,3 +346,4 @@ return isset($descricaoPorCodigo[5]) ? $descricaoPorCodigo[5] : 'Alguma coisa de
 // A lógica acima pode ser simplicada utilizando o operador de coalescência nula
 return $descricaoPorCodigo[5] ?? 'Alguma coisa deu errado.';
 ```
+Ir para: [3.14 Estruturas de Controle: Loops](14-Estruturas-de-controle-loops.md)
