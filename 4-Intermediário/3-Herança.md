@@ -43,6 +43,6 @@ Como você pode ver, apesar do Filho herdar as propiedades do Pai, é possível 
 
 ### Nota
 > - No PHP não é possível herdar mais de uma classe, para isso são usadas as interfaces.
-> - Você poderá aprender mais sobre a palavra chave `public` no capitulo sobre [modificadores de acesso](/4-Modificadores-de-acesso.md).
+> - Você poderá aprender mais sobre a palavra chave `public` no capitulo sobre [modificadores de acesso](4-Modificadores-de-acesso.md).
 
 
