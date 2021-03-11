@@ -346,6 +346,10 @@ return isset($descricaoPorCodigo[5]) ? $descricaoPorCodigo[5] : 'Alguma coisa de
 // A lógica acima pode ser simplicada utilizando o operador de coalescência nula
 return $descricaoPorCodigo[5] ?? 'Alguma coisa deu errado.';
 ```
+
 #### Notas
  
 - `isset` verifica a existência de uma variável ou uma chave e retorna um valor boleano. Se a variável/chave existir e **não possuir** o valor igual a `NULL` o resultado retornado será `TRUE`, caso for `NULL` ou não existir, o resultado retornará `FALSE`.
+
+Ir para: [3.14 Estruturas de Controle: Loops](14-Estruturas-de-controle-loops.md)
+

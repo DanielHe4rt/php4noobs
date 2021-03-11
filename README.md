@@ -50,12 +50,13 @@
 
 0. [Introdução](/4-Intermediário/0-introducao.md)
 1. [Classes](/4-Intermediário/1-Classes.md)
-2. [Modificadores de Acesso](/4-Intermediário/2-Modificadores-de-acesso.md)
-3. [Getters (Em construção)]()
-4. [Setters (Em construção)]()
-5. [Polimorfismo (Em construção)]()
-6. [Herança (Em construção)]()
-7. [Interfaces (Em construção)]()
+2. [Construtores e Destrutores](/4-Intermediário/2-Construtores-e-destrutores.md)
+3. [Modificadores de Acesso](/4-Intermediário/3-Modificadores-de-acesso.md)
+4. [Getters (Em construção)]()
+5. [Setters (Em construção)]()
+6. [Polimorfismo (Em construção)]()
+7. [Herança (Em construção)]()
+8. [Interfaces (Em construção)]()
 
 ### Módulo de funções
 
