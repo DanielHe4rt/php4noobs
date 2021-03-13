@@ -1,4 +1,4 @@
-# 3.13 Estruturas de Controle: Loops
+# 3.14 Estruturas de Controle: Loops
 
 As estruturas de controle relacionadas a Loops tendem a ter regras para continuar executando instruções do código até que essa regra seja quebrada.
 
@@ -6,7 +6,7 @@ Em outras palavras, você tem uma condição que é interpretada como um valor l
 
 ## Repetição: **for**
 
-O laço for funciona baseado em três argumentos dentro de parênteses, separados por vírgulas como uma condição para ser executado até que essa condição acabe.
+O laço `for` funciona baseado em três argumentos dentro de parênteses, separados por vírgulas como uma condição para ser executado até que essa condição acabe.
 
 Quando vemos uma condição que leva três argumentos no inicio, parece um pouco estranho. Mas vamos entender primeiro como funciona e como se aplica.
 
@@ -249,14 +249,14 @@ O comando continue, é funcional para as estruturas `for`, `while`, `foreach` e 
 
 ## Break
 
-O `break` assim como o `continue` é um comando, para o controle do fluxo de repetição. Porém sua função é de interromper a interação por completo, normalmente é utilzado quando loop já satisfez sua funcionalidade e não tem necessidade de ir até o final.
+O `break` assim como o `continue`, é um comando para o controle do fluxo de repetição. Porém sua função é de interromper a interação por completo, normalmente é utilizado quando o loop já satisfez sua funcionalidade e não tem necessidade de ir até o final.
 
 ## Exemplo #1 - Loops Infinitos
-Um dos mais claros exemplos, é por exemplos em situações que queremos sim um loop, infinito, vamos pensar na funcionalidade de menu:
+Um dos exemplos mais claros é em situações que queremos sim um loop, infinito. Vamos pensar na funcionalidade de menu:
 
 ```php
 while(true){
-    echo "Olá seja bem vindo, oque qual mensagem deseja enviar?"  . PHP_EOL;
+    echo "Olá seja bem vindo, qual mensagem deseja enviar?"  . PHP_EOL;
     echo "1. Bom dia" . PHP_EOL;
     echo "2. Boa tarde". PHP_EOL;
     echo "3. Boa noite" . PHP_EOL;
@@ -282,14 +282,14 @@ Perceba que no exemplo acima, assim que o úsuario digitar 0 o programa irá ser
 
 
 ### **Não se confuda**: 
-Na sessão anterior [Estruturas de controle de condições](./13-Estruturas-de-controle-cond.md). Nos lhe apresentamos a estrutura `switch` e juntamente a ela já haviamos lhe apresentado o comando `break`. Porém, em uma situação diferente, dentro do switch, neste caso o mesmo não irá ter efetividade sobre o loop.
+Na sessão anterior [Estruturas de controle de condições](./13-Estruturas-de-controle-cond.md). Nós lhe apresentamos a estrutura `switch` e juntamente a ela já haviamos lhe apresentado o comando `break`. Porém, em uma situação diferente, dentro do switch, neste caso o mesmo não irá ter efetividade sobre o loop.
 
 #### Exemplo #2
 Vamos repetir o exemplo anterior, porém desta vez ao inves do conjunto if/else, vamos utilizar switch no lugar.
 
 ```
 while(true){
-    echo "Olá seja bem vindo, oque qual mensagem deseja enviar?"  . PHP_EOL;
+    echo "Olá seja bem vindo, qual mensagem deseja enviar?"  . PHP_EOL;
     echo "1. Bom dia" . PHP_EOL;
     echo "2. Boa tarde". PHP_EOL;
     echo "3. Boa noite" . PHP_EOL;
@@ -313,4 +313,6 @@ while(true){
 }
 ```
 
-Este código acima, vai entrar ser apenas entrar em *loop infinito* e o comando break, sempre será utilizado, para sua função dentro do switch case,e não será interrompera o loop então *CUIDADO*.
+O código acima entrará em *loop infinito*, o comando `break` sempre será utilizado para sua função dentro do switch case, mas **não interromperá** o loop, então *CUIDADO*.
+
+Ir para: [3.15 Namespace](15-Namespace.md)
