@@ -51,11 +51,11 @@
 0. [Introdução](/4-Intermediário/0-introducao.md)
 1. [Classes](/4-Intermediário/1-Classes.md)
 2. [Construtores e Destrutores](/4-Intermediário/2-Construtores-e-destrutores.md)
-3. [Modificadores de Acesso](/4-Intermediário/3-Modificadores-de-acesso.md)
-4. [Getters (Em construção)]()
-5. [Setters (Em construção)]()
-6. [Polimorfismo (Em construção)]()
-7. [Herança (Em construção)]()
+3. [Herança](/4-Intermediário/3-Herança.md)
+4. [Modificadores de Acesso](/4-Intermediário/3-Modificadores-de-acesso.md)
+5. [Getters (Em construção)]()
+6. [Setters (Em construção)]()
+7. [Polimorfismo (Em construção)]()
 8. [Interfaces (Em construção)]()
 
 ### Módulo de funções
