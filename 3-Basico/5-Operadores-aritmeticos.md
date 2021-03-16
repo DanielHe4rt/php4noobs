@@ -65,8 +65,8 @@ echo $multiplicacao . "\n";
 <p align="center"><i>Arquivo encontrado em: exemplos/operadoresA4.php</i></p>
 
 ```console
-danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php operadoresA3.php
-50
+danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php operadoresA4.php
+25000
 ```
 
 ## Divisão
