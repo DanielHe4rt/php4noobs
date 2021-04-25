@@ -52,7 +52,7 @@
 1. [Classes](/4-Intermediário/1-Classes.md)
 2. [Construtores e Destrutores](/4-Intermediário/2-Construtores-e-destrutores.md)
 3. [Herança](/4-Intermediário/3-Herança.md)
-4. [Modificadores de Acesso](/4-Intermediário/3-Modificadores-de-acesso.md)
+4. [Modificadores de Acesso](/4-Intermediário/4-Modificadores-de-acesso.md)
 5. [Getters (Em construção)]()
 6. [Setters (Em construção)]()
 7. [Polimorfismo (Em construção)]()
