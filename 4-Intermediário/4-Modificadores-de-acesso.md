@@ -1,19 +1,23 @@
 # 4.4 - Modificadores de Acesso
 
-## O que são ?
+## O que são?
 
 Os modificadores de acesso são palavras-chave reservadas para definir quais metódos e/ou
-propiedades podem ser acessadas a partir um ponto especifíco do seu código. Existem 3 níveis de visibilidade: 
+propriedades podem ser acessadas à partir de um ponto especifíco do seu código. 
+
+## Quais são?
+
+No PHP, existem 3 níveis de visibilidade: 
 **public**, **protected** e **private**.
 
 
-### Public
+### public
 
-O nível de visibilidade publica é o padrão de todas as propiedades de uma classe, fazendo-as serem
-acessíveis de qualquer lugar do código.
+O nível de visibilidade public é o padrão de todas as propriedades de uma classe, fazendo-as serem
+acessíveis dentro do escopo da própria classe e por quaisquer classes externas, não somente as que herdam a classe pai.
 
 Por exemplo, temos uma classe Pessoa, com uma propriedade nome e um metódo apresentar,
-ambas as propiedades podem ser utilizadas fora da classe.
+ambas as propriedades podem ser utilizadas fora da classe.
 ```php
 <?php
 
@@ -22,7 +26,7 @@ class Pessoa {
     
     public function apresentar()
     {
-        echo "Meu nome é $this->nome";
+        echo "Meu nome é {$this->nome}";
     }
 }
 
@@ -31,9 +35,9 @@ echo $pessoa->nome . PHP_EOL; //Output: João
 $pessoa->apresentar() . PHP_EOL; //Output: Meu nome é João
 ```
 
-### Protected
+### protected
 
-Já o nível protegido faz com que as propiedades só sejam acessíveis dentro do escopo de classes que herdam a classe pai.
+Já o nível de visibilidade protected faz com que as propriedades sejam acessíveis somente dentro do escopo da própria classe e de classes que herdam a classe pai.
 
 
 ```php
@@ -51,7 +55,7 @@ class Filho extends Pai {
 
     public function apresentar()
     {
-        echo "Meu nome é $this->nome e o do meu pai é" . $this->nomePai;
+        echo "Meu nome é {$this->nome} e o do meu pai é" . $this->nomePai;
     }
 }
 
@@ -64,11 +68,11 @@ $flho->nomePai . PHP_EOL; //Erro fatal
 $filho->apresentar(); //Output: Meu nome é Pedro e o do meu pai é João
 ```
 
-### Private
+### private
 
-As propiedades com nível de acesso privado só estão disponíveis dentro da própia classe que a criou, não é possível acessar elas a partir de classes que a herdam.
+As propriedades com nível de acesso privado só estão disponíveis dentro do escopo da própria classe que a criou, não sendo possível acessar elas à partir de classes que herdam a classe pai.
 
-Voltando ao exemplo anterior, podemos criar um metodo e um atributo adcional para demostrar o nível privado.
+Voltando ao exemplo anterior, podemos criar um método e um atributo adicional para demonstrar o nível de visibilidade private.
 ```php
 
 <?php
@@ -81,7 +85,7 @@ class Pai {
 
     public function apresentar()
     {
-        echo "Meu nome é $this->nomePai e meu CPF é: $this->cpf";
+        echo "Meu nome é {$this->nomePai} e meu CPF é: {$this->cpf}";
     }
 
     private function mostrarCpf()
@@ -97,7 +101,7 @@ class Filho extends Pai {
 
     public function mostrarCpfPai()
     {
-        echo "O CPF do meu Pai é: " . $this->cpf; //Propiedade inexistente
+        echo "O CPF do meu Pai é: " . $this->cpf; //Propriedade inexistente
     }
 }
 
