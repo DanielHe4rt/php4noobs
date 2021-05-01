@@ -5,10 +5,15 @@ Nosso ambiente de desenvolvimento nas distribuições Linux será bem simples de
 Vamos instalar o PHP com alguns módulos para ajudar no desenvolvimento posteriormente.
 
 Pra instalar tudo de uma vez, basta rodar o comando abaixo:
-
+- Debian, Ubuntu e distribuições derivadas(apt):
 ```bash
 sudo apt install php php-mysql php-zip php-curl
 ```
+- Arch Linux, Manjaro e distribuições derivadas(pacman):
+```bash
+sudo pacman -S php
+```
+após a instalação no arquivo `/etc/php/php.ini` mude a linha `;extension=mysqli` para `extension=mysqli`.
 
 Caso sua distribuição não seja baseada no Debian (apt) você deve usar o gerenciador de pacotes apropriado para a sua distribuição (yum, pacman, zypper, ...).
 
