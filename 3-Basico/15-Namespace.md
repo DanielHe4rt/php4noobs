@@ -81,4 +81,4 @@ use Zend\Twitter as Twit;
 - Vimos algumas coisas aqui que estão relacionadas a orientação a objetos, não se preocupe com isso agora, teremos uma sessão só pra tratar disso.
 - Namespaces são [*case-insensitive*](https://pt.wikipedia.org/wiki/Case-sensitive), significa que tanto faz escrever com letras maiúsculas ou minúsculas, mas fique atento aos padrões de PSRs, falaremos sobre isso também.
 
-Ir para: [3.16 Configurações](16-Configs.md)
+Ir para: [4.0 Intermediário](../4-Intermediário/0-introducao.md)
