@@ -43,7 +43,7 @@ Mas hoje também existe possibilidade de escrever, testar e compartilhar seu có
 
 O Try It Online não pede nem login. É só entrar na página, escolher a linguagem e começar a programar. [Try It Online](https://tio.run)
 
-O Replit exige criação de conta, mas tem mais funcionalidades, um editor de texto com que permite editar código de forma colaborativa. [Replit](repl.it)
+O Replit exige criação de conta, mas tem mais funcionalidades, um editor de texto com que permite editar código de forma colaborativa. [Replit](https://repl.it)
 
 Há uma lista com outros na Wikipedia. [Source Code Playgrounds](https://en.wikipedia.org/wiki/Comparison_of_online_source_code_playgrounds)
 
