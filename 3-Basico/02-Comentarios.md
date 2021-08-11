@@ -64,4 +64,4 @@ danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php comentarios2.php
 He4rtDevs <3
 ```
 
-Ir para: [3.3 Tipos de dados](3-Tipos-de-dados.md)
+Ir para: [3.3 Tipos de dados](03-Tipos-de-dados.md)

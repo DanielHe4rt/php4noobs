@@ -122,4 +122,4 @@ retorna: 1
 - Na comparação de idênticos `===` o PHP não tenta converter os valores;
 - Por isso, quando você tenta comparar se a string `'123'` é idêntica `===` ao número `123`, o retorno é `false`, ou seja, diferente.
 
-Ir para: [3.9 Combinação/concatenação de Strings](9-Combinacao-strings.md)
+Ir para: [3.9 Combinação/concatenação de Strings](09-Combinacao-strings.md)

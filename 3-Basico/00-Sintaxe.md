@@ -69,4 +69,4 @@ Todos os comandos **devem** ser encapsulados por alguma tag de abertura e fecham
 
 Se o arquivo a ser lido tiver apenas um script em PHP, ele não necessita da tag de finalização **?>** e em algumas situações, não fechar a tag é considerado boa prática.
 
-Ir para: [3.1 Funções de Saída](1-Saida.md)
+Ir para: [3.1 Funções de Saída](01-Saida.md)
