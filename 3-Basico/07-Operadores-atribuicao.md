@@ -120,4 +120,4 @@ O valor da variável agora é = 12
 - Quando não precisar interpretar variáveis use aspas simples `''`, isso poupa processamento;
 - `PHP_EOL` é uma constante do PHP que serve para quebrar linhas.
 
-Ir para: [3.8 Comparação de Valores](8-Operadores-comparacao.md)
+Ir para: [3.8 Comparação de Valores](08-Operadores-comparacao.md)

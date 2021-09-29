@@ -50,6 +50,4 @@ unset($pessoa);
 > - Classes que herdam outras usaram o construtor da classe-pai caso não definam um construtor própio.
 
 
-
-
-
+Ir para: [4.3 Herança](3-Herança.md)

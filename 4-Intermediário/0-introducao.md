@@ -74,3 +74,5 @@ Diferente do procedural onde se chama funções para manipulação de dados já 
 
 **Sim no começo, ao se deparar a primeira vez com OO é um pouco confuso, mas nada como a prática e a mão na massa para deixar tudo mais claro. Os próximos tópicos irão te levar a isso.
 Bons estudos !!**
+
+Ir para: [4.1 Classes](1-Classes.md)

@@ -41,3 +41,5 @@ echo $bola->tamanho;
 //Métodos:
 $bola->quicar();
 ```
+
+Ir para: [4.2 Construtores e Destrutores](2-Construtores-e-destrutores.md)

@@ -186,4 +186,4 @@ Supondo que temos a expressão -> ( a + a1 / b \* c % d ).
 
 Primeiro será efetuada a divisão ( / ), depois a multiplicação ( \* ), depois o módulo ( % ) e depois o restante.
 
-Ir para: [3.6 Operadores BitWise](6-Operadores-bitwise.md)
+Ir para: [3.6 Operadores BitWise](06-Operadores-bitwise.md)
