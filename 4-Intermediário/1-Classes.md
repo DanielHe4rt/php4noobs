@@ -47,7 +47,7 @@ class Player {
             throw new Exception('A senha anterior está incorreta.');
         }
 
-        $this->password = password_hash($newPassword, PASSWORD_ARGON2I)
+        $this->password = password_hash($newPassword, PASSWORD_ARGON2I);
     }
 
     /**
