@@ -56,7 +56,7 @@ class Player {
      */
     public function getMoney(): float 
     {
-        retun $this->money;
+        return $this->money;
     }
 }
 
