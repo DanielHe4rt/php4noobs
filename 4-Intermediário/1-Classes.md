@@ -107,20 +107,30 @@ $silverSword = new Item('Silver Sword', 5640)
 $danielhe4rt = new Player('danielhe4rt','secret123', 1000);
 ```
 
-> ### Nota:
 
-> - Podemos observar neste caso que $bola é um objeto instância da classe Bola();
+> ### Nota: podemos notar que quando instanciamos a classe Item e a Player, houveram paramêtros sendo passados. Essa sequência de parametros é devido ao método CONSTRUTOR que colocamos na classe. 
 
-Seus métodos e atributos podem ser chamados e acessados através do operador '->'.
+Seus métodos e atributos podem ser chamados e acessados através do operador '->' (também conhecido pelos devs BR's como setinha :p).
 Sintaxe:
 
 ```php
 //Atributo:
-echo $bola->cor;
-echo $bola->tamanho;
+echo "Nome de usuário: " . $danielhe4rt->username;
 
 //Métodos:
-$bola->quicar();
+echo "Saldo: "  . $danielhe4rt->getMoney();
+
+if ($danielhe4rt->canBuy($woodenSword)) {
+    echo $danielhe4rt->username . ', você pode comprar a' . $woodenSword->name . '!';
+} else {
+    echo $danielhe4rt->username . ', caraio tiozão ce tá liso hein? Vai ter como comprar a ' . $woodenSword->name . ' não!';
+}
+
+if ($danielhe4rt->canBuy($silverSword)) {
+    echo $danielhe4rt->username . ', você pode comprar a' . $silverSword->name . '!';
+} else {
+    echo $danielhe4rt->username . ', caraio tiozão tem nem pra espada de madeira e quer a ' . $silverSword->name . ' num fode né!';
+}
 ```
 
 Ir para: [4.2 Construtores e Destrutores](2-Construtores-e-destrutores.md)
