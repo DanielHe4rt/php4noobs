@@ -108,7 +108,7 @@ As classes devem ser instânciadas para serem usadas, uma instância deve ser cr
 ```php
 $woodenSword = new Item('Wooden Sword', 800);
 
-$silverSword = new Item('Silver Sword', 5640)
+$silverSword = new Item('Silver Sword', 5640);
 
 $danielhe4rt = new Player('danielhe4rt','secret123', 1000);
 ```
