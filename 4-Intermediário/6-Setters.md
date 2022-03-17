@@ -23,7 +23,7 @@ Como mostrado em [4.5 Getters](5-Getters.md), podemos usar as palavras reservada
     }
 ```
 
->### estático
+>### estático:
 ```php
     class Exemplo
     {
