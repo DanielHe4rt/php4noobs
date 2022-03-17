@@ -2,7 +2,7 @@
 
 Quando falamos em funções para pessoas que não são programadoras, com toda certeza a primeira coisa que vem na cabeça são aquelas contas super difíceis de se aplicar da matemática onde são usadas variáveis e nunca retornam um resultado legível para as pessoas que não entendem do assunto, certo?
 
-Bom, é isso que eu penso e até entender o que era de fato, foi sempre isso ai. E agora vou te ajudar a desmistificar essa maravilha da programação então vem comigo.
+Bom, é isso que eu penso e até entender o que era de fato, foi sempre isso aí. E agora vou te ajudar a desmistificar essa maravilha da programação, então vem comigo.
 
 ## O que é uma função?
 
@@ -12,7 +12,7 @@ Ficou confuso? Vamos entender sobre o que é preciso pra se escrever uma funçã
 
 - Palavra reservada **function**;
 - Um nome para a função (como se fosse uma variável);
-- Parâmetros (opcional)
+- Parâmetros (opcional);
 - Um bloco de código.
 
 Com isso ai podemos escrever uma função bem simples e começar a entender a metodologia da coisa toda.
@@ -63,7 +63,7 @@ Pra isso, temos que evitar nomes de funções:
 
 Sim, coisas como essa realmente acontecem em cenários reais e você tem o DEVER de seguir um padrão de desenvolvimento pra ajudar tanto a você que está trabalhando no projeto quanto as próximas pessoas que forem mexer no seu código.
 
-Tá, mas como podemos padronizar essas funções? Vamos falar primeiro sobre **PascalCase,snake_case e camelCase**.
+Tá, mas como podemos padronizar essas funções? Vamos falar primeiro sobre convenções de nomenclatura como **PascalCase, snake_case e camelCase**.
 
 ### PascalCase
 
@@ -87,7 +87,7 @@ Essa padronização é bastante usada, porém não é a recomendação para escr
 
 ## snake_case
 
-O snake_case consista-se em escrever a variável sem capitalização e separando as palavras por **"\_"**.
+O snake_case consiste em escrever a variável sem capitalização e separando as palavras por **"\_"**.
 
 Exemplos:
 
@@ -105,14 +105,14 @@ function deletar_usuario_autenticado()
 }
 ```
 
-Esta padronização, já foi mais popular no passado, mas provavelmente em sua jornada como programador PHP, irá se deparar com diversas vezes com este padrão, visto que temos ainda grandes ecossistemas como Worpress que o utiliza como o seu padrão. Dentro da linguagem ainda há DIVERSAS, funções nativas utilizando este padrão, segue um breve exemplo:
+Esta padronização, já foi mais popular no passado, mas provavelmente em sua jornada como programador PHP, irá se deparar com diversas vezes com este padrão, visto que temos ainda grandes ecossistemas como Wordpress que o utiliza como o seu padrão. Dentro da linguagem ainda há DIVERSAS, funções nativas utilizando este padrão, segue um breve exemplo:
 
 ```php
  preg_replace("(\w+)", "He4rth Developers", "Devs");
  is_int(10);
 ```
 
-O snake_case, deve ser utilizado para variáveis e funções. Deve se tomar cuidado para não mistura-lo, com outras padronizações.
+O snake_case, deve ser utilizado para variáveis e funções. Deve se tomar cuidado para não misturá-lo, com outras padronizações.
 
 ### camelCase
 
@@ -140,7 +140,7 @@ PS: seria muito interessante também você padronizar nomes de funções/variáv
 
 ## Parametrização
 
-Parâmetros são váriaveis que deixam sua função flexível para o seu uso. Elas são opcionais, porém é quase certeza que você vai usar funções parametrizadas e vamos entender um pouco sobre.
+Parâmetros são váriaveis que deixam sua função flexível para o seu uso. Eles são opcionais, porém é quase certeza que você vai usar funções parametrizadas e vamos entender um pouco sobre.
 
 Pense no parâmetro como uma entrada dentro de uma variável que sua função irá receber e processar, tal como nossa primeira função **recepcionar()** que recebe o parâmetro **\$nomePessoa** e printa ela na tela junto com mais algumas coisas.
 
@@ -175,7 +175,7 @@ danielhe4rt@he4rt:~/dev/he4rt/php4noobs/4-Intermediario/exemplos$ php funcoes1.p
 Hello danielhe4rt
 ```
 
-Executando o código podemos que não houve um padrão passado pelo usuário e ele simplesmente consumiu o que estava por padrão. Lembre-se de usar parâmetros opcionais apenas quando você tiver a **EXTREMA CERTEZA** que eles podem ser opcionais para não bugar nenhuma aplicação em produção.
+Executando o código podemos que não houve um valor passado pelo usuário e ele simplesmente consumiu o que estava por padrão. Lembre-se de usar parâmetros opcionais apenas quando você tiver a **EXTREMA CERTEZA** que eles podem ser opcionais para não bugar nenhuma aplicação em produção.
 
 #### Tipagem de parâmetros
 
@@ -224,7 +224,7 @@ No PHP, também podemos criar função sem nome especifico, elas normalmente sã
 
 É Importante saber, que as funções anônimas, enxergaram apenas escopo próprio, e não herdam automaticamente o escopo anterior, por este motivo não se deve utilizar `$this` ou `globals` por exemplo, para realizar alguma ação dentro da função.
 
-Mas afinal, como vamos utilizar no dia a dia, para a sua utilização como callback, como citado anteriromente , vamos utilizar de exemplo a sua utilização na função `array_filter()
+Mas afinal, como vamos utilizar no dia a dia, para a sua utilização como callback, como citado anteriormente , vamos utilizar de exemplo a sua utilização na função `array_filter()
 `:
 
 ```php
@@ -260,7 +260,7 @@ $exemplo(); // Resultado: He4rtDevs
 ### Callbacks
 Bom com alguns conceitos explicados, pode ter ficado com um nó na cabeça, mas afinal o que é um **CALLBACK** ?
 
-Resumidamente, é um nome para uma função, que vai ser passada como paramêtro dentro de outra função, calma... Vamos aos exemplos.
+Resumidamente, é um nome para uma função, que vai ser passada como paramêtro dentro de outra função, ou seja, para que ela seja executada é necessário que a função a qual ela pertence seja chamada, calma... Vamos aos exemplos.
 
 Primeiramente, vamos tentar algo mais simples, por exemplo podemos passar uma função da propria linguagem para execução de uma tarefa:
 ```php

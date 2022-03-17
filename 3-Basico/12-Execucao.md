@@ -9,5 +9,7 @@ Os backticks ` `` `, também conhecidos como *backquotes*, executam o conteúdo 
 $output = `ls -al`;
 echo "<pre>$output</pre>";
 ```
+#### Notas
+Um **comando shell** é uma ou mais palavras que representam uma instrução enviada pelo usuário e seus programas para o kernel através de um interpretador de comandos. 
 
 Ir para: [3.13 Estruturas de Controle: Condicioinais](13-Estruturas-de-controle-cond.md)

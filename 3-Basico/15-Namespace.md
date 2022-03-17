@@ -1,7 +1,7 @@
 # 3.15 Namespaces
 
 Namespaces no PHP servem para encapsular códigos e eliminar a possibilidade de
-colisão de nomes. É uma forma de agrupar classes, interfaces, funções, métodos, constantes, etc. Que estão relacionadas.
+colisão de nomes. É uma forma de agrupar classes, interfaces, funções, métodos, constantes, entre outros que estão relacionadas.
 
 ## Declaração
 

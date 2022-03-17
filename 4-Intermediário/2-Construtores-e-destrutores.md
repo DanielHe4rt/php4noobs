@@ -2,7 +2,7 @@
 
 ## O que são ?
 
-Os construtores e destrutores são metódos mágicos que executam determinadas tarefas assim que a classe é instânciada e antes de ser removida da memória
+Os construtores e destrutores são metódos mágicos que executam determinadas tarefas assim que a classe é instânciada e antes de ser removida da memória.
 
 ### Construtores
 
@@ -175,8 +175,8 @@ class Player
     }
 }
 ```
-Note que deixei a classe bem sucinta e coloquei um echo para quando a classe é construida e quando a varável que recebe
-o objeto é removido da memória para dar um exemplo de como acontece o processo. Se liga:
+Note que deixei a classe bem sucinta e coloquei um echo para quando a classe é construida e quando a variável que recebe
+o objeto é removida da memória para dar um exemplo de como acontece o processo. Se liga:
 
 ```php
 $danielhe4rt = new Player('danielhe4rt');
@@ -189,7 +189,7 @@ unset($danielhe4rt);
 
 ### Notas:
 > - Ambos os metódos demostrados acima não devem retornar ou especificar tipo de retorno(apesar deste ser `void` por padrão). 
-> - Classes que herdam outras usaram o construtor da classe-pai caso não definam um construtor própio.
+> - Classes que herdam outras usarão o construtor da classe-pai caso não definam um construtor próprio.
 
 
 Ir para: [4.3 Herança](3-Herança.md)

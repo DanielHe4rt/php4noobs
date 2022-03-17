@@ -27,7 +27,7 @@ Vamos exemplificar com [pseudocódigo](https://pt.wikipedia.org/wiki/Pseudoc%C3%
     - Insira a nova lâmpada.
 ```
 
-Foram dados exemplos de como funcionaria estruturas de condições, agora vamos analisar cada uma delas.
+Foram dados exemplos de como funcionariam estruturas de condições, agora vamos analisar cada uma delas.
 
 ## Condição: if / else:
 
@@ -104,9 +104,9 @@ if ($usuario == "danielhe4rt" && $senha == "secret123") {
 
 ## Condição: if / else if / else:
 
-Quando vemos algum tipo de condição de if/else, o IDEAL é que sejam duas possibilidades de escolha. Porém, toda linguagem de programação existe a condicional extra chamada **else if**, na qual adiciona mais uma possibilidade de retorno VERDADEIRA para a condição.
+Quando vemos algum tipo de condição de if/else, o IDEAL é que sejam duas possibilidades de escolha. Porém, toda linguagem de programação existe a condicional extra chamada **else if**, na qual adiciona mais uma possibilidade de retorno **VERDADEIRA** para a condição.
 
-Na prática, você pode ter N checagens para interpretar uma resposta retornando VERDADEIRO, até chegar na condição FALSA. Entenda o exemplo abaixo:
+Na prática, você pode ter N checagens para interpretar uma resposta retornando **VERDADEIRO**, até chegar na condição **FALSO**. Entenda o exemplo abaixo:
 
 ```
 if (first condition) {
