@@ -53,7 +53,7 @@
 2. [Construtores e Destrutores](/4-Intermediário/2-Construtores-e-destrutores.md)
 3. [Herança](/4-Intermediário/3-Herança.md)
 4. [Modificadores de Acesso](/4-Intermediário/4-Modificadores-de-acesso.md)
-5. [Getters (Em construção)]()
+5. [Getters](/4-Intermediário/5-Getters.md)
 6. [Setters (Em construção)]()
 7. [Polimorfismo (Em construção)]()
 8. [Interfaces (Em construção)]()
