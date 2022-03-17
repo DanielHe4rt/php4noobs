@@ -54,7 +54,7 @@
 3. [Herança](/4-Intermediário/3-Herança.md)
 4. [Modificadores de Acesso](/4-Intermediário/4-Modificadores-de-acesso.md)
 5. [Getters (Em construção)]()
-6. [Setters (Em construção)]()
+6. [Setters](/4-Intermediário/6-Setters.md)
 7. [Polimorfismo (Em construção)]()
 8. [Interfaces (Em construção)]()
 
