@@ -13,7 +13,7 @@ Como mostrado em [4.5 Getters](5-Getters.md), podemos usar as palavras reservada
 ```php
     class Exemplo
     {
-        private $propriedadePrivada = "Um valor";
+        private $propriedadePrivada = "Esta propriedade não pode ser alterada ou lida diretamente";
 
         //Este método define um valor para $propriedadePrivada
         public function SetterParaPropriedadePrivada($novoValor)
@@ -27,7 +27,7 @@ Como mostrado em [4.5 Getters](5-Getters.md), podemos usar as palavras reservada
 ```php
     class Exemplo
     {
-        private static $propriedadePrivada = "Um valor";
+        private static $propriedadePrivada = "Esta propriedade não pode ser alterada ou lida diretamente";
 
         //Este método define um valor para $propriedadePrivada
         public static function SetterParaPropriedadePrivada(string $novoValor)
