@@ -40,9 +40,35 @@ $filho->apresentar; //Olá, meu nome é Enzo e meu idioma nativo é Português!
 
 Como você pode ver, apesar do Filho herdar as propiedades do Pai, é possível que estas sejam modificadas, como foi feito com a propiedade `nome`.
 
+### Pensando suas classes
+
+A herança em geral, e principalmente a vertical, gera uma relação de razão
+onde ambos os termos são convertíveis, pois é uma demarcação de categoria 
+pelo gênero próximo e pela diferença específica.
+
+No exemplo acima, podemos deixar essa relação mais clara se substituirmos
+a palavra-chave `extends` por `é um`.
+
+```
+Filho "é um" Pai
+```
+
+Essa relação pode ser verdadeira com algumas premissas:
+
+1. Premissa maior: Que o filho seja Pai
+2. Premissa menor: Que o filho não seja pai de seu pai
+
+Nenhuma dessas premissas pode ser estritamente respeitada nessa relação se
+levarmos em consideração somente a interface:
+
+```php
+(function (Pai $o): Filho {
+})(new Filho);
+```
 
 ### Nota
-> - No PHP não é possível herdar mais de uma classe, para isso são usadas as interfaces.
+> - A herança é comumente desencorajada em favor da composição.
+> - No PHP não é possível herdar mais de uma classe, para isso são usadas as classes intermediarias, interfaces ou traits.
 > - Você poderá aprender mais sobre a palavra chave `public` no capitulo sobre [modificadores de acesso](4-Modificadores-de-acesso.md).
 
 Ir para: [4.4 Modificares de Acesso](4-Modificadores-de-acesso.md)
