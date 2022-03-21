@@ -7,7 +7,7 @@ Setters são métodos usados para alterar valor de propriedades que não podem s
 
 
 ## Como usar
-Como mostrado em [4.5 Getters](5-Getters.md), podemos usar as palavras reservadas do php ```$this``` e ```self``` para manipular propriedades privadas. Antes vimos como ler o valor, agora vamos ver como alterar o valor, Veja o exemplo abaixo.
+Como mostrado em [4.5 Getters](5-Getters.md), podemos usar as palavras reservadas do php ```this``` e ```self``` para manipular propriedades privadas. Antes vimos como ler o valor, agora vamos ver como alterar o valor, Veja o exemplo abaixo.
 
 >### não estático:
 ```php
