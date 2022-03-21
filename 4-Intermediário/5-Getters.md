@@ -42,7 +42,7 @@
  ```php
    class Exemplo
    {
-      private static $propriedadePrivada = "Esta propriedade não pode ser alterada e lida diretamente";
+      private static $propriedadePrivada = "Esta propriedade não pode ser alterada nem lida diretamente";
       public static $propriedadePublica = "Esta propriedade pode ser alterada e lida diretamente";
       
       
