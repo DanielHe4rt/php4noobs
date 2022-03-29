@@ -114,3 +114,4 @@ $filho = new Filho();
 $filho->mostrarCpfPai(); //Erro fatal
 ```
 
+Ir para: [4.5 Getters](5-Getters.md)
