@@ -142,7 +142,7 @@ A leitura é interrompida caso uma das condições abaixo seja atingida.
     1. A quantidade de bytes informados como parâmetro são lidos;
     2. Quando o final do arquivo  (EOF - end of file - final do arquivo) é alcançado;
     3. um pacote tornou-se disponível (para network streams);
-    4. 8192 bytes (ou a quantidade de bytes necessárias pro que você irá ler) foram lidos (depois de abrir um stream)
+    4. 8192 bytes (ou a quantidade de bytes necessárias pro que você irá ler) foram lidos (depois de abrir um stream).
 
 Argumentos/Parâmetros:
 

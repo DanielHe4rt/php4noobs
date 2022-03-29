@@ -307,7 +307,7 @@ $contem = str_contains($stringCompleta, $buscandoPor); // retorna false
 
 Exemplo #3
 
-Uma String vazia sempre está continda em qualquer string
+Uma String vazia sempre está contida em qualquer string
 
 ```php
 $string  = 'He4rt devs é o melhor grupo';
@@ -353,7 +353,7 @@ $contem = str_starts_with($stringCompleta, $buscandoPor); // retorna false
 
 Exemplo #3
 
-Uma String vazia sempre está continda em qualquer string
+Uma String vazia sempre está contida em qualquer string
 
 ```php
 $string  = 'He4rt devs é o melhor grupo';
@@ -400,7 +400,7 @@ $contem = str_ends_with($stringCompleta, $buscandoPor); // retorna false
 
 Exemplo #3
 
-Uma String vazia sempre está continda em qualquer string
+Uma String vazia sempre está contida em qualquer string
 
 ```php
 $string  = 'He4rt devs é o melhor grupo';
@@ -411,7 +411,7 @@ $contem = str_ends_with($stringCompleta, $buscandoPor); // retorna true
 
 ## preg_replace
 
-A função **`preg_replace()`** substitui caracteres de uma string e te retorna uma nova string baseado em um Ragex.
+A função **`preg_replace()`** substitui caracteres de uma string e te retorna uma nova string baseado em um Regex.
 
 Argumentos/Parâmetros:
 

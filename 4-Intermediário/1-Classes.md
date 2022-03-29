@@ -1,6 +1,6 @@
 # 4.1 - Classes
 
-## O que é ?
+## O que são?
 
 As classes são responsáveis por criarem estruturas e comportamentos para conceitos das aplicações e do mundo real, elas são compostas basicamente por propriedades e métodos. As propriedades funcionam como característias de um objeto (representa uma analogia aos objetos do mundo real/virtual) e os métodos representam suas funcionalidades. Podemos ter um exemplo de um jogador de qualquer jogo virtual, onde ele se registra, tem uma quantidade X de dinheiro, e caso queira pode trocar de senha, veja este exemplo:
 
