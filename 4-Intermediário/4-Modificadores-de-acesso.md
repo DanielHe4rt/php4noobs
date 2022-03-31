@@ -64,7 +64,7 @@ $pai->nomePai . PHP_EOL; //Erro fatal
 
 $filho = new Filho();
 
-$flho->nomePai . PHP_EOL; //Erro fatal
+$filho->nomePai . PHP_EOL; //Erro fatal
 $filho->apresentar(); //Output: Meu nome é Pedro e o do meu pai é João
 ```
 
