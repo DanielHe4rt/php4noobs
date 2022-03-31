@@ -43,7 +43,7 @@ $danielhe4rt = new Player('danielhe4rt', 'secret123', 1000);
 ```
 
 Se você não passar algum dos parâmetros ou colocá-los fora de ordem, seu código apontará um erro
-falando que falta argumentos ou que os dados passados não **segem os mesmos tipos** (lembre-se de tipar os parametros de suas funções).
+falando que falta argumentos ou que os dados passados não **seguem os mesmos tipos** (lembre-se de tipar os parametros de suas funções).
 
 Caso você queira deixar um argumento opcional, você deverá atribuir um valor padrão pra eles. Se liga:
 
