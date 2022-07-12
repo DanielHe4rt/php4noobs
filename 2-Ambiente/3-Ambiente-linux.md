@@ -9,6 +9,13 @@ Pra instalar tudo de uma vez, basta rodar o comando abaixo:
 ```bash
 sudo apt install php php-mysql php-zip php-curl
 ```
+Podemos também adicionar uma ppa específica do PHP para gente sempre trabalhar com as últimas versões do php, que atualmente está na versão 8.1.7
+```
+sudo add-apt-repository ppa:ondrej/php
+sudo apt update
+sudo apt install php8.1 php8.1-mysql php8.1-zip php8.1-curl
+```
+
 - Arch Linux, Manjaro e distribuições derivadas(pacman):
 ```bash
 sudo pacman -S php
