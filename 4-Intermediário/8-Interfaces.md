@@ -5,25 +5,22 @@ Neste tópico abordaremos o assunto do que são interfaces no PHP e como impleme
 
 <br>
 
-<p>
-  Bom, para entendermos interfaces, vamos pegar uma definição da própria página do PHP:
-<p>
+Bom, para entendermos interfaces, vamos pegar uma definição da própria página do PHP:
 
-<blockquote cite="https://www.php.net/manual/pt_BR/language.oop5.interfaces.php">
-  <p>Interfaces de objetos permitem a criação de códigos que especificam quais métodos uma classe deve implementar, sem definir como esses métodos serão tratados.</p>
-</blockquote><br>
+> Interfaces de objetos permitem a criação de códigos que especificam quais métodos uma classe deve implementar, sem definir como esses métodos serão tratados.
 
-<p>
-  <strong> <i> Mas então, o que isso significa? </i> </strong> <br>
+<br>
+
+***Mas então, o que isso significa?*** 
   
   - Significa que interfaces são nada mais, nada menos do que modelos de métodos que podemos implementar em uma classe 
   (ou até mesmo estende-lá em outra interface como veremos mais a seguir), e que ao fazer essa implementação a classe passa a ser obrigada à conter os métodos declarados 
   na interface, resultando em um erro caso não seja feito;
   - Em outras palavras, podemos entender interfaces como um contrato, a partir do momento que você assina esse contrato (implementa ele), você passa a ser obrigado a 
   seguir as especificações previstas nele, o descumprimento delas seria punitivo (que no nosso caso seria um erro fatal do código).
-</p>
+
   
- <p> A partir desse entendimento podemos seguir para o próximo assunto 	:arrow_down: </p> <br>
+ A partir desse entendimento podemos seguir para o próximo assunto :arrow_down: <br>
  
  ## Como implementar uma interface?
  
@@ -31,8 +28,8 @@ Neste tópico abordaremos o assunto do que são interfaces no PHP e como impleme
  
   Ao trabalharmos com interfaces, usaremos principalmente duas palavras reservadas próprias para o seu uso:  ```interface``` e ```implements``` , onde:
   
-  - <strong>interface:</strong> Palavra reservada para definir a criação de uma interface;
-  - <strong>implements:</strong> Operador usado para realizar a implementação de interfaces;
+  - **interface:** Palavra reservada para definir a criação de uma interface;
+  - **implements:** Operador usado para realizar a implementação de interfaces;
 
   Veremos sobre sua síntaxe no código abaixo: 
   
@@ -53,7 +50,7 @@ Neste tópico abordaremos o assunto do que são interfaces no PHP e como impleme
 
   Agora para você entender melhor sobre seu uso, daremos alguns exemplos de como utilizar:
   
-  - <strong> Implementação correta de uma interface: </strong>
+- **Implementação correta de uma interface:**
 
 ```php
   // criamos a interface HelloWorld:
@@ -83,7 +80,7 @@ Neste tópico abordaremos o assunto do que são interfaces no PHP e como impleme
   
   <br>
   
-   - <strong> Implementação errada de uma interface: </strong>
+- **Implementação errada de uma interface:**
     
 ```php
   // criamos a interface HelloWorld:
@@ -109,15 +106,13 @@ Neste tópico abordaremos o assunto do que são interfaces no PHP e como impleme
 
 ```
 
-  Note que agora nosso código possui dois erros. O primeiro erro é semântico, onde estamos implementando uma interface com o método helloWorld em uma classe 
-  criada para o intuito de realizar somas, onde não faria tanto sentido a classe possuir esse método. E o segundo erro é que definimos a implementação da interface em uma classe que não contém o método definido na mesma, devido a isso
-  é gerado um erro fatal pelo interpretador que impossibilita de executar o programa, tendo o seguinte output: ``` Fatal error: Class Somar contains 1 abstract method and must therefore be declared abstract or implement the remaining methods... ```.
+  Note que agora nosso código possui dois erros. O primeiro erro é semântico, onde estamos implementando uma interface com o método helloWorld em uma classe criada para o intuito de realizar somas, onde não faria tanto sentido a classe possuir esse método. E o segundo erro é que definimos a implementação da interface em uma classe que não contém o método definido na mesma, devido a isso é gerado um erro fatal pelo interpretador que impossibilita de executar o programa, tendo o seguinte output: ``` Fatal error: Class Somar contains 1 abstract method and must therefore be declared abstract or implement the remaining methods... ```.
   
 <br>
 
-  - <strong> Implementação de duas interfaces: </strong>
+- **Implementação de duas interfaces:**
 
-  Para implementarmos duas ou mais interfaces em uma mesma classe usaremos uma vírgula ```,``` para separarmos elas:
+Para implementarmos duas ou mais interfaces em uma mesma classe usaremos uma vírgula ```,``` para separarmos elas:
 
 ```php
   // criamos a interface Nome e definimos os métodos para ela:
@@ -179,7 +174,7 @@ Neste tópico abordaremos o assunto do que são interfaces no PHP e como impleme
 
 <br>
 
- - <strong> Implementação interfaces estendíveis: </strong>
+ - **Implementação interfaces estendíveis:**
 
  Interfaces estendíveis são interfaces que recebem métodos por herança de outra através do operador ```extends``` (usado também em heranças de classes), veja um exemplo:
 
@@ -233,7 +228,7 @@ Neste tópico abordaremos o assunto do que são interfaces no PHP e como impleme
 
   <br>
 
-  - <strong> Usando constantes em interfaces: </strong>
+  - **Usando constantes em interfaces:**
 
   Apesar de não ser possível definir atributos para uma classe através de uma interface, o PHP permite a criação de constantes nessas estruturas, e caso essa constante não seja redeclarado, classes que implementarem essa interface também vão conseguir acessar essa constante, exemplo:
 
