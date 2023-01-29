@@ -7,7 +7,7 @@ Vamos instalar o PHP com alguns módulos para ajudar no desenvolvimento posterio
 Pra instalar tudo de uma vez, basta rodar o comando abaixo:
 - Debian, Ubuntu e distribuições derivadas(apt):
 ```bash
-sudo apt install php php-mysql php-zip php-curl
+sudo apt install php php-mysql php-zip php-curl 
 ```
 - Arch Linux, Manjaro e distribuições derivadas(pacman):
 ```bash
@@ -26,10 +26,10 @@ $ php -v
 O retorno do comando acima deve exibir algo parecido com:
 
 ```bash
-PHP 7.4.11-0ubuntu0.19.10.3 (cli) (built: Feb 12 2020 15:22:33) ( NTS )
-Copyright (c) 1997-2018 The PHP Group
-Zend Engine v3.3.11, Copyright (c) 1998-2018 Zend Technologies
-    with Zend OPcache v7.3.11-0ubuntu0.19.10.3, Copyright (c) 1999-2018, by Zend Technologies
+PHP 8.2.1 (cli) (built: Jan 13 2023 10:43:08) (NTS)
+Copyright (c) The PHP Group
+Zend Engine v4.2.1, Copyright (c) Zend Technologies
+    with Zend OPcache v8.2.1, Copyright (c), by Zend Technologies
 ```
 
 Para verificar os módulos instalados, basta rodar o comando abaixo:
