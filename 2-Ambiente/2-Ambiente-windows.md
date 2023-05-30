@@ -5,7 +5,7 @@ desenvolvimento e testes/estudos.
 
 ### Passo a passo:
 
-* Baixe os arquivos zipados da última versão do PHP no link: https://windows.php.net/download;
+* Baixe os arquivos zipados da última versão (Thread Safe) do PHP no link: https://windows.php.net/download;
 * Descompacte os arquivos que você baixou dentro da pasta `C:\Program Files`;   
 * Renomeie a pasta que você descompactou para `php`;
 * Edite as variáveis de ambiente do Windows;
