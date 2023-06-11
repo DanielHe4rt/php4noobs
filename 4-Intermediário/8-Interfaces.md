@@ -35,13 +35,13 @@ Bom, para entendermos interfaces, vamos pegar uma definição da própria págin
   
 ```php
   // sintaxe para a criação:
-  interface nome_interface 
+  interface ProvedorPagamentoInterface
   {
       // declaração de métodos
   }
   
   // sintaxe para a implementação:
-  class nome_classe implements nome_interface
+  class PaypalProvider implements ProvedorPagamentoInterface
   {
       // métodos e atributos da classe
   }
@@ -57,7 +57,7 @@ Bom, para entendermos interfaces, vamos pegar uma definição da própria págin
   interface HelloWorld 
   {
 	  // definimos que as classes que implementarem essa interface, deverá conter o método público helloWorld:
-	    public function helloWorld();
+	    public function helloWorld(): void
   }
 
 
