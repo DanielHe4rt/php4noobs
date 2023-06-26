@@ -56,7 +56,7 @@
 5. [Getters](/4-Intermediário/5-Getters.md)
 6. [Setters](/4-Intermediário/6-Setters.md)
 7. [Polimorfismo (Em construção)]()
-8. [Interfaces (Em construção)](/4-Intermediário/8-Interfaces.md)
+8. [Interfaces](/4-Intermediário/8-Interfaces.md)
 
 ### Módulo de funções
 
